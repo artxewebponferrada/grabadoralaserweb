@@ -11,12 +11,35 @@ interface Props {
     avatar: string;
   };
   tags: string[];
+  featuredImage?: string;   // <- NUEVO
+  imageAlt?: string;        // <- opcional
 }
 
-const { title, slug, excerpt, publishDate, author, tags } = Astro.props;
+const { title, slug, excerpt, publishDate, author, tags, featuredImage, imageAlt } = Astro.props;
+
+// Fallback si no hay featuredImage en el JSON
+const cover = featuredImage ?? `/imagenes/${slug}.jpg`;
+const alt = imageAlt ?? title;
 ---
 
 <article class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-hover transition-all duration-300">
+  <!-- Imagen del post -->
+  <a href={`/blog/${slug}/`} class="block">
+    <figure class="aspect-w-16 aspect-h-9 bg-gray-100 relative overflow-hidden">
+      <img
+        src={cover}
+        alt={alt}
+        loading="lazy"
+        decoding="async"
+        class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
+        width="1280"
+        height="720"
+      />
+      <!-- Overlay suave (azul de tu paleta) -->
+      <div class="absolute inset-0 bg-gradient-to-t from-primary-900/15 to-transparent"></div>
+    </figure>
+  </a>
+
   <div class="p-6">
     <header class="mb-4">
       <div class="flex items-center gap-3">
@@ -24,6 +47,8 @@ const { title, slug, excerpt, publishDate, author, tags } = Astro.props;
           src={author.avatar}
           alt={author.name}
           class="w-10 h-10 rounded-full object-cover ring-2 ring-gray-100"
+          loading="lazy"
+          decoding="async"
         />
         <div class="flex flex-col">
           <strong class="text-sm text-gray-900">{author.name}</strong>
