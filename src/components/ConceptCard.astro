@@ -1,0 +1,87 @@
+---
+interface Props {
+  term: string;
+  slug: string;
+  aka?: string[];
+  seo_title: string;
+  concept: string;
+  explanation: string;
+  related_terms?: string[];
+  seo_description: string;
+  tags: string[];
+}
+
+const { 
+  term, 
+  slug, 
+  aka = [], 
+  concept, 
+  explanation, 
+  related_terms = [], 
+  tags = [] 
+} = Astro.props;
+
+// Convert explanation markdown-style formatting to HTML
+const formatExplanation = (text: string) => {
+  return text
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\n\n/g, '</p><p>')
+    .replace(/\n/g, '<br>');
+};
+---
+
+<article 
+  id={slug}
+  class="bg-white rounded-2xl p-8 shadow-card hover:shadow-hover transition-all duration-300 border border-gray-100"
+>
+  <header class="mb-6">
+    <h3 class="text-2xl font-bold text-gray-900 mb-2">
+      {term}
+    </h3>
+    
+    {aka.length > 0 && (
+      <div class="text-sm text-gray-500 mb-3">
+        También conocido como: {aka.join(', ')}
+      </div>
+    )}
+
+    <p class="text-lg text-primary-700 font-medium">
+      {concept}
+    </p>
+  </header>
+
+  <div class="prose max-w-none text-gray-600 mb-6">
+    <p set:html={formatExplanation(explanation)} />
+  </div>
+
+  <footer class="flex flex-wrap items-center justify-between gap-4">
+    <!-- Tags -->
+    <div class="flex flex-wrap gap-2">
+      {tags.map((tag) => (
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+          {tag}
+        </span>
+      ))}
+    </div>
+
+    <!-- Related Terms -->
+    {related_terms.length > 0 && (
+      <div class="text-sm text-gray-500">
+        <span class="font-medium">Términos relacionados:</span>
+        <div class="flex flex-wrap gap-1 mt-1">
+          {related_terms.map((relatedTerm, index) => (
+            <span>
+              <a 
+                href={`#${relatedTerm}`}
+                class="text-primary-600 hover:text-primary-700 transition-colors"
+              >
+                {relatedTerm.replace(/-/g, ' ')}
+              </a>
+              {index < related_terms.length - 1 && <span class="text-gray-400">, </span>}
+            </span>
+          ))}
+        </div>
+      </div>
+    )}
+  </footer>
+</article>

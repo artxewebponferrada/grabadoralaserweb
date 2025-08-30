@@ -1,0 +1,120 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageSEO from '../../components/PageSEO.astro';
+import ConceptCard from '../../components/ConceptCard.astro';
+import conceptsData from '../../data/conceptos.json';
+
+const { laserGlossary } = conceptsData;
+
+// Schema.org structured data
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "name": laserGlossary.title,
+  "description": laserGlossary.description,
+  "inDefinedTermSet": laserGlossary.categories.flatMap(category =>
+    category.terms.map(term => ({
+      "@type": "DefinedTerm",
+      "name": term.term,
+      "description": term.concept,
+      "termCode": term.slug
+    }))
+  )
+};
+---
+
+<Layout>
+  <PageSEO
+    title={laserGlossary.title}
+    description={laserGlossary.description}
+  />
+
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- Header -->
+    <header class="text-center mb-16">
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4">
+        {laserGlossary.title}
+      </h1>
+      <p class="text-xl text-gray-600 max-w-4xl mx-auto mb-8">
+        {laserGlossary.description}
+      </p>
+      <div class="text-sm text-gray-500">
+        Última actualización: {new Date(laserGlossary.last_updated).toLocaleDateString('es-ES')}
+      </div>
+    </header>
+
+    <!-- Table of Contents -->
+    <nav class="bg-white rounded-2xl p-6 shadow-sm mb-12">
+      <h2 class="text-xl font-semibold text-gray-900 mb-6">Índice de Contenidos</h2>
+      <div class="grid gap-4 md:grid-cols-2">
+        {laserGlossary.categories.map((category) => (
+          <a
+            href={`#${category.name.toLowerCase().replace(/\s+/g, '-')}`}
+            class="flex items-center p-4 bg-gray-50 rounded-xl hover:bg-primary-50 hover:text-primary-700 transition-colors group"
+          >
+            <div>
+              <h3 class="font-semibold text-gray-900 group-hover:text-primary-700">
+                {category.name}
+              </h3>
+              <p class="text-sm text-gray-600 mt-1">
+                {category.terms.length} términos
+              </p>
+            </div>
+            <svg class="w-5 h-5 ml-auto text-gray-400 group-hover:text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        ))}
+      </div>
+    </nav>
+
+    <!-- Categories and Terms -->
+    {laserGlossary.categories.map((category) => (
+      <section 
+        id={category.name.toLowerCase().replace(/\s+/g, '-')}
+        class="mb-16"
+      >
+        <header class="mb-8">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            {category.name}
+          </h2>
+          <p class="text-lg text-gray-600">
+            {category.description}
+          </p>
+        </header>
+
+        <div class="grid gap-6">
+          {category.terms.map((term) => (
+            <ConceptCard {...term} />
+          ))}
+        </div>
+      </section>
+    ))}
+
+    <!-- Bottom CTA -->
+    <section class="bg-primary-50 rounded-2xl p-8 text-center">
+      <h2 class="text-2xl font-bold text-primary-900 mb-4">
+        ¿Buscas el grabador láser perfecto?
+      </h2>
+      <p class="text-primary-700 mb-6">
+        Ahora que conoces los conceptos básicos, explora nuestras reviews y comparativas para encontrar el equipo ideal.
+      </p>
+      <div class="flex justify-center gap-4">
+        <a
+          href="/buscador/"
+          class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-primary-600 hover:bg-primary-700 transition-colors"
+        >
+          Buscar Grabadores
+        </a>
+        <a
+          href="/blog/"
+          class="inline-flex items-center px-6 py-3 border border-primary-600 text-base font-medium rounded-full text-primary-600 hover:bg-primary-600 hover:text-white transition-colors"
+        >
+          Leer Guías
+        </a>
+      </div>
+    </section>
+  </div>
+</Layout>

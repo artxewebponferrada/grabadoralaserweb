@@ -1,0 +1,402 @@
+{
+  "laserGlossary": {
+    "title": "Diccionario Definitivo de Corte y Grabado Láser",
+    "description": "Un glosario completo con más de 70 términos técnicos sobre el corte, grabado y marcado láser. Explora desde conceptos fundamentales y componentes de la máquina hasta técnicas avanzadas, materiales y software. Ideal para profesionales, estudiantes y entusiastas de la fabricación digital.",
+    "last_updated": "2023-10-27T12:00:00Z",
+    "categories": [
+      {
+        "name": "Conceptos Fundamentales y Tipos de Láser",
+        "description": "Términos básicos que definen la tecnología láser, sus procesos principales y los diferentes tipos de fuentes láser utilizadas en la industria.",
+        "terms": [
+          {
+            "term": "Láser",
+            "slug": "laser",
+            "aka": ["Light Amplification by Stimulated Emission of Radiation"],
+            "seo_title": "Qué es un Láser: Significado y Cómo Funciona | Guía Total",
+            "concept": "Dispositivo que genera un haz de luz monocromático, coherente y altamente concentrado mediante emisión estimulada de radiación.",
+            "explanation": "El acrónimo LÁSER significa 'Amplificación de Luz por Emisión Estimulada de Radiación'. A diferencia de una bombilla que emite luz en todas direcciones y con múltiples longitudes de onda, un láser produce un haz de luz con propiedades únicas: \n1. **Monocromático:** Es de un solo color o longitud de onda pura. \n2. **Coherente:** Todas las ondas de luz viajan en perfecta sincronía, como soldados marchando al unísono. \n3. **Direccional:** El haz es extremadamente colimado, lo que significa que se propaga en una línea recta con muy poca dispersión. \nEstas características permiten que una lente pueda enfocar toda la energía del haz en un punto increíblemente pequeño, alcanzando temperaturas altísimas capaces de vaporizar o fundir materiales con una precisión micrométrica. Esta es la base de todo el corte y grabado láser.",
+            "related_terms": ["laser-co2", "laser-fibra", "haz-laser", "longitud-de-onda"],
+            "seo_description": "Descubre qué es un láser, su significado (Light Amplification by Stimulated Emission of Radiation) y por qué su haz de luz coherente es clave para el corte y grabado.",
+            "tags": ["concepto", "fundamental", "física"]
+          },
+          {
+            "term": "Corte Láser",
+            "slug": "corte-laser",
+            "aka": ["Corte por láser", "Laser cutting"],
+            "seo_title": "Corte Láser: Qué es, Cómo Funciona y Materiales | Guía",
+            "concept": "Proceso de fabricación sustractivo que utiliza un haz de láser de alta potencia para seccionar materiales con precisión.",
+            "explanation": "El corte por láser es un proceso térmico sin contacto donde un haz de láser enfocado funde, quema o vaporiza el material en una trayectoria definida por un diseño digital. Una asistencia de aire o gas (como oxígeno o nitrógeno) ayuda a expulsar el material fundido del surco, dejando un corte limpio y preciso. \nSus principales ventajas son: \n- **Precisión:** Capaz de crear geometrías complejas e intrincadas que serían imposibles con herramientas mecánicas. \n- **Bordes de Calidad:** A menudo produce bordes acabados que no requieren post-procesamiento (especialmente en acrílico). \n- **Versatilidad:** Funciona en una amplia gama de materiales, desde madera y plásticos hasta metales. \n- **Baja Deformación:** Al ser un proceso sin contacto, la tensión mecánica sobre el material es nula, y la Zona Afectada por el Calor (ZAC) es mínima.",
+            "related_terms": ["grabado-laser", "kerf", "asistencia-de-aire", "potencia-laser", "zona-afectada-calor"],
+            "seo_description": "Aprende qué es el corte láser, cómo funciona este proceso de alta precisión y qué materiales como madera, acrílico y metal puedes cortar. Conoce sus ventajas y aplicaciones.",
+            "tags": ["proceso", "fabricación", "sustractivo"]
+          },
+          {
+            "term": "Grabado Láser",
+            "slug": "grabado-laser",
+            "aka": ["Grabado por láser", "Laser engraving"],
+            "seo_title": "Qué es el Grabado Láser y Cómo se Realiza | Técnicas",
+            "concept": "Técnica que utiliza un haz de láser para remover selectivamente la superficie de un material y crear una marca visible y con relieve.",
+            "explanation": "El grabado láser crea una cavidad en la superficie del material, resultando en un diseño que se puede sentir al tacto. Funciona vaporizando el material hasta una profundidad controlada, que depende de la potencia y la velocidad del láser. Este proceso es ideal para la personalización de productos, creando imágenes, logotipos y textos permanentes. \nExisten dos métodos principales: \n- **Grabado Raster:** El cabezal se mueve de lado a lado, como una impresora, para rellenar áreas. Es perfecto para imágenes y fotografías. \n- **Grabado Vectorial:** El láser sigue las líneas del diseño, creando trazos finos y nítidos. Es mucho más rápido y se usa para delinear formas o texto.",
+            "related_terms": ["marcado-laser", "grabado-raster", "grabado-vectorial", "resolucion-dpi"],
+            "seo_description": "Explora qué es el grabado láser, sus diferencias con el marcado y el corte, y cómo se utiliza para personalizar productos de madera, vidrio, metal y cuero.",
+            "tags": ["proceso", "personalización", "marcado"]
+          },
+          {
+            "term": "Marcado Láser",
+            "slug": "marcado-laser",
+            "aka": ["Marcaje láser", "Laser marking"],
+            "seo_title": "Marcado Láser vs Grabado: Diferencias y Aplicaciones",
+            "concept": "Proceso que modifica las propiedades superficiales de un material para crear una marca de alto contraste sin eliminar material significativamente.",
+            "explanation": "A diferencia del grabado, el marcado láser es un proceso superficial que no crea una cavidad perceptible. La interacción del láser con el material provoca una alteración química o estructural que cambia su color. \nAlgunas técnicas comunes de marcado son: \n- **Recocido (Annealing):** Se calienta un metal (como el acero inoxidable) para crear una capa de óxido controlada, resultando en una marca negra muy duradera. \n- **Coloración (Coloration):** Se modifica la microestructura de la superficie del metal para que refleje la luz de forma diferente, creando colores. \n- **Espumado (Foaming):** En plásticos, el láser derrite el material y crea burbujas de gas que quedan atrapadas al enfriarse, generando una marca en relieve y de color claro. \nEs un proceso muy rápido, ideal para códigos QR, números de serie y aplicaciones médicas donde la integridad de la superficie es crítica.",
+            "related_terms": ["grabado-laser", "laser-fibra", "marcado-por-recocido"],
+            "seo_description": "Conoce la diferencia entre marcado y grabado láser. Descubre cómo el marcado láser crea marcas duraderas en metales y plásticos sin eliminar material.",
+            "tags": ["proceso", "identificación", "superficial"]
+          },
+          {
+            "term": "Láser de CO2",
+            "slug": "laser-co2",
+            "aka": ["Láser de Dióxido de Carbono"],
+            "seo_title": "Láser de CO2: Qué es, Usos y Materiales Compatibles",
+            "concept": "Tipo de láser de gas que utiliza una mezcla de dióxido de carbono excitada eléctricamente como medio activo.",
+            "explanation": "Los láseres de CO2 son los caballos de batalla en el mundo del corte y grabado de materiales no metálicos y orgánicos. Operan en una longitud de onda de 10.6 micrómetros (10,600 nm), en el infrarrojo lejano. Esta longitud de onda es absorbida de manera muy eficiente por materiales como madera, MDF, acrílico, cuero, tela, cartón, goma, vidrio y piedra. Su versatilidad, coste relativamente bajo y alta potencia disponible los convierten en la opción más popular para talleres, makerspaces y muchas aplicaciones industriales. Sin embargo, no pueden cortar metales directamente debido a que su superficie reflectante disipa la energía, aunque sí pueden grabar sobre metales anodizados o recubiertos.",
+            "related_terms": ["laser-fibra", "tubo-laser", "materiales-compatibles", "longitud-de-onda"],
+            "seo_description": "Descubre qué es un láser de CO2, los materiales que puede cortar y grabar (madera, acrílico, cuero) y por qué es la tecnología más versátil para no metales.",
+            "tags": ["tipo-laser", "hardware", "co2"]
+          },
+          {
+            "term": "Láser de Fibra",
+            "slug": "laser-fibra",
+            "aka": ["Láser de Fibra Óptica"],
+            "seo_title": "Qué es un Láser de Fibra y sus Usos en Metales",
+            "concept": "Tipo de láser de estado sólido que utiliza una fibra óptica dopada con elementos de tierras raras como medio activo.",
+            "explanation": "El láser de fibra representa una tecnología más moderna, conocida por su increíble eficiencia, fiabilidad y larga vida útil (más de 25,000 horas) sin necesidad de mantenimiento. Opera en una longitud de onda mucho más corta que el CO2, típicamente 1.06 micrómetros (1,064 nm). Esta longitud de onda es absorbida perfectamente por los metales, lo que los convierte en la herramienta predilecta para el marcado, grabado y corte de acero, aluminio, latón, cobre, titanio y metales preciosos. Su haz de alta calidad permite puntos de enfoque extremadamente pequeños, logrando una precisión y detalle inigualables, especialmente para el marcado de números de serie, códigos QR y logotipos complejos en la industria metalúrgica, electrónica y de la joyería.",
+            "related_terms": ["laser-co2", "marcado-laser", "anodizado-de-aluminio", "longitud-de-onda"],
+            "seo_description": "Aprende qué es un láser de fibra, sus ventajas para marcar y cortar metales como acero y aluminio, y sus diferencias clave con los láseres de CO2.",
+            "tags": ["tipo-laser", "hardware", "fibra", "metal"]
+          },
+          {
+            "term": "Láser de Diodo",
+            "slug": "laser-diodo",
+            "aka": ["Láser semiconductor"],
+            "seo_title": "Láser de Diodo: Guía para Principiantes y Hobbyists",
+            "concept": "Láser que utiliza un diodo semiconductor para generar luz, comúnmente encontrado en máquinas de grabado de nivel de entrada.",
+            "explanation": "Los láseres de diodo son la puerta de entrada al mundo del grabado láser para muchos aficionados y pequeños negocios debido a su bajo coste, tamaño compacto y simplicidad. Suelen emitir luz en el espectro visible (generalmente azul, ~450 nm). Su potencia es considerablemente menor que la de los sistemas de CO2 o fibra, lo que los hace ideales para grabar sobre madera, cuero, cartón, y algunos plásticos opacos. También pueden cortar materiales muy delgados y blandos como papel, vinilo o madera de balsa de pocos milímetros. No son efectivos para materiales transparentes (el haz los atraviesa) o metales (su energía es reflejada). Son perfectos para personalización y proyectos a pequeña escala.",
+            "related_terms": ["laser-co2", "potencia-laser"],
+            "seo_description": "Descubre qué es un láser de diodo, sus aplicaciones en el grabado de hobby, los materiales compatibles y sus ventajas en términos de coste y tamaño.",
+            "tags": ["tipo-laser", "hardware", "diodo", "hobby"]
+          }
+        ]
+      },
+      {
+        "name": "Componentes de la Máquina y Hardware",
+        "description": "Partes físicas y sistemas que componen una máquina de corte y grabado láser, desde la óptica hasta los sistemas de movimiento y seguridad.",
+        "terms": [
+          {
+            "term": "Tubo Láser",
+            "slug": "tubo-laser",
+            "aka": ["Tubo de resonancia", "Tubo láser de CO2"],
+            "seo_title": "Tubo Láser de CO2: Funcionamiento, Vida Útil y Cuidados",
+            "concept": "Componente sellado de vidrio que contiene la mezcla de gases y genera el haz de láser en una máquina de CO2.",
+            "explanation": "El tubo láser es el corazón y principal consumible de una máquina de CO2. Se trata de una serie de tubos de vidrio concéntricos. El tubo interior contiene una mezcla de gases a baja presión (principalmente CO2, Nitrógeno y Helio). Cuando se aplica un alto voltaje desde la fuente de alimentación, el nitrógeno se excita y transfiere su energía a las moléculas de CO2, que emiten fotones. Estos fotones rebotan entre dos espejos en los extremos del tubo, amplificándose hasta que un haz de láser coherente emerge por el espejo parcialmente traslúcido. \nLa vida útil de un tubo (ej. 1,500 a 10,000 horas) depende de su calidad y de mantener una refrigeración adecuada, ya que el calor es su principal enemigo.",
+            "related_terms": ["laser-co2", "fuente-de-alimentacion", "sistema-de-refrigeracion"],
+            "seo_description": "Aprende qué es un tubo láser de CO2, cómo funciona para generar el haz, su vida útil y la importancia de su refrigeración para un rendimiento óptimo.",
+            "tags": ["hardware", "componente", "co2", "consumible"]
+          },
+          {
+            "term": "Cabezal del Láser",
+            "slug": "cabezal-laser",
+            "aka": ["Cabezal de corte"],
+            "seo_title": "Cabezal del Láser: Partes, Función y Mantenimiento",
+            "concept": "Componente móvil que alberga la lente de enfoque final y la boquilla de asistencia de aire.",
+            "explanation": "El cabezal del láser es la herramienta final que aplica la energía sobre el material. Se desplaza a lo largo del pórtico en los ejes X e Y. Sus componentes clave son: \n- **Soporte del Espejo Final:** Contiene el tercer y último espejo que desvía el haz 90 grados hacia abajo. \n- **Tubo del Cabezal:** Permite ajustar la posición vertical de la lente para el enfoque. \n- **Lente de Enfoque:** El componente óptico que concentra el haz. \n- **Boquilla (Nozzle):** Dirige el chorro de la asistencia de aire de forma cónica hacia el punto de corte. \nUn mantenimiento regular, que incluye la limpieza de la lente y la correcta alineación del haz para que pase por el centro de la boquilla, es absolutamente crucial para garantizar un corte de calidad y prevenir daños en los componentes.",
+            "related_terms": ["lente-de-enfoque", "asistencia-de-aire", "eje-z", "espejos-reflectantes"],
+            "seo_description": "Descubre las partes del cabezal láser: la lente de enfoque y la boquilla de aire. Aprende por qué su alineación y limpieza son vitales para un corte perfecto.",
+            "tags": ["hardware", "componente", "óptica"]
+          },
+          {
+            "term": "Lente de Enfoque",
+            "slug": "lente-de-enfoque",
+            "aka": ["Lente focal"],
+            "seo_title": "Lente de Enfoque para Láser: Tipos y Distancia Focal",
+            "concept": "Componente óptico, generalmente de Seleniuro de Zinc (ZnSe), que concentra el haz de láser en un punto diminuto.",
+            "explanation": "La lente de enfoque es una de las piezas ópticas más delicadas y críticas. Para láseres de CO2, se fabrican de Seleniuro de Zinc (ZnSe) por su alta transparencia a la longitud de onda infrarroja. La principal característica de una lente es su **distancia focal** (ej. 1.5\", 2\", 2.5\", 4\"). \n- **Lentes de corta distancia focal (ej. 1.5\"):** Crean un punto de enfoque muy pequeño (kerf fino) y son ideales para grabado de alta resolución y corte de materiales finos. \n- **Lentes de larga distancia focal (ej. 4\"):** Tienen una mayor profundidad de campo, lo que las hace más adecuadas para cortar materiales muy gruesos, ya que mantienen el haz enfocado a través de un mayor espesor, aunque el kerf sea ligeramente mayor. \nLa limpieza regular con productos específicos (como alcohol isopropílico y paños para óptica) es vital para evitar que la suciedad absorba energía, sobrecaliente y agriete la lente.",
+            "related_terms": ["distancia-focal", "punto-de-enfoque", "cabezal-laser", "kerf"],
+            "seo_description": "Aprende qué es una lente de enfoque para láser, de qué material está hecha (ZnSe) y cómo la distancia focal afecta a la calidad del corte y grabado.",
+            "tags": ["hardware", "componente", "óptica"]
+          },
+          {
+            "term": "Espejos Reflectantes",
+            "slug": "espejos-reflectantes",
+            "aka": ["Espejos de guiado"],
+            "seo_title": "Espejos para Láser: Tipos, Alineación y Mantenimiento",
+            "concept": "Conjunto de espejos, usualmente de Silicio (Si) o Molibdeno (Mo), que dirigen el haz láser desde el tubo hasta el cabezal.",
+            "explanation": "Los espejos son los componentes que transportan el haz de láser invisible desde su origen en el tubo hasta el material. En una máquina de pórtico típica, hay tres espejos. El primero está fijo cerca del tubo, el segundo se mueve con el eje Y, y el tercero se mueve con el eje X (en el cabezal). Están montados en soportes ajustables con tornillos de precisión que permiten su calibración. \nLos materiales más comunes son: \n- **Molibdeno (Mo):** Extremadamente duraderos y resistentes a limpiezas agresivas, pero ligeramente menos reflectantes. \n- **Silicio (Si) recubierto de oro:** Ofrecen una reflectividad muy alta, pero su recubrimiento es más delicado. \nUna alineación perfecta es clave para la consistencia del corte en toda la mesa de trabajo.",
+            "related_terms": ["alineacion-de-espejos", "haz-laser", "cabezal-laser", "mantenimiento"],
+            "seo_description": "Descubre la función de los espejos reflectantes en una máquina láser y por qué su correcta alineación es crucial para mantener la potencia y la precisión del corte.",
+            "tags": ["hardware", "componente", "óptica"]
+          },
+          {
+            "term": "Sistema de Refrigeración",
+            "slug": "sistema-de-refrigeracion",
+            "aka": ["Chiller", "Enfriador de agua"],
+            "seo_title": "Sistema de Refrigeración (Chiller) para Láser CO2 | Guía",
+            "concept": "Equipo que circula agua destilada a través del tubo láser para disipar el calor generado durante su funcionamiento.",
+            "explanation": "El sistema de refrigeración es un componente no negociable para la salud y longevidad de un láser de CO2. Su única y vital misión es disipar la enorme cantidad de calor residual que se genera en el tubo láser durante su operación. Sin una refrigeración adecuada, el tubo se sobrecalentaría en segundos, causando una caída drástica de la potencia, inestabilidad en el haz y, en el peor de los casos, la rotura irreparable del tubo de vidrio. \n- **Sistemas Activos (Chillers):** Son unidades con compresor que mantienen el agua a una temperatura constante (ej. 18-22°C), garantizando un rendimiento estable y la máxima protección. Son la opción profesional recomendada. \n- **Sistemas Pasivos:** Una simple bomba de agua en un depósito. No son recomendables para uso intensivo. \nEs crucial usar agua destilada para evitar la acumulación de minerales.",
+            "related_terms": ["tubo-laser", "laser-co2", "mantenimiento"],
+            "seo_description": "Aprende qué es un chiller y por qué el sistema de refrigeración por agua es vital para proteger el tubo de tu máquina láser de CO2 y garantizar su rendimiento.",
+            "tags": ["hardware", "componente", "seguridad", "mantenimiento"]
+          },
+          {
+            "term": "Asistencia de Aire",
+            "slug": "asistencia-de-aire",
+            "aka": ["Air assist", "Soplado de aire"],
+            "seo_title": "Asistencia de Aire en Corte Láser: Qué es y Beneficios",
+            "concept": "Un chorro de aire comprimido dirigido al punto de corte a través de una boquilla en el cabezal del láser.",
+            "explanation": "La asistencia de aire es una función crítica, no opcional, para obtener resultados de calidad y operar de forma segura. Se suministra a través de un compresor de aire y cumple varias funciones simultáneamente: \n1. **Mejora del Corte:** Expulsa el material derretido o vaporizado del kerf (surco de corte), permitiendo que el láser actúe sobre material virgen y logrando un corte más profundo y limpio. \n2. **Prevención de Llamas:** En materiales combustibles como la madera o el acrílico, el chorro de aire suprime las llamas que se generan, evitando el 'charring' excesivo y el riesgo de incendio. \n3. **Protección de la Lente:** Crea una presión positiva que impide que el humo y los residuos del corte suban y se depositen sobre la lente de enfoque, lo que la dañaría y reduciría la potencia. \nLa presión y el caudal de aire deben ajustarse según el material y la operación.",
+            "related_terms": ["corte-laser", "cabezal-laser", "charring", "lente-de-enfoque"],
+            "seo_description": "Descubre qué es la asistencia de aire (air assist) en el corte láser, sus beneficios para obtener bordes limpios, evitar llamas y proteger la lente de la máquina.",
+            "tags": ["hardware", "proceso", "calidad"]
+          },
+          {
+            "term": "Extractor de Humos",
+            "slug": "extractor-de-humos",
+            "aka": ["Sistema de extracción", "Ventilador de escape"],
+            "seo_title": "Extractor de Humos para Láser: Seguridad y Mantenimiento",
+            "concept": "Sistema de ventilación que elimina los gases, humos y partículas generados durante el proceso de corte o grabado.",
+            "explanation": "El proceso láser, al vaporizar material, genera humos y partículas que pueden ser desde molestos hasta altamente tóxicos. Un sistema de extracción eficiente es fundamental por tres razones: \n1. **Seguridad del Operario:** Protege la salud del usuario al evacuar gases nocivos (como los del acrílico o MDF) del área de trabajo. Es imperativo no cortar materiales como el PVC, que libera cloro gaseoso. \n2. **Rendimiento de la Máquina:** Si los humos no se evacuan rápidamente, pueden ensuciar la óptica (lente y espejos), dispersar el haz láser y reducir significativamente la potencia de corte. \n3. **Calidad del Trabajo:** Evita que los residuos y el hollín se depositen sobre la superficie del material, manchando el resultado final. \nEl sistema consiste en un potente ventilador que succiona el aire del interior de la máquina y lo expulsa al exterior a través de un conducto.",
+            "related_terms": ["seguridad-laser", "materiales-compatibles", "mantenimiento"],
+            "seo_description": "Aprende la importancia de un buen extractor de humos para la seguridad en el corte láser y cómo protege tanto al operario como a los componentes de la máquina.",
+            "tags": ["hardware", "seguridad", "mantenimiento"]
+          },
+          {
+            "term": "Mesa de Trabajo",
+            "slug": "mesa-de-trabajo",
+            "aka": ["Cama de corte"],
+            "seo_title": "Tipos de Mesa de Trabajo para Láser: Panal vs Cuchillas",
+            "concept": "Superficie sobre la que se coloca el material a procesar.",
+            "explanation": "La elección de la mesa de trabajo adecuada es clave para la calidad del corte y la versatilidad de la máquina. Los dos tipos más comunes son: \n- **Mesa de Panal de Abeja (Honeycomb):** Una rejilla de celdas hexagonales de metal que ofrece un soporte uniforme en toda la superficie. Es ideal para cortar materiales pequeños, delgados o flexibles como tela, papel o cuero, ya que evita que caigan. También facilita una buena extracción de humos. \n- **Mesa de Cuchillas o Lamas (Blade/Knife Table):** Consiste en una serie de listones metálicos verticales y paralelos. Su principal ventaja es que minimiza el área de contacto con la parte inferior del material, reduciendo drásticamente el 'flashback' (reflejo del láser). Es la preferida para cortar materiales más gruesos y rígidos como el acrílico y la madera.",
+            "related_terms": ["mesa-de-panal", "mesa-de-cuchillas", "flashback"],
+            "seo_description": "Conoce los diferentes tipos de mesa de trabajo para láser: panal de abeja vs. cuchillas. Descubre cuál es la mejor para cortar acrílico, madera o tela.",
+            "tags": ["hardware", "componente"]
+          }
+        ]
+      },
+      {
+        "name": "Parámetros, Técnicas y Procesos",
+        "description": "Configuraciones, métodos y fenómenos físicos que definen el resultado de un trabajo de corte o grabado láser.",
+        "terms": [
+          {
+            "term": "Potencia del Láser",
+            "slug": "potencia-laser",
+            "aka": ["Poder del láser"],
+            "seo_title": "Potencia del Láser (W): Cómo Configurar para Corte/Grabado",
+            "concept": "Cantidad de energía por unidad de tiempo que el láser emite, medida en Vatios (W).",
+            "explanation": "La potencia es el parámetro que determina cuánta energía se aplica al material. En el software de control, se suele configurar como un porcentaje de la potencia máxima del tubo láser (ej. un tubo de 100W al 60% de potencia está emitiendo 60W). \n- **Para el Corte:** Se necesita una potencia suficiente para atravesar completamente el material. Más potencia permite cortar materiales más gruesos o hacerlo a mayor velocidad. \n- **Para el Grabado:** Se utilizan potencias más bajas. La cantidad de potencia influye directamente en la profundidad y oscuridad del grabado. \nEs crucial nunca operar un tubo de CO2 al 100% de su capacidad de forma continua, ya que acorta drásticamente su vida útil. Se recomienda no superar el 80-90% para trabajos exigentes. El equilibrio entre potencia y velocidad es la clave para dominar cualquier material.",
+            "related_terms": ["velocidad-corte-grabado", "frecuencia-ppi", "tubo-laser"],
+            "seo_description": "Entiende qué es la potencia del láser (medida en vatios), cómo afecta a la profundidad del corte y el grabado, y cómo configurarla correctamente en tu máquina.",
+            "tags": ["parámetro", "configuración", "proceso"]
+          },
+          {
+            "term": "Velocidad de Corte/Grabado",
+            "slug": "velocidad-corte-grabado",
+            "aka": ["Velocidad de trabajo"],
+            "seo_title": "Velocidad en Corte y Grabado Láser: Cómo Afecta al Resultado",
+            "concept": "Rapidez con la que el cabezal del láser se desplaza sobre la superficie del material.",
+            "explanation": "La velocidad, medida en milímetros por segundo (mm/s), determina el tiempo de exposición del material al haz de láser. Es un parámetro inversamente proporcional a la energía aplicada: a mayor velocidad, menos energía se transfiere en cada punto. \n- **En el Corte:** Una velocidad demasiado alta resultará en un corte incompleto. Una velocidad demasiado baja puede causar un 'kerf' más ancho y mayor 'charring' (carbonización). \n- **En el Grabado:** La velocidad afecta al tono del grabado. Velocidades más lentas producen marcas más oscuras y profundas, mientras que velocidades más rápidas dan como resultado grabados más ligeros. \nLa máxima velocidad de una máquina está limitada por su mecánica (motores, correas) y por la complejidad del diseño, ya que en curvas cerradas debe desacelerar para mantener la precisión.",
+            "related_terms": ["potencia-laser", "frecuencia-ppi", "aceleracion"],
+            "seo_description": "Aprende cómo la velocidad de corte y grabado láser influye en el resultado final y cómo balancearla con la potencia para lograr cortes limpios y grabados precisos.",
+            "tags": ["parámetro", "configuración", "proceso"]
+          },
+          {
+            "term": "Resolución (DPI)",
+            "slug": "resolucion-dpi",
+            "aka": ["Dots Per Inch", "Puntos por Pulgada"],
+            "seo_title": "Resolución DPI en Grabado Láser: Calidad y Detalle de Imagen",
+            "concept": "Medida de la densidad de puntos o líneas en un grabado de tipo raster.",
+            "explanation": "DPI (Dots Per Inch o Puntos por Pulgada) es un parámetro exclusivo del grabado de trama (raster). Define la separación entre las líneas horizontales que el láser traza para formar la imagen. \n- **Un DPI alto (ej. 500-1000):** Las líneas están muy juntas, solapándose ligeramente. Esto crea una imagen de aspecto sólido, con gran detalle y transiciones suaves, ideal para fotografías. Sin embargo, el proceso es más lento y aplica más calor al material. \n- **Un DPI bajo (ej. 150-250):** Las líneas están más separadas y pueden ser visibles individualmente. Esto es útil para efectos de tramado, grabados rápidos o en materiales que no soportan mucho calor, como el papel. \nLa elección del DPI adecuado depende del material, la lente utilizada (un punto de enfoque fino permite mayores DPI) y el efecto estético que se busca.",
+            "related_terms": ["grabado-raster", "archivo-de-trama", "tramado-dithering"],
+            "seo_description": "Descubre qué significa la resolución DPI (Puntos por Pulgada) en el grabado láser y cómo afecta al detalle y la calidad de tus imágenes y fotografías grabadas.",
+            "tags": ["parámetro", "configuración", "calidad", "grabado"]
+          },
+          {
+            "term": "Kerf",
+            "slug": "kerf",
+            "aka": ["Ancho de corte", "Sangría de corte"],
+            "seo_title": "Qué es el Kerf en Corte Láser y Cómo Compensarlo | Guía",
+            "concept": "Ancho del surco o la cantidad de material que es eliminado por el haz de láser durante el corte.",
+            "explanation": "El kerf se refiere al ancho del material que es físicamente eliminado o vaporizado por el haz de láser durante un proceso de corte. Es un concepto fundamental para cualquier trabajo que requiera precisión dimensional, especialmente en piezas que deben encajar entre sí (ensambles 'press-fit', incrustaciones o 'inlays'). Si diseñas un cuadrado de 10x10mm, la pieza resultante será ligeramente más pequeña (ej. 9.8x9.8mm) debido al kerf. Para lograr un ajuste perfecto, este ancho de corte debe ser medido y compensado en el software de diseño. \nEl valor del kerf no es fijo; varía según: \n1. **Material y Grosor:** Materiales más blandos pueden tener un kerf mayor. \n2. **Enfoque de la Lente:** Un enfoque perfecto produce el kerf más fino. \n3. **Potencia y Velocidad:** Parámetros más agresivos pueden aumentar el kerf.",
+            "related_terms": ["corte-laser", "distancia-focal", "archivo-vectorial", "ensamble-press-fit"],
+            "seo_description": "Aprende qué es el kerf o ancho de corte láser y por qué es fundamental compensarlo en tus diseños para crear ensambles y encajes perfectos (press-fit).",
+            "tags": ["parámetro", "diseño", "precisión"]
+          },
+          {
+            "term": "Distancia Focal",
+            "slug": "distancia-focal",
+            "aka": ["Enfoque"],
+            "seo_title": "Distancia Focal y Enfoque en Láser: Cómo Ajustarla",
+            "concept": "Distancia óptima entre la lente de enfoque y la superficie del material para lograr el punto de haz más pequeño y concentrado.",
+            "explanation": "El correcto enfoque es, posiblemente, el ajuste más crítico para un corte láser eficiente. La distancia focal es una propiedad intrínseca de la lente (ej. 2 pulgadas). Para lograr la máxima densidad de energía, la superficie del material debe colocarse exactamente a esa distancia de la lente. \n- **Si el enfoque es demasiado alto o bajo:** El punto del láser sobre el material será más grande y difuso, la energía se dispersará y el resultado será un corte incompleto, bordes derretidos o un grabado de baja calidad. \nEl enfoque se ajusta moviendo la mesa de trabajo (eje Z) hacia arriba o hacia abajo. Muchas máquinas incluyen herramientas de calibración o sistemas de autoenfoque para simplificar este proceso. Para cortar materiales gruesos, a veces se ajusta el foco a la mitad del grosor del material.",
+            "related_terms": ["lente-de-enfoque", "punto-de-enfoque", "eje-z", "prueba-de-rampa"],
+            "seo_description": "Descubre qué es la distancia focal en una máquina láser, por qué es crucial para un corte limpio y cómo puedes ajustar el enfoque perfecto para cada material.",
+            "tags": ["parámetro", "configuración", "óptica", "calidad"]
+          },
+          {
+            "term": "Grabado de Trama (Raster)",
+            "slug": "grabado-raster",
+            "aka": ["Grabado de relleno"],
+            "seo_title": "Grabado Raster (Trama): Qué es y Cómo Funciona | Guía",
+            "concept": "Técnica de grabado que crea una imagen moviendo el cabezal láser de lado a lado, línea por línea, como una impresora de inyección de tinta.",
+            "explanation": "El grabado de trama o raster es el método utilizado para grabar imágenes basadas en píxeles (mapas de bits), como fotografías, logotipos complejos o diseños con sombreados. El cabezal del láser escanea el área de trabajo horizontalmente, encendiendo y apagando el haz a alta velocidad para 'dibujar' la imagen punto por punto. La intensidad de cada punto se puede modular (usando técnicas como el tramado o 'dithering') para simular tonos de gris. Aunque es un proceso más lento que el grabado vectorial, es el único método para reproducir imágenes fotorrealistas. La calidad del resultado depende en gran medida de la resolución (DPI) seleccionada y de la preparación previa de la imagen.",
+            "related_terms": ["grabado-vectorial", "archivo-de-trama", "resolucion-dpi", "tramado-dithering"],
+            "seo_description": "Aprende qué es el grabado raster (o de trama), cómo funciona para grabar fotografías e imágenes detalladas, y sus diferencias con el grabado vectorial.",
+            "tags": ["proceso", "grabado", "técnica"]
+          },
+          {
+            "term": "Grabado Vectorial",
+            "slug": "grabado-vectorial",
+            "aka": ["Marcado vectorial", "Corte a baja potencia"],
+            "seo_title": "Grabado Vectorial: Rápido, Preciso y Eficiente",
+            "concept": "Técnica de grabado donde el láser sigue las líneas (vectores) de un diseño, similar a un corte pero con baja potencia.",
+            "explanation": "El grabado vectorial, también conocido como 'scoring', es un proceso extremadamente rápido y preciso. En lugar de rellenar un área, el cabezal del láser se mueve directamente a lo largo de las trayectorias definidas en un archivo vectorial (líneas, curvas, formas). Se configura en el software como una operación de corte, pero utilizando una combinación de baja potencia y alta velocidad. El resultado es una línea fina y nítida grabada en la superficie. Es la técnica ideal para: \n- Delinear textos y logotipos. \n- Crear líneas de plegado en cartón o papel. \n- Añadir detalles decorativos lineales. \n- Marcar guías de ensamblaje en piezas. \nConsume mucho menos tiempo que el grabado raster, por lo que es preferible siempre que no se necesite rellenar áreas.",
+            "related_terms": ["grabado-raster", "archivo-vectorial", "corte-laser"],
+            "seo_description": "Descubre qué es el grabado vectorial, sus ventajas en velocidad y precisión para delinear texto y formas, y cómo configurarlo en tu software láser.",
+            "tags": ["proceso", "grabado", "técnica"]
+          },
+          {
+            "term": "Alineación de Espejos",
+            "slug": "alineacion-de-espejos",
+            "aka": ["Calibración de espejos"],
+            "seo_title": "Cómo Realizar la Alineación de Espejos en una Máquina Láser",
+            "concept": "Proceso de ajuste de los espejos para asegurar que el haz de láser viaje paralelo a los ejes de la máquina e incida en el centro de la lente.",
+            "explanation": "La alineación de los espejos es una tarea de mantenimiento fundamental que todo operador de láser debe conocer. Su objetivo es garantizar que el haz de láser, desde que sale del tubo hasta que entra en la lente, siga una trayectoria perfecta. Una mala alineación provoca: \n- **Pérdida de Potencia:** Si el haz no incide en el centro de los espejos, parte de su energía se pierde. \n- **Cortes Inconsistentes:** El corte puede ser bueno en una esquina de la mesa y malo en otra. \n- **Forma del Punto Irregular:** Un haz que entra descentrado en la lente produce un punto de enfoque ovalado, resultando en un kerf irregular. \nEl proceso se realiza ajustando los tornillos de los soportes de los espejos y haciendo disparos de prueba (pulsos) sobre cinta de carrocero en diferentes puntos del área de trabajo hasta que el punto de impacto sea el mismo en todas las posiciones.",
+            "related_terms": ["espejos-reflectantes", "mantenimiento", "haz-laser", "cabezal-laser"],
+            "seo_description": "Aprende a realizar la alineación de espejos de tu máquina láser. Una guía paso a paso para asegurar la máxima potencia y cortes consistentes en toda el área de trabajo.",
+            "tags": ["mantenimiento", "calibración", "proceso"]
+          }
+        ]
+      },
+      {
+        "name": "Software, Archivos y Diseño",
+        "description": "Formatos de archivo, programas y conceptos de diseño digital específicos para la preparación de trabajos en máquinas láser.",
+        "terms": [
+          {
+            "term": "Archivo Vectorial",
+            "slug": "archivo-vectorial",
+            "aka": ["Gráfico vectorial"],
+            "seo_title": "Archivos Vectoriales (SVG, DXF) para Corte Láser | Guía",
+            "concept": "Imagen definida por puntos, líneas y curvas basadas en ecuaciones matemáticas, ideal para el corte y grabado de líneas.",
+            "explanation": "Los gráficos vectoriales son el lenguaje que entienden las máquinas de corte láser. A diferencia de una imagen de píxeles, un vector no almacena información de color para cada punto, sino las instrucciones matemáticas para dibujar una forma ('empieza aquí, traza una curva hasta allí'). Esto les confiere dos ventajas cruciales: \n1. **Escalabilidad Infinita:** Se pueden ampliar o reducir a cualquier tamaño sin perder la más mínima calidad o definición. \n2. **Definición de Trayectorias:** Proporcionan las rutas exactas que el cabezal del láser debe seguir para cortar o grabar vectorialmente. \nLos formatos más comunes son .SVG, .AI (Adobe Illustrator), .DXF (AutoCAD), .CDR (CorelDRAW) y .PDF (si contiene vectores). En el software láser, es una práctica común asignar colores diferentes a las líneas para definir distintas operaciones (ej. rojo para cortar, azul para grabar).",
+            "related_terms": ["archivo-de-trama", "grabado-vectorial", "kerf", "software-de-diseno"],
+            "seo_description": "Descubre qué es un archivo vectorial (SVG, DXF, AI), por qué es esencial para el corte láser y cómo prepararlo correctamente en programas como Illustrator o CorelDRAW.",
+            "tags": ["software", "diseño", "archivo"]
+          },
+          {
+            "term": "Archivo de Trama (Raster)",
+            "slug": "archivo-de-trama",
+            "aka": ["Imagen de mapa de bits", "Bitmap"],
+            "seo_title": "Archivos de Trama (JPG, PNG) para Grabado Láser",
+            "concept": "Imagen compuesta por una cuadrícula de píxeles, utilizada exclusivamente para el grabado de relleno.",
+            "explanation": "Un archivo de trama o mapa de bits es una imagen digital estándar, como una fotografía. Está formada por una rejilla de pequeños cuadrados de color llamados píxeles. Su calidad está ligada a su resolución; si se amplía demasiado, se 'pixela'. \nEn el contexto del láser, estos archivos (formatos .JPG, .PNG, .BMP, .TIFF) se utilizan únicamente para el **grabado de trama (raster)**. El software láser analiza la imagen y convierte los diferentes tonos de cada píxel en instrucciones para el láser. Generalmente, los píxeles más oscuros se traducen en una mayor potencia del láser, creando un grabado más profundo o quemado. Para simular los tonos intermedios en materiales que solo tienen dos estados (grabado o no grabado), se utilizan técnicas de tramado ('dithering').",
+            "related_terms": ["archivo-vectorial", "grabado-raster", "resolucion-dpi", "tramado-dithering"],
+            "seo_description": "Aprende qué es un archivo de trama o mapa de bits (JPG, PNG) y cómo se utiliza en el grabado láser para reproducir fotografías y sombreados con gran detalle.",
+            "tags": ["software", "diseño", "archivo"]
+          },
+          {
+            "term": "Software de Control",
+            "slug": "software-de-control",
+            "aka": ["Software láser"],
+            "seo_title": "Software de Control Láser: LightBurn vs RDWorks y Otros",
+            "concept": "Programa que actúa como intermediario entre el archivo de diseño y la máquina láser, permitiendo configurar parámetros y enviar el trabajo.",
+            "explanation": "El software de control es el cerebro de la operación. Es la interfaz donde el usuario importa un diseño (vectorial o de trama), lo organiza en el área de trabajo y asigna los parámetros específicos para cada parte del proyecto. Sus funciones principales incluyen: \n- **Gestión de Capas:** Asignar diferentes potencias, velocidades y modos de operación (corte, grabado raster, etc.) a diferentes colores o capas del diseño. \n- **Previsualización:** Mostrar una simulación de la trayectoria que seguirá el láser y estimar el tiempo del trabajo. \n- **Optimización de Trayectoria:** Calcular la ruta más eficiente para minimizar el tiempo de trabajo. \n- **Comunicación con la Máquina:** Enviar el archivo procesado al controlador de la máquina láser. \nEjemplos populares incluyen **LightBurn** (muy versátil y potente), **RDWorks** (común en máquinas con controladores Ruida) y **LaserGRBL** (para máquinas basadas en GRBL).",
+            "related_terms": ["controlador-cnc", "lightburn", "g-code", "ruida"],
+            "seo_description": "Conoce los principales software de control para máquinas láser como LightBurn y RDWorks. Aprende a configurar los parámetros de corte y grabado para enviar tus diseños.",
+            "tags": ["software", "control"]
+          },
+          {
+            "term": "LightBurn",
+            "slug": "lightburn",
+            "aka": [],
+            "seo_title": "Qué es LightBurn: El Mejor Software para Control Láser",
+            "concept": "Software de diseño, edición y control para máquinas láser, ampliamente considerado como uno de los más potentes y versátiles del mercado.",
+            "explanation": "LightBurn se ha convertido en el estándar de facto para muchos usuarios de láser de CO2 y diodo. Es un software todo-en-uno que permite realizar el flujo de trabajo completo: desde el diseño y la edición de vectores y texto, hasta la importación de archivos, la configuración de parámetros y el control directo de la máquina. \nSus principales ventajas son: \n- **Compatibilidad:** Funciona con la gran mayoría de controladores del mercado (Ruida, Trocen, GCode, etc.). \n- **Interfaz Intuitiva:** Es fácil de aprender pero increíblemente potente, con un sistema de capas basado en colores muy visual. \n- **Funciones Avanzadas:** Incluye herramientas de anidado, control de cámara para posicionamiento, editor de imágenes para grabado, y un control muy fino sobre todos los parámetros del láser. \n- **Soporte y Comunidad:** Cuenta con una excelente documentación y una comunidad de usuarios muy activa.",
+            "related_terms": ["software-de-control", "controlador-cnc", "g-code", "ruida"],
+            "seo_description": "Descubre qué es LightBurn, el software todo-en-uno para diseño y control láser. Conoce sus principales funciones y por qué es el programa preferido por la comunidad.",
+            "tags": ["software", "control", "diseño"]
+          },
+          {
+            "term": "Anidado (Nesting)",
+            "slug": "anidado-nesting",
+            "aka": ["Nesting"],
+            "seo_title": "Anidado (Nesting): Cómo Optimizar Material en Corte Láser",
+            "concept": "Proceso de organizar eficientemente múltiples piezas de un diseño en la plancha de material para minimizar el desperdicio.",
+            "explanation": "El anidado o 'nesting' es una estrategia de optimización fundamental para ahorrar material, tiempo y dinero, especialmente en la producción. Consiste en colocar las geometrías a cortar de la forma más compacta posible en la plancha de material. Un buen software de anidado (a menudo integrado en programas como LightBurn o disponible como plugins para software CAD) puede rotar y encajar las piezas automáticamente, como si fuera un puzzle, para lograr el máximo aprovechamiento. \nAdemás de ahorrar material, un buen anidado puede reducir el tiempo de corte al compartir líneas de corte comunes entre piezas adyacentes ('common line cutting').",
+            "related_terms": ["software-de-diseno", "kerf", "optimizacion-de-trayectoria"],
+            "seo_description": "Aprende qué es el anidado o nesting y cómo esta técnica de optimización te ayuda a ahorrar material y dinero al organizar tus piezas para el corte láser.",
+            "tags": ["software", "diseño", "optimización"]
+          }
+        ]
+      },
+      {
+        "name": "Materiales y Propiedades",
+        "description": "Información sobre los materiales más comunes procesados con láser y los fenómenos asociados a su interacción con el haz.",
+        "terms": [
+          {
+            "term": "Acrílico (PMMA)",
+            "slug": "acrilico-pmma",
+            "aka": ["Metacrilato", "Plexiglas"],
+            "seo_title": "Cortar y Grabar Acrílico con Láser: Guía de Tipos y Ajustes",
+            "concept": "Plástico termoplástico transparente muy popular para el corte y grabado láser.",
+            "explanation": "El acrílico (PMMA) es uno de los materiales favoritos para el láser de CO2 por los acabados de alta calidad que produce. Es crucial diferenciar entre dos tipos: \n- **Acrílico de Colada (Cast Acrylic):** Es la mejor opción para el grabado. El láser produce un contraste blanco esmerilado, nítido y de gran belleza. También se corta limpiamente, pero los bordes quedan con un acabado mate. \n- **Acrílico de Extrusión (Extruded Acrylic):** Al cortarlo con los parámetros correctos, produce un borde perfectamente pulido y transparente, como si estuviera flameado. Sin embargo, al grabarlo, el resultado es claro y poco contrastado. \nEs importante retirar la película protectora de plástico después del corte y usar una buena asistencia de aire para evitar llamas y conseguir bordes limpios.",
+            "related_terms": ["corte-laser", "laser-co2", "flashback"],
+            "seo_description": "Descubre las diferencias entre acrílico de colada y de extrusión para el corte láser. Aprende a conseguir bordes pulidos y grabados de alto contraste.",
+            "tags": ["material", "plástico"]
+          },
+          {
+            "term": "MDF (Tablero de Fibra de Densidad Media)",
+            "slug": "mdf",
+            "aka": ["DM"],
+            "seo_title": "Cortar y Grabar MDF con Láser: Parámetros y Consejos",
+            "concept": "Producto de madera de ingeniería hecho de fibras de madera y resina, económico y fácil de cortar con láser.",
+            "explanation": "El MDF es un material compuesto muy popular en el mundo láser por su bajo coste y su consistencia. Al no tener vetas ni nudos como la madera natural, se corta y graba de manera muy uniforme. \n- **Corte:** Se corta de forma muy fiable. Los bordes resultantes son de un color marrón oscuro o negro debido a la carbonización de las fibras y la resina. Este borde oscuro puede ser un elemento estético deseado o puede limpiarse si es necesario. \n- **Grabado:** Produce un buen contraste, eliminando la capa superior más clara y revelando un interior más oscuro. \nDebido a las resinas y adhesivos que contiene, el corte de MDF genera un humo denso y con un olor característico. Es absolutamente esencial contar con un sistema de extracción de humos muy potente y una buena ventilación.",
+            "related_terms": ["corte-laser", "laser-co2", "charring", "extractor-de-humos"],
+            "seo_description": "Aprende las ventajas de usar MDF para corte y grabado láser. Descubre los parámetros recomendados y consejos para obtener los mejores resultados en este material.",
+            "tags": ["material", "madera"]
+          },
+          {
+            "term": "Anodizado de Aluminio",
+            "slug": "anodizado-de-aluminio",
+            "aka": ["Aluminio anodizado"],
+            "seo_title": "Cómo Grabar Aluminio Anodizado con Láser (CO2 y Fibra)",
+            "concept": "Aluminio con una capa protectora de óxido creada electroquímicamente, ideal para el grabado láser.",
+            "explanation": "El aluminio anodizado es un material perfecto para el grabado láser. El proceso de anodizado crea una capa de óxido de aluminio porosa y extremadamente dura que se puede teñir de varios colores. El láser no graba el aluminio en sí, sino que blanquea o elimina esta capa de tinte con gran precisión. \n- **Láser de CO2:** Con potencias relativamente bajas, puede 'decolorar' el anodizado, revelando una marca blanca o gris clara de alto contraste sobre el fondo de color. \n- **Láser de Fibra:** Es aún más eficaz, produciendo marcas extremadamente nítidas y brillantes. \nEsta técnica es muy duradera y resistente a la abrasión, por lo que es ideal para la personalización de placas de identificación, carcasas de productos electrónicos, tarjetas de visita metálicas y artículos promocionales.",
+            "related_terms": ["marcado-laser", "laser-fibra", "laser-co2"],
+            "seo_description": "Descubre cómo funciona el grabado láser sobre aluminio anodizado para crear marcas blancas de alto contraste. Ideal para placas de identificación y personalización.",
+            "tags": ["material", "metal", "proceso"]
+          },
+          {
+            "term": "Charring",
+            "slug": "charring",
+            "aka": ["Carbonización", "Quemado"],
+            "seo_title": "Qué es el Charring (Bordes Quemados) y Cómo Evitarlo",
+            "concept": "Efecto de quemado o carbonización en los bordes de materiales orgánicos como la madera o el papel durante el corte láser.",
+            "explanation": "El 'charring' es el oscurecimiento de los bordes del corte en materiales combustibles. Es el resultado directo del intenso calor del láser. Si bien a veces puede ser un efecto estético deseado que añade contraste, en muchas ocasiones se busca un corte lo más limpio posible. Para minimizar la carbonización se pueden aplicar varias técnicas: \n1. **Optimizar Parámetros:** Usar la mayor velocidad y la menor potencia posible que aún permitan un corte completo. \n2. **Asistencia de Aire Fuerte:** Un chorro de aire potente ayuda a enfriar el borde y a extinguir las pequeñas llamas que causan el quemado. \n3. **Enmascaramiento:** Aplicar cinta de carrocero o de aplicación sobre la superficie del material. La cinta absorbe el exceso de calor y el hollín, y al retirarla deja una superficie limpia. \n4. **Enfoque Preciso:** Un enfoque perfecto concentra la energía y reduce el calor disperso.",
+            "related_terms": ["corte-laser", "mdf", "asistencia-de-aire", "enmascaramiento"],
+            "seo_description": "Aprende qué es el charring o carbonización en el corte láser de madera y cómo puedes reducir o eliminar los bordes quemados con los parámetros y técnicas correctas.",
+            "tags": ["efecto", "material", "calidad"]
+          },
+          {
+            "term": "Flashback",
+            "slug": "flashback",
+            "aka": ["Reflejo posterior", "Marcas de la mesa"],
+            "seo_title": "Qué es el Flashback en Corte Láser y Cómo Prevenirlo",
+            "concept": "Marcas o quemaduras en la parte inferior del material causadas por el reflejo del haz de láser en la mesa de trabajo.",
+            "explanation": "El flashback ocurre cuando el haz de láser atraviesa el material y, en lugar de disiparse, rebota en la superficie sólida que hay debajo (como una mesa de panal muy sucia o una plancha metálica) y quema la cara posterior del corte. Esto deja unas antiestéticas marcas de rejilla o quemaduras en la parte inferior de la pieza. \nLa mejor manera de prevenir el flashback es: \n- **Usar una Mesa de Cuchillas (Knife Table):** Esta mesa minimiza radicalmente la superficie de contacto bajo el material, permitiendo que el haz pase de largo sin encontrar nada que lo refleje. \n- **Mantener la Mesa Limpia:** Los residuos y el hollín acumulados en una mesa de panal pueden crear una superficie reflectante y causar flashback. \n- **Elevar el Material:** Colocar pequeños soportes para levantar ligeramente el material de la mesa también puede ayudar a reducir este efecto.",
+            "related_terms": ["mesa-de-trabajo", "mesa-de-cuchillas", "mesa-de-panal"],
+            "seo_description": "Descubre qué es el flashback en el corte láser y cómo evitar esas molestas marcas en la parte posterior de tus piezas utilizando una mesa de cuchillas o de panal.",
+            "tags": ["defecto", "calidad", "proceso"]
+          }
+        ]
+      }
+    ]
+  }
+}
