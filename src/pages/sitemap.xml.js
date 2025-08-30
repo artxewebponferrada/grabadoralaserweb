@@ -131,7 +131,7 @@ export async function GET(context) {
                 </xsl:for-each>
               </tbody>
             </table>
-            <div class="muted" style="margin-top:8px">La hoja de estilo se ignora por los buscadores; es solo para visualización.</div>
+            <div class="muted" style="margin-top:8px">Migrabadoralaser.es</div>
           </div>
         </div>
       </body>
