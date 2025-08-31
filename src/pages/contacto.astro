@@ -3,50 +3,182 @@ import Layout from '../layouts/Layout.astro';
 import LegalHeader from '../components/LegalHeader.astro';
 import ContactForm from '../components/ContactForm.astro';
 import PageSEO from '../components/PageSEO.astro';
+
+const site = {
+  name: 'Mi grabadora laser',
+  domain: 'https://migrabadoralaser.es',
+  email: 'info@migrabadoralaser.es',
+  logo: 'https://migrabadoralaser.es/logo.png',
+  x: 'https://twitter.com/migrabadoralaser',
+  fb: 'https://facebook.com/migrabadoralaser',
+  ig: 'https://instagram.com/migrabadoralaser',
+};
+
+const ld = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${site.domain}#org`,
+      name: site.name,
+      url: site.domain,
+      logo: { '@type': 'ImageObject', url: site.logo },
+      sameAs: [site.x, site.fb, site.ig].filter(Boolean),
+      contactPoint: [
+        {
+          '@type': 'ContactPoint',
+          contactType: 'customer support',
+          email: site.email,
+          availableLanguage: ['es'],
+          areaServed: 'ES',
+          hoursAvailable: {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: [
+              'Monday','Tuesday','Wednesday','Thursday','Friday'
+            ],
+            opens: '09:00',
+            closes: '18:00'
+          }
+        }
+      ],
+      publishingPrinciples: `${site.domain}/politica-editorial/`,
+      correctionsPolicy: `${site.domain}/politica-de-correcciones/`,
+      privacyPolicy: `${site.domain}/privacidad/`
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${site.domain}#website`,
+      url: site.domain,
+      name: site.name,
+      publisher: { '@id': `${site.domain}#org` },
+      inLanguage: 'es'
+    },
+    {
+      '@type': 'ContactPage',
+      '@id': `${site.domain}/contacto/#contact`,
+      url: `${site.domain}/contacto/`,
+      name: 'Contacto',
+      isPartOf: { '@id': `${site.domain}#website` },
+      about: { '@id': `${site.domain}#org` },
+      primaryImageOfPage: { '@type': 'ImageObject', url: site.logo },
+      inLanguage: 'es'
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${site.domain}/contacto/#breadcrumb`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, item: { '@id': site.domain, name: 'Inicio' } },
+        { '@type': 'ListItem', position: 2, item: { '@id': `${site.domain}/contacto/`, name: 'Contacto' } }
+      ]
+    }
+  ]
+};
+
+const pageTitle = 'Contacto — Mi grabadora laser';
+const pageDesc = 'Ponte en contacto con Mi grabadora laser. Soporte editorial, sugerencias, correcciones y consultas sobre nuestras comparativas de grabadoras láser.';
 ---
 
 <Layout>
-  <PageSEO
-    title="Contacto"
-    description="Ponte en contacto con nosotros para cualquier consulta o sugerencia"
-    noindex={true}
-  />
+  <PageSEO title={pageTitle} description={pageDesc} noindex={false} />
+  <script type="application/ld+json" set:html={JSON.stringify(ld)} />
 
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <LegalHeader
       title="Contacto"
-      description="Estamos aquí para ayudarte"
+      description="Estamos aquí para ayudarte: soporte, correcciones y consultas editoriales"
     />
 
     <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-white rounded-xl p-6 shadow-sm">
-        <h2 class="text-xl font-semibold text-gray-900 mb-4">Información de Contacto</h2>
-        <div class="space-y-4">
+      <section class="bg-white rounded-xl p-6 shadow-sm" aria-labelledby="info-contacto">
+        <h2 id="info-contacto" class="text-xl font-semibold text-gray-900 mb-4">Información de contacto</h2>
+
+        <div class="space-y-5">
           <div class="flex items-start">
-            <svg class="w-6 h-6 text-primary-600 mt-1 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg class="w-6 h-6 text-primary-600 mt-1 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
             <div>
-              <p class="font-medium text-gray-900">Email</p>
-              <a href="mailto:info@migrabadoralaser.es" class="text-gray-600 hover:text-primary-600">
-                info@migrabadoralaser.es
+              <p class="font-medium text-gray-900">Correo</p>
+              <a href={`mailto:${site.email}`} class="text-gray-700 hover:text-primary-700 underline decoration-dotted">
+                {site.email}
               </a>
+              <p class="mt-1 text-xs text-gray-500">Tiempo medio de respuesta: 24–48 h laborables.</p>
             </div>
           </div>
 
           <div class="flex items-start">
-            <svg class="w-6 h-6 text-primary-600 mt-1 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg class="w-6 h-6 text-primary-600 mt-1 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <div>
-              <p class="font-medium text-gray-900">Horario de Atención</p>
-              <p class="text-gray-600">Lunes a Viernes: 9:00 - 18:00</p>
+              <p class="font-medium text-gray-900">Horario</p>
+              <p class="text-gray-700">Lunes a Viernes, 9:00–18:00 (CET).</p>
+              <p class="mt-1 text-xs text-gray-500">Fuera de horario, tu mensaje entra en cola prioritaria.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <svg class="w-6 h-6 text-primary-600 mt-1 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h18M3 10h18M3 15h18M3 20h18" />
+            </svg>
+            <div>
+              <p class="font-medium text-gray-900">Motivo del contacto</p>
+              <ul class="mt-1 text-gray-700 list-disc list-inside space-y-1">
+                <li><a class="underline decoration-dotted hover:text-primary-700" href="/politica-de-correcciones/">Solicitar corrección</a></li>
+                <li><a class="underline decoration-dotted hover:text-primary-700" href="/politica-editorial/">Consulta editorial o conflicto de interés</a></li>
+                <li><a class="underline decoration-dotted hover:text-primary-700" href="/metodologia/">Dudas sobre metodología</a></li>
+                <li><a class="underline decoration-dotted hover:text-primary-700" href="/privacidad/">Privacidad y datos</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <svg class="w-6 h-6 text-primary-600 mt-1 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20z" />
+            </svg>
+            <div>
+              <p class="font-medium text-gray-900">Transparencia</p>
+              <p class="text-gray-700">No aceptamos pagos por reseñas favorables. Algunos enlaces son de afiliado y no afectan a nuestras conclusiones.</p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <ContactForm />
+      <section aria-labelledby="form-contacto">
+        <h2 id="form-contacto" class="sr-only">Formulario de contacto</h2>
+        <ContactForm />
+        <p class="mt-3 text-xs text-gray-500">
+          Al enviar aceptas nuestra <a href="/privacidad/" class="underline decoration-dotted hover:text-primary-700">política de privacidad</a>.
+          Guardamos un registro mínimo (nombre, email, mensaje) para gestionar tu solicitud.
+        </p>
+      </section>
     </div>
+
+    <div class="mt-10 grid md:grid-cols-3 gap-4 text-sm text-gray-600">
+      <div class="bg-white rounded-xl p-4 shadow-sm">
+        <p class="font-medium text-gray-900">Redes oficiales</p>
+        <p class="mt-1">
+          <a href={site.x} class="underline decoration-dotted hover:text-primary-700" rel="me noopener" target="_blank">X</a> ·
+          <a href={site.fb} class="underline decoration-dotted hover:text-primary-700" rel="me noopener" target="_blank">Facebook</a> ·
+          <a href={site.ig} class="underline decoration-dotted hover:text-primary-700" rel="me noopener" target="_blank">Instagram</a>
+        </p>
+      </div>
+      <div class="bg-white rounded-xl p-4 shadow-sm">
+        <p class="font-medium text-gray-900">Editorial</p>
+        <p class="mt-1">
+          <a href="/politica-editorial/" class="underline decoration-dotted hover:text-primary-700">Política editorial</a> ·
+          <a href="/metodologia/" class="underline decoration-dotted hover:text-primary-700">Metodología</a>
+        </p>
+      </div>
+      <div class="bg-white rounded-xl p-4 shadow-sm">
+        <p class="font-medium text-gray-900">Privacidad y correcciones</p>
+        <p class="mt-1">
+          <a href="/privacidad/" class="underline decoration-dotted hover:text-primary-700">Privacidad</a> ·
+          <a href="/politica-de-correcciones/" class="underline decoration-dotted hover:text-primary-700">Correcciones</a>
+        </p>
+      </div>
+    </div>
+
+    <p class="mt-8 text-xs text-gray-500">Última revisión: <time datetime="2025-08-31">31/08/2025</time></p>
   </div>
 </Layout>
