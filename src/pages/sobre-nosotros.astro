@@ -3,81 +3,227 @@ import Layout from '../layouts/Layout.astro';
 import LegalHeader from '../components/LegalHeader.astro';
 import PageSEO from '../components/PageSEO.astro';
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Mi grabadora laser",
-  "description": "Expertos en grabado láser comprometidos con tu éxito. Ofrecemos reviews, guías y consejos sobre grabadores láser.",
-  "url": "https://migrabadoralaser.es",
-  "logo": "https://migrabadoralaser.es/logo.png",
-  "sameAs": [
-    "https://twitter.com/migrabadoralaser",
-    "https://facebook.com/migrabadoralaser",
-    "https://instagram.com/migrabadoralaser"
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "",
-    "contactType": "customer service",
-    "email": "info@migrabadoralaser.es",
-    "availableLanguage": ["Spanish"]
-  }
+const site = {
+  name: 'Mi grabadora laser',
+  legalName: 'Migrabadoralaser.es',
+  domain: 'https://migrabadoralaser.es',
+  logo: 'https://migrabadoralaser.es/logo.png',
+  email: 'info@migrabadoralaser.es',
+  x: 'https://twitter.com/migrabadoralaser',
+  fb: 'https://facebook.com/migrabadoralaser',
+  ig: 'https://instagram.com/migrabadoralaser',
 };
+
+const ld = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${site.domain}#org`,
+      'name': site.name,
+      'legalName': site.legalName,
+      'url': site.domain,
+      'logo': { '@type': 'ImageObject', 'url': site.logo },
+      'sameAs': [site.x, site.fb, site.ig].filter(Boolean),
+      'contactPoint': [{
+        '@type': 'ContactPoint',
+        'contactType': 'customer service',
+        'email': site.email,
+        'availableLanguage': ['es']
+      }],
+      'publishingPrinciples': `${site.domain}/politica-editorial/`,
+      'correctionsPolicy': `${site.domain}/politica-de-correcciones/`,
+      'ethicsPolicy': `${site.domain}/politica-editorial/`,
+      'diversityPolicy': `${site.domain}/metodologia/`,
+      'actionableFeedbackPolicy': `${site.domain}/politica-de-correcciones/`,
+      'ownershipFundingInfo': `${site.domain}/politica-editorial/`,
+      'knowsAbout': [
+        'comparativas de grabadoras láser',
+        'análisis técnico de corte y grabado',
+        'seguridad láser y extracción de humos',
+        'evaluación de relación calidad-precio'
+      ]
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${site.domain}#website`,
+      'url': site.domain,
+      'name': site.name,
+      'publisher': { '@id': `${site.domain}#org` },
+      'inLanguage': 'es',
+      'potentialAction': {
+        '@type': 'SearchAction',
+        'target': `${site.domain}/buscar?q={search_term_string}`,
+        'query-input': 'required name=search_term_string'
+      }
+    },
+    {
+      '@type': 'AboutPage',
+      '@id': `${site.domain}/sobre-nosotros/#about`,
+      'url': `${site.domain}/sobre-nosotros/`,
+      'name': 'Sobre Nosotros',
+      'isPartOf': { '@id': `${site.domain}#website` },
+      'primaryImageOfPage': { '@type': 'ImageObject', 'url': site.logo },
+      'inLanguage': 'es',
+      'publisher': { '@id': `${site.domain}#org` }
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${site.domain}/sobre-nosotros/#breadcrumb`,
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'item': { '@id': site.domain, 'name': 'Inicio' } },
+        { '@type': 'ListItem', 'position': 2, 'item': { '@id': `${site.domain}/sobre-nosotros/`, 'name': 'Sobre Nosotros' } }
+      ]
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${site.domain}/sobre-nosotros/#faq`,
+      'mainEntity': [
+        {
+          '@type': 'Question',
+          'name': '¿Cómo realizáis las comparativas?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Aplicamos criterios ponderados sobre rendimiento, precisión de grabado y corte, seguridad, experiencia de uso y soporte. Cada guía documenta alcance, limitaciones y fecha de revisión. Ver metodología en /metodologia/.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': '¿Existen conflictos de interés?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'No aceptamos pagos por reseñas favorables. Podemos usar enlaces de afiliado que no alteran conclusiones. Divulgación en política editorial y en notas de cada artículo cuando corresponda.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': '¿Cómo solicitar una corrección?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Envía un correo a info@migrabadoralaser.es con la URL y la evidencia. Registramos cambios y mostramos la fecha de última actualización.'
+          }
+        }
+      ]
+    }
+  ]
+};
+
+const pageTitle = 'Sobre Nosotros — Mi grabadora laser';
+const pageDesc = 'Quiénes somos, metodología de comparativas y principios editoriales en grabadores láser. Transparencia, fuentes y actualizaciones.';
 ---
 
 <Layout>
-  <PageSEO
-    title="Sobre Nosotros - Expertos en Grabado Láser"
-    description="Descubre quiénes somos y nuestra misión de ayudarte a encontrar el grabador láser perfecto. Expertos en reviews, guías y consejos sobre grabado láser."
-    noindex={false}
-  />
-  
-  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
-  
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <PageSEO title={pageTitle} description={pageDesc} noindex={false} />
+  <script type="application/ld+json" set:html={JSON.stringify(ld)} />
+
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <LegalHeader
       title="Sobre Nosotros"
-      description="Expertos en grabado láser comprometidos con tu éxito"
+      description="Comparativas expertas en grabadoras láser con metodología abierta, transparencia e independencia"
     />
 
+    <section class="grid md:grid-cols-3 gap-4 mb-8">
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <h3 class="text-base font-semibold">Experiencia</h3>
+        <p class="mt-2 text-sm text-gray-600">Análisis comparativos centrados en precisión, seguridad y calidad de resultados sobre madera, metacrilato, cuero, cartón y acero (marcado). </p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <h3 class="text-base font-semibold">Metodología</h3>
+        <p class="mt-2 text-sm text-gray-600">Criterios ponderados, pruebas reproducibles, revisión por pares interna y control de versiones en cada guía.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <h3 class="text-base font-semibold">Transparencia</h3>
+        <p class="mt-2 text-sm text-gray-600">Política editorial, correcciones públicas, financiación declarada y contacto directo.</p>
+      </div>
+    </section>
+
     <div class="prose prose-lg max-w-none">
-      <div class="bg-white rounded-2xl p-8 shadow-sm mb-8">
-        <h2>Nuestra Misión</h2>
-        <p>
-          En Mi grabadora laser, nos dedicamos a proporcionar información detallada y objetiva sobre grabadores láser, ayudando a nuestros lectores a tomar decisiones informadas en sus compras.
-        </p>
+      <section class="bg-white rounded-2xl p-8 shadow-sm mb-8">
+        <h2>Nuestra misión</h2>
+        <p>En {site.name}, guiamos a usuarios y profesionales hacia la mejor elección de grabadora láser mediante comparativas claras y verificables, priorizando seguridad, precisión y utilidad real.</p>
+      </section>
 
-        <h2>Nuestro Compromiso</h2>
-        <p>
-          Nos comprometemos a ofrecer:
-        </p>
+      <section class="bg-white rounded-2xl p-8 shadow-sm mb-8">
+        <h2>Metodología de comparativas</h2>
+        <p>Nuestras evaluaciones se rigen por una matriz de valoración con ponderaciones públicas. Los factores principales incluyen rendimiento efectivo, calidad de grabado/corte, seguridad, experiencia de uso y soporte posventa.</p>
         <ul>
-          <li>Reviews imparciales y detallados</li>
-          <li>Guías prácticas y tutoriales</li>
-          <li>Comparativas exhaustivas</li>
-          <li>Consejos de expertos</li>
+          <li>Pruebas con materiales estándar y patrones de calibración repetibles.</li>
+          <li>Mediciones y documentación visual (macrofotografía) de resultados.</li>
+          <li>Contraste con especificaciones, manuales y notas de firmware.</li>
+          <li>Revisión técnica interna previa a publicación y tras actualizaciones relevantes.</li>
         </ul>
-      </div>
+        <p class="mt-4 text-sm text-gray-600">Detalle ampliado en <a href="/metodologia/">/metodologia/</a>.</p>
+      </section>
 
-      <div class="bg-white rounded-2xl p-8 shadow-sm mb-8">
-        <h2>Nuestro Equipo</h2>
-        <p>
-          Contamos con un equipo de expertos en grabado láser con años de experiencia en el sector. Cada miembro aporta su conocimiento especializado para ofrecerte la mejor información posible.
-        </p>
-      </div>
-
-      <div class="bg-white rounded-2xl p-8 shadow-sm">
-        <h2>Metodología</h2>
-        <p>
-          Nuestras reviews y análisis se basan en:
-        </p>
+      <section class="bg-white rounded-2xl p-8 shadow-sm mb-8">
+        <h2>Independencia editorial y financiación</h2>
+        <p>Somos independientes de fabricantes y distribuidores. Algunas páginas incluyen enlaces de afiliado que no influyen en la selección ni en las conclusiones. Declaramos cualquier relación comercial aplicable.</p>
         <ul>
-          <li>Pruebas prácticas exhaustivas</li>
-          <li>Análisis técnico detallado</li>
-          <li>Evaluación de la relación calidad-precio</li>
-          <li>Feedback de usuarios reales</li>
+          <li>No aceptamos pagos por reseñas favorables.</li>
+          <li>Señalamos limitaciones y alcance de cada prueba.</li>
+          <li>Divulgamos afiliación con claridad cuando aplica.</li>
         </ul>
-      </div>
+        <p class="mt-4 text-sm text-gray-600">Consulta la <a href="/politica-editorial/">política editorial</a> y la <a href="/politica-de-correcciones/">política de correcciones</a>.</p>
+      </section>
+
+      <section class="bg-white rounded-2xl p-8 shadow-sm mb-8">
+        <h2>Nuestro equipo</h2>
+        <p>El contenido se elabora por un equipo con experiencia práctica en corte y grabado, soporte técnico y documentación, especializado en categorías de consumo y semiprofesional.</p>
+        <div class="grid sm:grid-cols-2 gap-6 mt-6">
+          <article class="flex items-start gap-4">
+            <img src="/imagenes/autores/equipo.svg" alt="Equipo de comparativas" class="w-16 h-16 rounded-xl ring-1 ring-gray-200" />
+            <div>
+              <h3 class="m-0">Equipo de comparativas</h3>
+              <p class="m-0 text-sm text-gray-600">Pruebas de rendimiento y consistencia, control de fichas y matrices comparativas.</p>
+            </div>
+          </article>
+          <article class="flex items-start gap-4">
+            <img src="/imagenes/autores/edicion.svg" alt="Edición técnica" class="w-16 h-16 rounded-xl ring-1 ring-gray-200" />
+            <div>
+              <h3 class="m-0">Edición técnica</h3>
+              <p class="m-0 text-sm text-gray-600">Verificación metodológica, fuentes y coherencia terminológica.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="bg-white rounded-2xl p-8 shadow-sm mb-8">
+        <h2>Fuentes y citación</h2>
+        <p>Citamos manuales y hojas de datos del fabricante, documentación de firmware y recomendaciones de seguridad. Enlazamos a fuentes primarias y registramos fecha de última verificación.</p>
+      </section>
+
+      <section class="bg-white rounded-2xl p-8 shadow-sm mb-8">
+        <h2>Actualizaciones y correcciones</h2>
+        <p>Revisamos contenidos cuando hay cambios de firmware, lanzamientos o alertas de seguridad. Atendemos solicitudes de corrección con trazabilidad de cambios.</p>
+        <ul>
+          <li>Historial de cambios por página.</li>
+          <li>Revisión cuando un modelo queda descatalogado.</li>
+          <li>Fechas de última actualización visibles.</li>
+        </ul>
+      </section>
+
+      <section class="bg-white rounded-2xl p-8 shadow-sm" id="faq">
+        <h2>Preguntas frecuentes</h2>
+        <details class="mb-3">
+          <summary>¿Probáis físicamente todos los modelos?</summary>
+          <p>Probamos directamente una muestra representativa y contrastamos el resto con documentación técnica, resultados de usuarios y pruebas de terceros fiables. Indicamos el alcance de cada análisis.</p>
+        </details>
+        <details class="mb-3">
+          <summary>¿Cómo resolvéis empates en una comparativa?</summary>
+          <p>Priorizamos precisión, seguridad y soporte. En caso de igualdad, la recomendación se adapta al caso de uso: materiales, volumen y presupuesto.</p>
+        </details>
+        <details>
+          <summary>¿Cómo gestionáis los conflictos de interés?</summary>
+          <p>Separación entre equipo editorial y acuerdos comerciales, divulgación de afiliación y revisión técnica independiente.</p>
+        </details>
+      </section>
+
+      <p class="mt-10 text-sm text-gray-500">Última revisión editorial: <time datetime="2025-08-31">31/08/2025</time></p>
+    </div>
+
+    <div class="mt-12 border-t pt-6 text-sm text-gray-600">
+      <p>Contacto editorial: <a href={`mailto:${site.email}`}>{site.email}</a></p>
+      <p>Redes: <a href={site.x}>X</a> · <a href={site.fb}>Facebook</a> · <a href={site.ig}>Instagram</a></p>
     </div>
   </div>
 </Layout>
