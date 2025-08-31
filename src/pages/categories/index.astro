@@ -3,25 +3,97 @@ import Layout from '../../layouts/Layout.astro';
 import CategoryCard from '../../components/CategoryCard.astro';
 import data from '../../data';
 
-// Filter categories that have published products
 const now = new Date();
-const categoriesWithProducts = data.categories.filter(category =>
-  data.products.some(product => 
-    product.categories.includes(category.id) &&
-    new Date(product.publishDate) <= now
+
+// Categorías con productos publicados
+const categoriesWithProducts = data.categories.filter((category) =>
+  data.products.some(
+    (product) =>
+      Array.isArray(product.categories) &&
+      product.categories.includes(category.id) &&
+      new Date(product.publishDate) <= now
   )
 );
+
+const domain = 'https://migrabadoralaser.es';
+
+const ldCollection = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${domain}/categories/#collection`,
+  name: 'Categorías de grabado y corte láser',
+  url: `${domain}/categories/`,
+  description:
+    'Explora categorías de grabadoras y cortadoras láser, accesorios y software. Elige por material, tecnología y potencia.',
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: categoriesWithProducts.map((c, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${domain}/categories/${c.id}/`,
+      name: c.title
+    }))
+  }
+};
+
+const ldBreadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  '@id': `${domain}/categories/#breadcrumb`,
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, item: { '@id': domain, name: 'Inicio' } },
+    { '@type': 'ListItem', position: 2, item: { '@id': `${domain}/categories/`, name: 'Categorías' } }
+  ]
+};
+
+const ldFaq = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  '@id': `${domain}/categories/#faq`,
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '¿Qué tecnología conviene para cada material?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text:
+          'CO₂ destaca en madera y acrílico; fibra es óptima para marcaje en metales; diodo es versátil y económico. Elige según material y necesidad de corte/producción.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cómo estimar la potencia necesaria?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text:
+          '5–10 W para iniciación y grabado fino; 20–40 W para más velocidad y corte en maderas; ≥50 W para materiales gruesos o uso intensivo. Ajusta potencia, velocidad y pasadas.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: '¿Qué accesorios tienen mayor impacto en la calidad?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text:
+          'Asistencia de aire, mesa panal y extracción de humos. Mejoran el corte, reducen rebaba y elevan la seguridad. Usa gafas certificadas adecuadas a la longitud de onda.'
+      }
+    }
+  ]
+};
 ---
 
 <Layout
-  title="Categorías de grabadores láser"
-  description="Explora nuestra completa colección de categorías de grabadores láser, desde máquinas para aficionados hasta máquinas de calidad profesional."
+  title="Categorías de grabado y corte láser"
+  description="Explora las categorías de grabadoras y cortadoras láser, accesorios y software. Encuentra la máquina adecuada por material, tecnología y potencia."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(ldCollection)} />
+  <script type="application/ld+json" set:html={JSON.stringify(ldBreadcrumb)} />
+
   <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
-      <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Laser Engraver Categories</h1>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Categorías de grabado y corte láser</h1>
       <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-        Encuentre el grabador láser perfecto para sus necesidades. Explore nuestras categorías de grabadoras y cortadoras láser cuidadosamente seleccionadas.
+        Accede directamente a las categorías y compara opciones por material, tecnología, potencia y accesorios.
       </p>
     </div>
 
@@ -31,21 +103,123 @@ const categoriesWithProducts = data.categories.filter(category =>
       ))}
     </div>
 
-    <div class="mt-16 bg-white rounded-2xl p-8">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Cómo elegir el grabador láser más adecuado?</h2>
-      <div class="prose max-w-none text-gray-600">
-        <p>
-          La selección del grabador láser perfecto depende de varios factores, entre los que se incluyen el uso previsto,
-          presupuesto y características necesarias. Estas son algunas consideraciones clave:
-        </p>
-        <ul>
-          <li>Determina su uso principal (afición, negocio, industrial).</li>
-          <li>Considera los materiales con los que trabajará.</li>
-          <li>Evalúa el tamaño del área de trabajo que necesita.</li>
-          <li>Verifica los requisitos de potencia del láser.</li>
-          <li>Revise las características de seguridad y certificaciones.</li>
-        </ul>
+    <section class="mt-16 bg-white rounded-2xl p-8 shadow-sm">
+      <h2 class="text-2xl font-bold text-gray-900">Comparador de tecnologías</h2>
+      <p class="mt-2 text-gray-700">Diferencias clave entre diodo, CO₂ y fibra para decidir con criterio técnico.</p>
+      <div class="mt-6 overflow-x-auto">
+        <table class="w-full table-auto text-left text-sm">
+          <caption class="sr-only">Comparativa de tecnologías láser</caption>
+          <thead class="text-gray-900">
+            <tr>
+              <th class="py-3 pr-4">Tecnología</th>
+              <th class="py-3 pr-4">Fortalezas</th>
+              <th class="py-3 pr-4">Limitaciones</th>
+              <th class="py-3 pr-4">Mejor para</th>
+              <th class="py-3">Explorar</th>
+            </tr>
+          </thead>
+          <tbody class="align-top text-gray-700">
+            <tr class="border-t">
+              <td class="py-3 pr-4 font-medium">Diodo</td>
+              <td class="py-3 pr-4">Precio contenido, versátil, fácil de mantener</td>
+              <td class="py-3 pr-4">Corte limitado en espesores altos</td>
+              <td class="py-3 pr-4">Grabado en madera, cuero y marcado ligero en metales</td>
+              <td class="py-3"><a class="underline decoration-dotted hover:text-primary-700" href="/categories/grabadoras-laser-de-diodo/">Ver diodo</a></td>
+            </tr>
+            <tr class="border-t">
+              <td class="py-3 pr-4 font-medium">CO₂</td>
+              <td class="py-3 pr-4">Corte limpio en orgánicos y acrílico</td>
+              <td class="py-3 pr-4">Requiere alineación/ópticas; mantenimiento mayor</td>
+              <td class="py-3 pr-4">Madera, cuero, acrílico, proyectos de corte</td>
+              <td class="py-3"><a class="underline decoration-dotted hover:text-primary-700" href="/categories/grabadoras-laser-co2/">Ver CO₂</a></td>
+            </tr>
+            <tr class="border-t">
+              <td class="py-3 pr-4 font-medium">Fibra</td>
+              <td class="py-3 pr-4">Marcaje rápido y preciso en metales</td>
+              <td class="py-3 pr-4">No corta orgánicos; inversión superior</td>
+              <td class="py-3 pr-4">Identificación industrial, joyería, metal</td>
+              <td class="py-3"><a class="underline decoration-dotted hover:text-primary-700" href="/categories/grabadoras-laser-de-fibra/">Ver fibra</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </div>
+    </section>
+
+    <section class="mt-12 bg-white rounded-2xl p-8 shadow-sm">
+      <h2 class="text-2xl font-bold text-gray-900">Selector de potencia según uso</h2>
+      <p class="mt-2 text-gray-700">Recomendaciones prácticas para acertar con la potencia sin sobredimensionar.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-6 text-sm">
+        <article class="rounded-xl border border-gray-100 p-6">
+          <h3 class="font-semibold text-gray-900">Personalización y hobby</h3>
+          <ul class="mt-3 space-y-2 text-gray-700">
+            <li>5–10 W para grabado fino en madera/cuero</li>
+            <li>Con <a class="underline decoration-dotted hover:text-primary-700" href="/categories/asistencia-de-aire-para-grabadoras-laser/">air assist</a> mejora el corte</li>
+            <li>Explora <a class="underline decoration-dotted hover:text-primary-700" href="/categories/mini-grabadoras-laser/">mini grabadoras</a></li>
+          </ul>
+        </article>
+        <article class="rounded-xl border border-gray-100 p-6">
+          <h3 class="font-semibold text-gray-900">Corte frecuente en madera</h3>
+          <ul class="mt-3 space-y-2 text-gray-700">
+            <li>20–40 W para mayor productividad</li>
+            <li>CO₂ destaca en <a class="underline decoration-dotted hover:text-primary-700" href="/categories/cortadoras-laser-para-madera/">corte de madera</a></li>
+            <li>Mesa panal y <a class="underline decoration-dotted hover:text-primary-700" href="/categories/cajas-extractoras-de-humo-para-laser/">extracción</a></li>
+          </ul>
+        </article>
+        <article class="rounded-xl border border-gray-100 p-6">
+          <h3 class="font-semibold text-gray-900">Marcaje en metal y producción</h3>
+          <ul class="mt-3 space-y-2 text-gray-700">
+            <li>Fibra para metales con alta precisión</li>
+            <li>Útil para <a class="underline decoration-dotted hover:text-primary-700" href="/categories/grabadoras-laser-para-joyas/">joyería</a> y <a class="underline decoration-dotted hover:text-primary-700" href="/categories/grabadoras-laser-para-anillos/">anillos</a></li>
+            <li>Compatibilidad con <a class="underline decoration-dotted hover:text-primary-700" href="/marcas/lightburn/">LightBurn</a> cuando aplique</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="mt-12 bg-white rounded-2xl p-8 shadow-sm">
+      <h2 class="text-2xl font-bold text-gray-900">Accesorios que cambian el juego</h2>
+      <p class="mt-2 text-gray-700">Mejoras directas en calidad, limpieza y seguridad.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-6 text-sm">
+        <article class="rounded-xl border border-gray-100 p-6">
+          <h3 class="font-semibold text-gray-900">Calidad de corte</h3>
+          <ul class="mt-3 space-y-2">
+            <li><a class="underline decoration-dotted hover:text-primary-700" href="/categories/asistencia-de-aire-para-grabadoras-laser/">Asistencia de aire</a></li>
+            <li><a class="underline decoration-dotted hover:text-primary-700" href="/categories/mesa-de-trabajo-para-grabadoras-laser/">Mesas panal</a></li>
+          </ul>
+        </article>
+        <article class="rounded-xl border border-gray-100 p-6">
+          <h3 class="font-semibold text-gray-900">Ambiente y seguridad</h3>
+          <ul class="mt-3 space-y-2">
+            <li><a class="underline decoration-dotted hover:text-primary-700" href="/categories/cajas-extractoras-de-humo-para-laser/">Extracción de humos</a></li>
+            <li><a class="underline decoration-dotted hover:text-primary-700" href="/categories/gafas-de-proteccion-para-grabadoras-laser/">Gafas certificadas</a></li>
+          </ul>
+        </article>
+        <article class="rounded-xl border border-gray-100 p-6">
+          <h3 class="font-semibold text-gray-900">Productividad</h3>
+          <ul class="mt-3 space-y-2">
+            <li><a class="underline decoration-dotted hover:text-primary-700" href="/categories/rodillos-para-grabar-botellas-y-vasos/">Rodillos rotativos</a></li>
+            <li><a class="underline decoration-dotted hover:text-primary-700" href="/categories/software-para-grabadoras-laser/">Software compatible</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="mt-12 bg-white rounded-2xl p-8 shadow-sm" id="faq">
+      <h2 class="text-2xl font-bold text-gray-900">Preguntas frecuentes</h2>
+      <details class="mt-4 mb-2">
+        <summary class="font-medium text-gray-900">¿Qué tecnología conviene para cada material?</summary>
+        <p class="mt-2 text-gray-700">CO₂ para orgánicos y acrílico, fibra para metales, diodo para versatilidad y presupuesto contenido.</p>
+      </details>
+      <details class="mb-2">
+        <summary class="font-medium text-gray-900">¿Cómo estimar la potencia necesaria?</summary>
+        <p class="mt-2 text-gray-700">5–10 W iniciación, 20–40 W corte frecuente, ≥50 W uso intensivo/materiales gruesos.</p>
+      </details>
+      <details>
+        <summary class="font-medium text-gray-900">¿Qué accesorios tienen mayor impacto?</summary>
+        <p class="mt-2 text-gray-700">Asistencia de aire, mesa panal y extracción de humos. Mejora de calidad y seguridad inmediata.</p>
+      </details>
+    </section>
+
+    <script type="application/ld+json" set:html={JSON.stringify(ldFaq)} />
   </div>
 </Layout>
