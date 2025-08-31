@@ -3,7 +3,8 @@
     {
       "id": "ortur",
       "name": "Ortur",
-      "title": "Marca Ortur de grabadoras laser: Opiniones y Reviews", 
+      "seotitle": "Ortur: opiniones y reviews de grabadoras láser — pruebas y comparativas",
+      "seodescription": "Analizamos las grabadoras láser Ortur con tests de precisión, seguridad y software (LightBurn, LaserGRBL). Modelos, rendimientos reales, comparativas y recomendaciones por uso.",
       "slug": "ortur",
       "logo": "/imagenes/ortur-logo.jpg",
       "publishDate": "2025-03-13",
@@ -58,6 +59,8 @@
     {
       "id": "wainlux",
       "name": "Wainlux",
+      "seotitle": "Wainlux: opiniones y reviews de grabadoras láser para empezar y crecer",
+      "seodescription": "Reseñas de Wainlux con foco en facilidad de uso, montaje rápido y calidad de grabado. Medimos potencia efectiva, materiales compatibles y valor real para DIY y pequeños talleres.",
       "slug": "wainlux",
       "logo": "/imagenes/wainlux-logo.jpg",
       "publishDate": "2025-03-13",
@@ -116,6 +119,8 @@
     {
       "id": "vevor",
       "name": "Vevor",
+      "seotitle": "Vevor: opiniones y reviews de grabadoras láser — calidad-precio real",
+      "seodescription": "Evaluamos las grabadoras láser Vevor: rendimiento, fiabilidad y soporte. Tests de corte y grabado, envíos y garantía, con comparativas por potencia y materiales para acertar al comprar.",
       "slug": "vevor",
       "logo": "/imagenes/vevor-logo.jpg",
       "publishDate": "2025-03-13",
@@ -174,6 +179,8 @@
     {
       "id": "xtool",
       "name": "xTool",
+    "seotitle": "xTool: opiniones y reviews de grabadoras láser — precisión y ecosistema",
+    "seodescription": "Pruebas de xTool (F1/M1/S1/P2): velocidad, calidad de grabado y accesorios. Benchmarks en madera, metal y acrílico, software y guías para elegir el modelo ideal según tu proyecto.",
       "slug": "xtool",
       "logo": "/imagenes/xtool-logo.jpg",
       "publishDate": "2025-03-08",
@@ -232,6 +239,8 @@
     {
       "id": "twotrees",
       "name": "Two Trees",
+      "seotitle": "Two Trees: opiniones y reviews de láser y CNC — modelos y comparativas",
+      "seodescription": "Analizamos Two Trees: grabadoras láser y CNC con certificaciones CE/FCC. Montaje, compatibilidad con LightBurn/LaserGRBL, precisión y mejor relación entre precio y prestaciones.",
       "slug": "two-trees",
       "logo": "/imagenes/twotrees-logo.jpg",
       "publishDate": "2025-03-14",
@@ -290,6 +299,8 @@
     {
       "id": "sculpfun",
       "name": "Sculpfun",
+      "seotitle": "Sculpfun: opiniones y reviews de grabadoras láser domésticas y pro",
+      "seodescription": "Tests Sculpfun: montaje, seguridad y calidad de corte/grabado en madera, cuero y acrílico. Valoramos potencia real, accesorios (air assist) y qué conviene a principiantes y makers.",
       "slug": "sculpfun",
       "logo": "/imagenes/sculpfun-logo.jpg",
       "publishDate": "2025-03-11",
@@ -348,6 +359,8 @@
     {
       "id": "sainsmart",
       "name": "SainSmart",
+      "seotitle": "SainSmart: opiniones y reviews de grabadoras láser para makers",
+      "seodescription": "Revisamos SainSmart con foco en precisión, facilidad de uso y ecosistema maker. Comparativas de modelos, compatibilidad CNC/láser, parámetros por material y guías paso a paso.",
       "slug": "sainsmart",
       "logo": "/imagenes/sainsmart-logo.jpg",
       "publishDate": "2025-03-11",
@@ -406,6 +419,8 @@
     {
       "id": "peixu",
       "name": "Peixu",
+      "seotitle": "Peixu: opiniones y reviews de grabadoras láser — rendimiento profesional",
+      "seodescription": "Evaluación de Peixu: montaje, robustez y precisión para uso profesional. Medimos potencia útil, calidad de corte en metales y orgánicos, soporte y precio frente a alternativas.",
       "slug": "peixu",
       "logo": "/imagenes/peixu-logo.jpg",
       "publishDate": "2025-04-04",
@@ -464,6 +479,8 @@
     {
       "id": "omtech",
       "name": "OMTech",
+      "seotitle": "OMTech: opiniones y reviews de grabadoras láser CO₂ — guía completa",
+      "seodescription": "Analizamos OMTech: CO₂ para corte y grabado con chiller y extras. Calidad de haz, área útil, seguridad y soporte. Comparativas por vatios y materiales para elegir con criterio.",
       "slug": "omtech",
       "logo": "/imagenes/omtech-logo.jpg",
       "publishDate": "2025-03-07",
@@ -522,6 +539,8 @@
     {
       "id": "mecpow",
       "name": "Mecpow",
+      "seotitle": "Mecpow: opiniones y reviews de grabadoras láser — seguras y fáciles",
+      "seodescription": "Pruebas Mecpow: montaje en minutos, compatibilidad con LightBurn y rendimiento real en madera, cuero y acrílico. Evaluamos sistemas de seguridad, accesorios y mejor compra.",
       "slug": "mecpow",
       "logo": "/imagenes/mecpow-logo.jpg",
       "publishDate": "2025-03-07",
@@ -580,6 +599,8 @@
     {
       "id": "mcwlaser",
       "name": "MCWlaser",
+      "seotitle": "MCWlaser: opiniones y reviews — gafas, ópticas y accesorios láser",
+      "seodescription": "Revisamos MCWlaser: gafas certificadas EN-207, mesas panal y ópticas. Qué proteger según longitud de onda, calidad de construcción y mejores kits para tu grabadora o cortadora.",
       "slug": "mcwlaser",
       "logo": "/imagenes/mcwlaser-logo.jpg",
       "publishDate": "2025-03-14",
@@ -638,6 +659,8 @@
     {
       "id": "longer",
       "name": "LONGER",
+      "seotitle": "LONGER: opiniones y reviews de grabadoras láser — potencia accesible",
+      "seodescription": "Tests de LONGER: instalación sencilla, precisión y software (LaserBurn). Rendimiento en madera y cuero, relación calidad-precio y qué modelo encaja con tu nivel y tipo de trabajo.",
       "slug": "longer",
       "logo": "/imagenes/longer-logo.jpg",
       "publishDate": "2025-04-09",
@@ -696,6 +719,8 @@
     {
       "id": "lightburn",
       "name": "LightBurn",
+      "seotitle": "LightBurn: opiniones y reviews del software láser — control y flujo",
+      "seodescription": "Analizamos LightBurn: edición vectorial, nodos, potencia/velocidad/pasadas y envío directo a la máquina. Compatibilidades, trucos de productividad y ajustes para cortes perfectos.",
       "slug": "lightburn",
       "logo": "/imagenes/lightburn-logo.jpg",
       "publishDate": "2025-03-17",
@@ -760,6 +785,8 @@
     {
       "id": "laserpecker",
       "name": "LaserPecker",
+      "seotitle": "LaserPecker: opiniones y reviews — grabadoras láser portátiles",
+      "seodescription": "Probamos LaserPecker: doble láser, app móvil y precisión en múltiples materiales. Qué tal graba, límites reales, accesorios y cuál elegir para proyectos creativos y en movilidad.",
       "slug": "laserpecker",
       "logo": "/imagenes/laserpecker-logo.jpg",
       "publishDate": "2025-03-17",
@@ -824,6 +851,8 @@
     {
       "id": "laser-tree",
       "name": "Laser Tree",
+      "seotitle": "Laser Tree: opiniones y reviews — módulos láser de diodo y kits",
+      "seodescription": "Evaluamos Laser Tree: instalación, micro-FAC, potencia efectiva y calidad de corte. Compatibilidad con LightBurn/GRBL, seguridad y qué módulo elegir según material y uso.",
       "slug": "laser-tree",
       "logo": "/imagenes/laser-tree-logo.jpg",
       "publishDate": "2025-03-07",
@@ -888,6 +917,8 @@
     {
       "id": "ikier",
       "name": "Ikier",
+      "seotitle": "Ikier: opiniones y reviews — grabadoras láser smart con autoenfoque",
+      "seodescription": "Tests Ikier: autoenfoque, diseño modular y rieles lineales. Montaje en 10 minutos, precisión y compatibilidad con LightBurn. Guías para escoger potencia y accesorios ideales.",
       "slug": "ikier",
       "logo": "/imagenes/ikier-logo.jpg",
       "publishDate": "2025-03-13",
@@ -947,6 +978,8 @@
     {
       "id": "fonland",
       "name": "Fonland",
+      "seotitle": "Fonland: opiniones y reviews — óptica y soluciones láser de precisión",
+      "seodescription": "Revisamos Fonland: lentes, módulos y equipos láser para corte/grabado. Calidad óptica, certificaciones y qué componentes elevan seguridad y acabado en tu entorno de trabajo.",
       "slug": "fonland",
       "logo": "/imagenes/fonland-logo.jpg",
       "publishDate": "2025-03-20",
@@ -1011,6 +1044,8 @@
     {
       "id": "creatorally",
       "name": "Creatorally",
+      "seotitle": "Creatorally: opiniones y reviews — materiales para grabado y corte láser",
+      "seodescription": "Analizamos Creatorally: maderas, acrílicos y aceros para láser diodo/CO₂/fibra. Calidad, sostenibilidad y qué material rinde mejor según proyecto, potencia y tipo de máquina.",
       "slug": "creatorally",
       "logo": "/imagenes/creatorally-logo.jpg",
       "publishDate": "2025-03-14",
@@ -1075,6 +1110,8 @@
     {
       "id": "creality",
       "name": "Creality",
+      "seotitle": "Creality: opiniones y reviews de láser e impresión 3D — ecosistema pro",
+      "seodescription": "Pruebas Creality: láser Falcon y ecosistema 3D. Montaje, software, precisión y materiales. Qué comprar según objetivo: iniciación, aula/taller o producción ligera continua.",
       "slug": "creality",
       "logo": "/imagenes/creality-logo.jpg",
       "publishDate": "2025-03-12",
@@ -1134,6 +1171,8 @@
     {
       "id": "commarker",
       "name": "ComMarker",
+      "seotitle": "ComMarker: opiniones y reviews — láser de fibra para marcaje preciso",
+      "seodescription": "Analizamos ComMarker B-series: potencia, velocidad, EZCAD y calidad de marcaje en metales. Configuración, accesorios y recomendaciones por volumen, pieza y presupuesto.",
       "slug": "commarker",
       "logo": "/imagenes/commarker-logo.jpg",
       "publishDate": "2025-03-28",
@@ -1193,6 +1232,8 @@
     {
       "id": "atomstack",
       "name": "Atomstack",
+      "seotitle": "Atomstack: opiniones y reviews de grabadoras láser — catálogo y RA2",
+      "seodescription": "Tests Atomstack: potencia de diodo real, calidad de corte y rotatorios RA2. Qué modelo elegir (A10/A20/A40), accesorios clave y parámetros por material para mejores resultados.",
       "slug": "atomstack",
       "logo": "/imagenes/atomstack-logo.jpg",
       "publishDate": "2025-03-09",
@@ -1252,6 +1293,8 @@
     {
       "id": "atezr",
       "name": "Atezr",
+      "seotitle": "Atezr: opiniones y reviews de grabadoras láser — potencia y facilidad",
+      "seodescription": "Revisamos Atezr: montaje rápido, rendimiento en madera y metales ligeros, interfaz multilenguaje. Puntos a mejorar de soporte y cómo optimizar con air assist y mesa panal.",
       "slug": "atezr",
       "logo": "/imagenes/atezr-logo.jpg",
       "publishDate": "2025-04-06",
@@ -1311,6 +1354,8 @@
     {
       "id": "annoy-tools",
       "name": "Annoy Tools",
+      "seotitle": "Annoy Tools: opiniones y reviews — láser, CNC y mesas panal pro",
+      "seodescription": "Valoramos Annoy Tools: módulos láser, mesas panal y piezas CNC. Montaje, compatibilidad y rendimiento real tras decenas de cortes. Kits recomendados por uso y presupuesto.",
       "slug": "annoy-tools",
       "logo": "/imagenes/annoy-tools-logo.jpg",
       "publishDate": "2025-03-14",
@@ -1370,6 +1415,8 @@
     {
       "id": "airminty",
       "name": "Airminty",
+      "seotitle": "Airminty: opiniones y reviews — herramientas y accesorios para grabado",
+      "seodescription": "Analizamos Airminty: herramientas y accesorios prácticos para grabado fino. Ergonomía, autonomía y acabado en vidrio, metal y madera. Qué rinde de verdad y qué evitar.",
       "slug": "airminty",
       "logo": "/imagenes/airminty-logo.jpg",
       "publishDate": "2025-03-26",
