@@ -249,6 +249,22 @@ const products = data.products
       </section>
     )}
 
+    <header class="text-center mb-12">
+      <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        Los mejores grabadores láser {brand.name}
+      </h2>
+      <p class="mt-4 text-xl text-gray-600">
+        Descubre nuestra selección de las mejores reviews de las grabadores láser de la marca {brand.name}
+      </p>
+    </header>
+
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
+      {products.map((product) => (
+        <ProductCard {...product} />
+      ))}
+    </div>
+
+  </div>
     {brand.faqs && (
       <section class="bg-white rounded-2xl p-8 mb-16">
         <div class="mt-8 space-y-4">
@@ -283,20 +299,4 @@ const products = data.products
       </section>
     )}
 
-    <header class="text-center mb-12">
-      <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-        Los mejores grabadores láser {brand.name}
-      </h2>
-      <p class="mt-4 text-xl text-gray-600">
-        Descubre nuestra selección de las mejores reviews de las grabadores láser de la marca {brand.name}
-      </p>
-    </header>
-
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
-      {products.map((product) => (
-        <ProductCard {...product} />
-      ))}
-    </div>
-
-  </div>
 </Layout>
