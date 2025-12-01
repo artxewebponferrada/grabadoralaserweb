@@ -307,6 +307,175 @@ const bestForMetal = productsData.products.find(p => p.id === bestForMetalId);
 
         </div>
       </section>
+      {/* --- SECCIÓN 5: COMPARATIVA TÉCNICA --- */}
+      <section class="mb-24">
+        <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">
+          Comparativa Técnica de Grabadoras Láser 2025
+        </h2>
+
+        <p class="max-w-3xl mx-auto text-center text-slate-600 mb-10">
+          Tabla comparativa real basada en potencia óptica, área de trabajo, tipo de láser y precio aproximado. 
+          Perfecta para decidir cuál es la mejor grabadora láser según tus necesidades.
+        </p>
+
+        <div class="overflow-x-auto bg-white rounded-xl border border-slate-200 shadow-sm">
+          <table class="w-full text-sm text-left">
+            <thead class="bg-slate-100 text-slate-700 uppercase text-xs font-bold">
+              <tr>
+                <th class="p-4">Modelo</th>
+                <th class="p-4">Potencia</th>
+                <th class="p-4">Área</th>
+                <th class="p-4">Tipo</th>
+                <th class="p-4">Precio</th>
+                <th class="p-4">Análisis</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              {[topModel1, topModel2, topModel3].map((m) => (
+                <tr class="hover:bg-slate-50">
+                  <td class="p-4 font-bold text-slate-800">{m.title}</td>
+                  <td class="p-4">{m.power || "—"}</td>
+                  <td class="p-4">{m.area || "—"}</td>
+                  <td class="p-4">{m.laserType || "Diodo"}</td>
+                  <td class="p-4">{m.priceRange || "—"}</td>
+                  <td class="p-4">
+                    <a href={`/products/${m.slug}/`} class="text-blue-600 font-bold hover:underline">Ver review</a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+      {/* --- SECCIÓN 6: COMPARADOR INTELIGENTE --- */}
+      <section class="mb-24">
+        <h2 class="text-3xl font-bold text-center text-slate-900 mb-10">
+          Comparador de Grabadoras Láser por Potencia, Precio y Uso
+        </h2>
+
+        <p class="max-w-3xl mx-auto text-center text-slate-600 mb-12">
+          Selección automática basada en los criterios más importantes: potencia óptica, presupuesto y tipo de material.
+          Ideal para encontrar la mejor máquina sin perder tiempo.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          {/* Potencia */}
+          <div class="bg-white rounded-xl shadow-md border border-slate-200 p-6">
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Mejor por Potencia</h3>
+            <p class="text-slate-600 text-sm mb-4">
+              Si necesitas cortar contrachapado grueso o trabajar a gran velocidad.
+            </p>
+            <div class="flex items-center gap-3 mb-4">
+              <img src={bestForWood.mainImage} class="w-14 h-14 object-contain border rounded" />
+              <div>
+                <span class="block text-xs font-bold text-slate-400 uppercase">Recomendación</span>
+                <h4 class="font-bold text-slate-800">{bestForWood.title}</h4>
+              </div>
+            </div>
+            <a href={`/products/${bestForWood.slug}/`} class="block w-full text-center py-2 border border-blue-500 text-blue-600 font-bold rounded hover:bg-blue-50 transition-colors">
+              Comparar Potencia
+            </a>
+          </div>
+
+          {/* Precio */}
+          <div class="bg-white rounded-xl shadow-md border border-slate-200 p-6">
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Mejor Calidad / Precio</h3>
+            <p class="text-slate-600 text-sm mb-4">
+              Opción ideal para empezar con buena potencia sin gastar demasiado.
+            </p>
+            <div class="flex items-center gap-3 mb-4">
+              <img src={topModel2.mainImage} class="w-14 h-14 object-contain border rounded" />
+              <div>
+                <span class="block text-xs font-bold text-slate-400 uppercase">Recomendación</span>
+                <h4 class="font-bold text-slate-800">{topModel2.title}</h4>
+              </div>
+            </div>
+            <a href={`/products/${topModel2.slug}/`} class="block w-full text-center py-2 border border-green-500 text-green-600 font-bold rounded hover:bg-green-50 transition-colors">
+              Comparar Precios
+            </a>
+          </div>
+
+          {/* Uso profesional */}
+          <div class="bg-white rounded-xl shadow-md border border-slate-200 p-6">
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Mejor para Profesional</h3>
+            <p class="text-slate-600 text-sm mb-4">
+              Para producción, negocios y talleres que trabajan varias horas al día.
+            </p>
+            <div class="flex items-center gap-3 mb-4">
+              <img src={topModel1.mainImage} class="w-14 h-14 object-contain border rounded" />
+              <div>
+                <span class="block text-xs font-bold text-slate-400 uppercase">Recomendación</span>
+                <h4 class="font-bold text-slate-800">{topModel1.title}</h4>
+              </div>
+            </div>
+            <a href={`/products/${topModel1.slug}/`} class="block w-full text-center py-2 border border-slate-700 text-slate-700 font-bold rounded hover:bg-slate-50 transition-colors">
+              Comparar para Profesionales
+            </a>
+          </div>
+
+        </div>
+      </section>
+      {/* --- SECCIÓN 7: FAQS --- */}
+      <section class="mb-24">
+        <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">
+          Preguntas Frecuentes sobre Grabadoras Láser
+        </h2>
+
+        <div class="max-w-3xl mx-auto space-y-8">
+
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">
+              ¿Cuál es la mejor grabadora láser calidad-precio en 2025?
+            </h3>
+            <p class="text-slate-600">
+              La <strong>{topModel2.title}</strong> es actualmente la opción más equilibrada por potencia,
+              facilidad de uso y coste. Es ideal para principiantes y makers que quieren cortar madera fina.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">
+              ¿Qué potencia necesito para cortar madera?
+            </h3>
+            <p class="text-slate-600">
+              Para cortar contrachapado de 3 a 10 mm se recomienda un láser de al menos 
+              <strong>20W ópticos</strong> y asistencia de aire. Para cortes gruesos, 24W o 30W.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">
+              ¿Puedo grabar metal con una grabadora láser de diodo?
+            </h3>
+            <p class="text-slate-600">
+              Puedes marcar acero inoxidable con spray marcaje, pero para grabado real necesitas un 
+              <strong>láser de fibra</strong> como el {bestForMetal.title}.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">
+              ¿Qué grabadora láser es mejor para empezar?
+            </h3>
+            <p class="text-slate-600">
+              La más recomendada para principiantes es la <strong>{bestForBeginners.title}</strong> 
+              por su montaje sencillo, potencia suficiente y amplia comunidad.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">
+              ¿Vale la pena una grabadora láser portátil?
+            </h3>
+            <p class="text-slate-600">
+              Sí, si necesitas movilidad para ferias, talleres temporales o trabajos fuera del taller.
+              Los modelos como LaserPecker 4 ofrecen calidad sorprendente para su tamaño.
+            </p>
+          </div>
+
+        </div>
+      </section>
 
     </div>
   </main>
