@@ -39,6 +39,7 @@ const products = data.products
   description={brand.seodescription}
 >
   <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+
     <!-- Brand Header -->
     <header class="text-center mb-16">
       <figure class="w-64 h-64 mx-auto mb-8 rounded-2xl overflow-hidden bg-gray-50 p-6">
@@ -49,7 +50,9 @@ const products = data.products
           style="border-radius: 50%"
         />
       </figure>
-      <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Marca {brand.name} opiniones</h1>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4">
+        Marca {brand.name} opiniones
+      </h1>
       <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
         {brand.description}
       </p>
@@ -66,7 +69,9 @@ const products = data.products
     <!-- Brand Reviews Section -->
     {brand.brandReviews && (
       <section class="bg-white rounded-2xl p-8 mb-16">
-        <h2 class="text-2xl font-bold text-gray-900 mb-6">Opiniones sobre {brand.name}</h2>
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">
+          Opiniones sobre {brand.name}
+        </h2>
         <p class="text-gray-600 mb-8">{brand.brandReviews.summary}</p>
         
         <div class="grid gap-6">
@@ -85,7 +90,9 @@ const products = data.products
               </div>
               <blockquote class="text-gray-600 mb-3">{review.content}</blockquote>
               <footer>
-                <cite class="text-sm font-medium text-gray-900 not-italic">{review.name}</cite>
+                <cite class="text-sm font-medium text-gray-900 not-italic">
+                  {review.name}
+                </cite>
               </footer>
             </article>
           ))}
@@ -93,39 +100,68 @@ const products = data.products
       </section>
     )}
 
-      <header class="text-center mb-12">
-        <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          Los mejores grabadores láser {brand.name}
+    <!-- NUEVO: Rating -->
+    {brand.rating && (
+      <section class="bg-white rounded-2xl p-8 mb-16 shadow-sm">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">
+          Valoración general de {brand.name}
         </h2>
-        <p class="mt-4 text-xl text-gray-600">
-          Descubre nuestra selección de las mejores reviews de las grabadores láser de la marca {brand.name}
-        </p>
-      </header>
+        <p class="text-3xl font-bold text-primary-600">{brand.rating} / 5</p>
+      </section>
+    )}
 
-    <!-- Products Grid -->
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
-      {products.map((product) => (
-        <ProductCard {...product} />
-      ))}
-    </div>
+    <!-- NUEVO: Pros y Contras -->
+    {(brand.pros || brand.cons) && (
+      <section class="bg-white rounded-2xl p-8 mb-16 shadow-sm">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">
+          Pros y contras de las grabadoras láser {brand.name}
+        </h2>
 
-    <!-- Two Column Section -->
-    {brand.twoColumnSection && (
-      <section class="bg-white rounded-2xl p-8 mb-16">
-        <div class="grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">{brand.twoColumnSection.title}</h2>
-            <div class="prose max-w-none text-gray-600">
-              {brand.twoColumnSection.content}
+        <div class="grid md:grid-cols-2 gap-12">
+
+          {brand.pros && brand.pros.length > 0 && (
+            <div>
+              <h3 class="text-xl font-semibold text-green-700 mb-3">Pros</h3>
+              <ul class="list-disc ml-6 text-gray-700 space-y-2">
+                {brand.pros.map(item => <li>{item}</li>)}
+              </ul>
             </div>
+          )}
+
+          {brand.cons && brand.cons.length > 0 && (
+            <div>
+              <h3 class="text-xl font-semibold text-red-700 mb-3">Contras</h3>
+              <ul class="list-disc ml-6 text-gray-700 space-y-2">
+                {brand.cons.map(item => <li>{item}</li>)}
+              </ul>
+            </div>
+          )}
+
+        </div>
+      </section>
+    )}
+
+    <!-- NUEVO: Two Column Section, movido aquí -->
+    {brand.twoColumnSection && (
+      <section class="bg-white rounded-2xl p-8 mb-16 shadow-sm">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">
+          {brand.twoColumnSection.title}
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div class="prose max-w-none text-gray-600">
+            {brand.twoColumnSection.content}
           </div>
-          <figure class="aspect-w-16 aspect-h-9 bg-gray-50 rounded-xl overflow-hidden">
-            <img
-              src={brand.twoColumnSection.image}
-              alt={brand.twoColumnSection.imageAlt}
-              class="w-full h-full object-cover"
-            />
-          </figure>
+
+          {brand.twoColumnSection.image && (
+            <figure class="bg-gray-50 rounded-xl overflow-hidden">
+              <img
+                src={brand.twoColumnSection.image}
+                alt={brand.twoColumnSection.imageAlt}
+                class="w-full h-full object-cover"
+              />
+            </figure>
+          )}
         </div>
       </section>
     )}
@@ -133,12 +169,16 @@ const products = data.products
     <!-- Brand Information -->
     <section class="bg-white rounded-2xl p-8 shadow-soft mb-16">
       <div class="prose max-w-none">
-        <h2 class="text-2xl font-bold text-gray-900 mb-6">Sobre {brand.name}</h2>
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">
+          Sobre {brand.name}
+        </h2>
         <div class="text-gray-600 mb-8">
           {brand.longDescription}
         </div>
 
-        <h3 class="text-xl font-bold text-gray-900 mb-4">Características destacadas</h3>
+        <h3 class="text-xl font-bold text-gray-900 mb-4">
+          Características destacadas
+        </h3>
         <ul class="space-y-3">
           {brand.features.map((feature) => (
             <li class="flex items-center text-gray-600">
@@ -155,16 +195,22 @@ const products = data.products
     <!-- Contenido de la marca -->
     <section class="bg-white rounded-2xl p-8 shadow-soft mb-16">
       <div class="prose max-w-none">
-        <h2 class="text-2xl font-bold text-gray-900 mb-6">¿Merece la pena la marca {brand.name}?</h2>
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">
+          ¿Merece la pena la marca {brand.name}?
+        </h2>
         <div class="text-gray-600 mb-8">
           {brand.contentBrand}
         </div>
       </div>
     </section>
 
-    <section class="bg-white rounded-2xl p-8 mb-16">
+    <!-- FAQs -->
+    {brand.faqs && (
+      <section class="bg-white rounded-2xl p-8 mb-16">
         <div class="mt-8 space-y-4">
-          <h3 class="text-2xl font-bold text-gray-900 mb-6">Preguntas frecuentes sobre la marca {brand.name}</h3>
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">
+            Preguntas frecuentes sobre la marca {brand.name}
+          </h3>
           {brand.faqs.map((faq, index) => (
             <details class="group bg-gray-50 rounded-xl" {...index === 0 && { open: true }}>
               <summary class="flex justify-between items-center cursor-pointer p-6">
@@ -186,7 +232,25 @@ const products = data.products
             </details>
           ))}
         </div>
-    </section>
-    
+      </section>
+    )}
+
+    <!-- Products Title -->
+    <header class="text-center mb-12">
+      <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        Los mejores grabadores láser {brand.name}
+      </h2>
+      <p class="mt-4 text-xl text-gray-600">
+        Descubre nuestra selección de las mejores reviews de las grabadores láser de la marca {brand.name}
+      </p>
+    </header>
+
+    <!-- Products Grid -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
+      {products.map((product) => (
+        <ProductCard {...product} />
+      ))}
+    </div>
+
   </div>
 </Layout>
