@@ -55,7 +55,7 @@ const schema = {
           class="w-12 h-12 rounded-full object-cover"
         />
         <div>
-          <a href={`/authors/${author.slug}`} class="text-gray-900 font-medium hover:text-primary-600">
+          <a href={`/authors/${author.slug}/`} class="text-gray-900 font-medium hover:text-primary-600">
             {author.name}
           </a>
           <div class="flex items-center gap-2 text-sm text-gray-500">
@@ -145,13 +145,13 @@ const schema = {
     <!-- Related Articles -->
     {relatedArticles.length > 0 && (
       <section>
-        <h2 class="text-2xl font-bold text-gray-900 mb-6">Related Articles</h2>
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Otros artículos relacionados</h2>
         <div class="grid gap-8 md:grid-cols-3">
           {relatedArticles.map((related) => {
             const relatedAuthor = getAuthorById(related.author);
             return (
               <article class="group">
-                <a href={`/blog/${related.slug}`} class="block">
+                <a href={`/blog/${related.slug}/`} class="block">
                   <h3 class="text-xl font-bold text-gray-900 group-hover:text-primary-600 mb-2">
                     {related.title}
                   </h3>
