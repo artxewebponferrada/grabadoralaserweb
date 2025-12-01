@@ -8,17 +8,35 @@
       "slug": "ortur",
       "logo": "/imagenes/ortur-logo.jpg",
       "publishDate": "2025-03-13",
+    
+      "rating": 4.6,
+      "pros": [
+        "Alta precisión de grabado incluso en materiales delicados",
+        "Compatibilidad total con LightBurn y LaserGRBL",
+        "Muy buena relación calidad-precio dentro del segmento hobby-pro",
+        "Comunidad activa y abundante documentación",
+        "Actualizaciones frecuentes de firmware que mejoran estabilidad y seguridad"
+      ],
+      "cons": [
+        "Montaje inicial algo laborioso para usuarios sin experiencia",
+        "Algunos modelos requieren calibración fina para obtener el mejor rendimiento",
+        "Protecciones láser básicas en los modelos económicos (recomendado añadir accesorios)"
+      ],
+    
       "description": "Ortur es una marca líder en grabadores láser, conocida por su innovación y calidad.",
       "alternativeDescription": "Ortur combina innovación, calidad y seguridad en sus grabadores láser, ofreciendo soluciones tanto para profesionales como aficionados.",
       "longDescription": "Ortur se ha establecido como uno de los fabricantes más respetados en la industria de grabadores láser. Con un fuerte enfoque en la innovación y la seguridad, Ortur ofrece una amplia gama de máquinas que satisfacen las necesidades tanto de principiantes como de profesionales.",
       "contentBrand": "Merece la pena confiar en Ortur por su compromiso con la calidad, la innovación y la seguridad. Sus productos destacan por ser fáciles de usar, incluso para quienes no tienen experiencia previa, mientras que los usuarios avanzados valoran las características técnicas avanzadas y la compatibilidad con diversos softwares. Además, la marca ofrece un soporte técnico excepcional, lo que asegura que siempre tendrás ayuda cuando la necesites. Con un enfoque en la seguridad, Ortur utiliza materiales de alta calidad y tecnología de protección láser en todos sus dispositivos, lo que la convierte en una opción confiable y eficiente en el mercado de los grabadores láser.",
+    
       "features": [
         "Tecnología de última generación",
         "Excelente relación calidad-precio",
         "Enfoque en la seguridad",
         "Soporte técnico dedicado"
       ],
+    
       "website": "https://ortur.net/",
+    
       "brandReviews": {
         "summary": "Ortur recibe constantemente elogios por su calidad y diseño innovador. Los usuarios destacan la facilidad de uso y el excelente soporte técnico.",
         "reviews": [
@@ -39,12 +57,14 @@
           }
         ]
       },
+    
       "twoColumnSection": {
         "title": "Por qué elegir Ortur",
         "content": "Con un enfoque constante en la innovación y la seguridad, Ortur es una marca confiable que ofrece productos de calidad. Sus grabadores láser son ideales para profesionales y aficionados, con diseños intuitivos y características avanzadas.",
         "image": "/imagenes/ortur-opiniones.jpg",
         "imageAlt": "Opiniones sobre las grabadoras laser Ortur"
       },
+    
       "faqs": [
         {
           "question": "¿Es compatible con software como LightBurn?",
