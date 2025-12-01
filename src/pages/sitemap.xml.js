@@ -56,6 +56,8 @@ export async function GET(context) {
     createUrlEntry("/sobre-nosotros/", "0.6", "weekly"),
     createUrlEntry("/contacto/", "0.6", "weekly"),
     createUrlEntry("/faqs/", "0.6", "weekly"),
+    createUrlEntry("/comparador/", "0.8", "weekly"),
+    createUrlEntry("/conceptos/", "0.8", "weekly"),
 
     // Dinámicas
     ...publishedProducts.map((product) =>
