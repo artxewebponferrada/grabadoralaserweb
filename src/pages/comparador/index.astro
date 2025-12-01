@@ -176,7 +176,7 @@ const bestForMetal = productsData.products.find(p => p.id === bestForMetalId);
                   Ver Análisis de Marca
                 </a>
                 <a href={brand.amazonUrl} target="_blank" rel="nofollow" class="px-6 py-2 border border-slate-300 text-slate-600 font-bold rounded-lg hover:bg-yellow-400 hover:text-yellow-900 hover:border-yellow-400 transition-colors text-center text-sm">
-                  Ver Tienda Oficial
+                  Ver Oferta en Amazon
                 </a>
               </div>
             </div>
@@ -301,29 +301,30 @@ const bestForMetal = productsData.products.find(p => p.id === bestForMetalId);
 
         </div>
       </section>
-{/* --- SECCIÓN 5: COMPARATIVA TÉCNICA --- */}
-      <section className="mb-24">
-        <h2 className="text-3xl font-bold text-center text-slate-900 mb-12">
+      {/* --- SECCIÓN 5: COMPARATIVA TÉCNICA --- */}
+      <section class="mb-24">
+        <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">
           Comparativa Técnica de Grabadoras Láser 2025
         </h2>
 
-        <p className="max-w-3xl mx-auto text-center text-slate-600 mb-10">
-          Analizamos las especificaciones clave de los 10 modelos más relevantes del mercado actual. 
+        <p class="max-w-3xl mx-auto text-center text-slate-600 mb-10">
+          Analizamos las especificaciones clave de los 10 modelos más relevantes del mercado actual.
           Compara potencia, área de trabajo y tecnología para encontrar la máquina exacta para tu taller.
         </p>
 
-        <div className="overflow-x-auto bg-white rounded-xl border border-slate-200 shadow-sm">
-          <table className="w-full text-sm text-left">
-            <thead className="bg-slate-100 text-slate-700 uppercase text-xs font-bold">
+        <div class="overflow-x-auto bg-white rounded-xl border border-slate-200 shadow-sm">
+          <table class="w-full text-sm text-left">
+            <thead class="bg-slate-100 text-slate-700 uppercase text-xs font-bold">
               <tr>
-                <th className="p-4 min-w-[200px]">Modelo</th>
-                <th className="p-4">Potencia</th>
-                <th className="p-4">Área de Trabajo</th>
-                <th className="p-4">Tecnología</th>
-                <th className="p-4 text-center">Análisis</th>
+                <th class="p-4 min-w-[200px]">Modelo</th>
+                <th class="p-4">Potencia</th>
+                <th class="p-4">Área de Trabajo</th>
+                <th class="p-4">Tecnología</th>
+                <th class="p-4 text-center">Análisis</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-200">
+
+            <tbody class="divide-y divide-slate-200">
               {[
                 {
                   title: "xTool P2 55W",
@@ -396,24 +397,30 @@ const bestForMetal = productsData.products.find(p => p.id === bestForMetalId);
                   type: "Diodo"
                 }
               ].map((m, index) => (
-                <tr key={index} className="hover:bg-slate-50 transition-colors">
-                  <td className="p-4 font-bold text-slate-800">{m.title}</td>
-                  <td className="p-4 text-slate-600">{m.power}</td>
-                  <td className="p-4 text-slate-600">{m.area}</td>
-                  <td className="p-4">
-                    <span className={`px-2 py-1 rounded-full text-xs font-bold border ${
-                      m.type === 'CO2' ? 'bg-purple-50 text-purple-700 border-purple-200' :
-                      m.type === 'Fibra' ? 'bg-orange-50 text-orange-700 border-orange-200' :
-                      m.type === 'Híbrido' || m.type === 'Dual' ? 'bg-emerald-50 text-emerald-700 border-emerald-200' :
-                      'bg-blue-50 text-blue-700 border-blue-200'
+                <tr class="hover:bg-slate-50 transition-colors">
+                  <td class="p-4 font-bold text-slate-800">{m.title}</td>
+                  <td class="p-4 text-slate-600">{m.power}</td>
+                  <td class="p-4 text-slate-600">{m.area}</td>
+
+                  {/* Badge dinámico */}
+                  <td class="p-4">
+                    <span class={`px-2 py-1 rounded-full text-xs font-bold border ${
+                      m.type === 'CO2'
+                        ? 'bg-purple-50 text-purple-700 border-purple-200'
+                        : m.type === 'Fibra'
+                        ? 'bg-orange-50 text-orange-700 border-orange-200'
+                        : m.type === 'Híbrido' || m.type === 'Dual'
+                        ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
+                        : 'bg-blue-50 text-blue-700 border-blue-200'
                     }`}>
                       {m.type}
                     </span>
                   </td>
-                  <td className="p-4 text-center">
-                    <a 
-                      href={`/products/${m.slug}/`} 
-                      className="text-blue-600 font-bold hover:text-blue-800 hover:underline transition-colors"
+
+                  <td class="p-4 text-center">
+                    <a
+                      href={`/products/${m.slug}/`}
+                      class="text-blue-600 font-bold hover:text-blue-800 hover:underline transition-colors"
                     >
                       Ver review
                     </a>
