@@ -141,33 +141,46 @@ const schema = {
         </div>
       </div>
     </section>
-
     <!-- Related Articles -->
     {relatedArticles.length > 0 && (
       <section>
         <h2 class="text-2xl font-bold text-gray-900 mb-6">Otros artículos relacionados</h2>
+
         <div class="grid gap-8 md:grid-cols-3">
+
           {relatedArticles.map((related) => {
             const relatedAuthor = getAuthorById(related.author);
+
             return (
-              <article class="group">
+              <article class="group bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
                 <a href={`/blog/${related.slug}/`} class="block">
-                  <h3 class="text-xl font-bold text-gray-900 group-hover:text-primary-600 mb-2">
-                    {related.title}
-                  </h3>
-                  <p class="text-gray-600 mb-4 line-clamp-2">
-                    {related.excerpt}
-                  </p>
-                  <div class="flex items-center gap-3">
-                    <img
-                      src={relatedAuthor.avatar}
-                      alt={relatedAuthor.name}
-                      class="w-8 h-8 rounded-full object-cover"
-                    />
-                    <div class="text-sm">
-                      <span class="text-gray-900">{relatedAuthor.name}</span>
-                      <div class="text-gray-500">
-                        {format(new Date(related.publishDate), 'MMM d, yyyy')}
+
+                  {/* Imagen del artículo */}
+                  {related.featuredImage && (
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-100 overflow-hidden">
+                      <img
+                        src={related.featuredImage}
+                        alt={related.title}
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  )}
+
+                  {/* Contenido */}
+                  <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 group-hover:text-primary-600 mb-2">
+                      {related.title}
+                    </h3>
+
+                    <p class="text-gray-600 mb-4 line-clamp-2">
+                      {related.excerpt}
+                    </p>
+
+                    <div class="flex items-center gap-3">
+                      <div class="text-sm">
+                        <div class="text-gray-500">
+                          {format(new Date(related.publishDate), 'MMM d, yyyy')}
+                        </div>
                       </div>
                     </div>
                   </div>
