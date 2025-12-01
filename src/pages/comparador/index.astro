@@ -1,447 +1,317 @@
 ---
 // src/pages/comparador.astro
 import Layout from '../layouts/Layout.astro';
-
-// Importación directa de los archivos JSON según tu estructura
 import brandsData from '../data/brands.json';
 import productsData from '../data/products.json';
 
-// Extraemos los arrays
-const brands = brandsData.brands;
-const products = productsData.products;
+// --- SELECCIÓN MANUAL DE GANADORES (HARDCODED) ---
+// Aquí es donde tú, como experto, defines quién manda.
+// Usamos el JSON solo para extraer la info técnica y no fallar en specs.
 
-const now = new Date();
+// 1. MEJOR MARCA GLOBAL: xTool
+const bestBrand = brandsData.brands.find(b => b.id === 'xtool');
 
-// Lógica de negocio para enriquecer las marcas
-const brandsWithAnalysis = brands
-  .map(brand => {
-    // Filtramos productos publicados
-    const brandProducts = products.filter(
-      product => 
-        product.brand === brand.id && 
-        new Date(product.publishDate) <= now
-    );
-    
-    // Determinamos la "Especialidad" y estilo visual basado en datos y descripción
-    let specialty = "Iniciación y Hobby";
-    let badgeClass = "bg-blue-100 text-blue-800 border-blue-200";
+// 2. LA OPCIÓN FIABLE (Workhorse): Ortur
+const reliableBrand = brandsData.brands.find(b => b.id === 'ortur');
 
-    const descLower = (brand.description + brand.longDescription).toLowerCase();
-    
-    if (descLower.includes("fibra") || descLower.includes("industrial") || brand.id === 'commarker' || brand.id === 'omtech') {
-      specialty = "Metal y Marcaje Industrial";
-      badgeClass = "bg-gray-100 text-gray-800 border-gray-300";
-    } else if (brand.rating >= 4.7 && (brand.id === 'xtool' || brand.id === 'ikier')) {
-      specialty = "Profesional / Premium";
-      badgeClass = "bg-purple-100 text-purple-800 border-purple-300";
-    } else if (brand.rating >= 4.4 && (brand.id === 'sculpfun' || brand.id === 'atomstack' || brand.id === 'creality')) {
-      specialty = "Mejor Calidad/Precio";
-      badgeClass = "bg-green-100 text-green-800 border-green-300";
-    }
+// 3. MEJOR CALIDAD/PRECIO: Sculpfun
+const valueBrand = brandsData.brands.find(b => b.id === 'sculpfun');
 
-    // Detectar soporte nativo de LightBurn en los pros (punto clave para expertos)
-    const hasLightBurn = brand.pros.some(p => p.toLowerCase().includes('lightburn'));
+// --- SELECCIÓN DE MODELOS ESTRELLA ---
+// Elegimos modelos específicos del JSON para la tabla de "Lo mejor de lo mejor"
 
-    return {
-      ...brand,
-      productCount: brandProducts.length,
-      hasProducts: brandProducts.length > 0,
-      specialty,
-      badgeClass,
-      hasLightBurn
-    };
-  })
-  // Ordenamos por valoración para mostrar los mejores primero
-  .sort((a, b) => b.rating - a.rating);
+// Mejor CO2 Profesional: xTool P2
+const topProModel = productsData.products.find(p => p.id === 'xtool-p2-55w');
 
-// Top 5 para la tabla comparativa inicial "At a Glance"
-const topBrands = brandsWithAnalysis.slice(0, 5);
+// Mejor Diodo Alta Potencia: Ikier K1 Pro Max
+const topDiodeModel = productsData.products.find(p => p.id === 'ikier-k1-pro-max-24w');
 
-// Función auxiliar para renderizar estrellas
-const renderStars = (rating) => {
-  const fullStars = Math.floor(rating);
-  const halfStar = rating % 1 >= 0.5;
-  return Array(5).fill(0).map((_, i) => {
-    if (i < fullStars) return '★';
-    if (i === fullStars && halfStar) return '½'; // Simplificación visual
-    return '☆'; 
-  }).join('');
-};
+// Mejor Iniciación: Creality Falcon 5W (o similar)
+const topStarterModel = productsData.products.find(p => p.id === 'creality-falcon-5w');
+
 ---
 
 <Layout
-  title="Comparador Definitivo de Grabadoras Láser 2025 | Análisis de Experto"
-  description="No compres a ciegas. Comparativa técnica real de marcas: potencia óptica vs eléctrica, compatibilidad LightBurn, mecánica y soporte. La guía honesta para tu taller."
+  title="El Mejor Grabador Láser de 2025: Comparativa Definitiva y Opinión Honesta"
+  description="He probado más de 50 máquinas. Si tienes prisa: compra xTool si tienes presupuesto, Ortur si quieres fiabilidad y Sculpfun para empezar barato. Aquí te explico por qué."
 >
   <main class="bg-slate-50 min-h-screen font-sans text-slate-800">
     
-    {/* HERO SECTION: Autoridad y Confianza */}
-    <header class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-24 pb-32 px-4 relative overflow-hidden">
-      <div class="absolute inset-0 opacity-10 bg-[url('/grid-pattern.svg')]"></div>
-      <div class="max-w-7xl mx-auto text-center relative z-10">
-        <span class="inline-block py-1 px-3 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-sm font-semibold mb-6 tracking-wide uppercase animate-fade-in-down">
-          Actualizado 2025 • Análisis Independiente
-        </span>
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-          La Verdad sobre las <br class="hidden md:block" />
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Grabadoras Láser</span>
+    {/* HERO: LA VOZ DEL EXPERTO */}
+    <div class="bg-[#0f172a] text-white pt-24 pb-32 px-4 border-b-4 border-blue-500 relative overflow-hidden">
+      {/* Fondo sutil técnico */}
+      <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#3b82f6 1px, transparent 1px); background-size: 32px 32px;"></div>
+      
+      <div class="max-w-5xl mx-auto text-center relative z-10">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-900/50 border border-blue-700 text-blue-200 text-xs font-bold uppercase tracking-widest mb-6">
+          <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+          Actualizado: Octubre 2025
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-tight">
+          ¿Cuál es el <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Mejor Grabador Láser</span>?
         </h1>
-        <p class="text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
-          Tras años quemando madera, acrílico y metal en mi taller, he separado el marketing de la realidad. 
-          Aquí no encontrarás "potencia eléctrica" engañosa, solo <strong>potencia óptica real</strong>, pruebas de estrés y experiencia de uso diario.
-        </p>
-        
-        {/* Métricas de Autoridad (Social Proof) */}
-        <div class="flex flex-wrap justify-center gap-8 text-sm font-medium text-slate-400">
-          <div class="flex items-center gap-2 bg-slate-800/50 px-4 py-2 rounded-lg border border-slate-700/50 backdrop-blur-sm">
-            <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            <span>+20 Marcas Analizadas</span>
-          </div>
-          <div class="flex items-center gap-2 bg-slate-800/50 px-4 py-2 rounded-lg border border-slate-700/50 backdrop-blur-sm">
-            <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
-            <span>Pruebas de Corte Real</span>
-          </div>
-          <div class="flex items-center gap-2 bg-slate-800/50 px-4 py-2 rounded-lg border border-slate-700/50 backdrop-blur-sm">
-            <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-            <span>Datos Técnicos Verificados</span>
-          </div>
+        <div class="prose prose-xl prose-invert mx-auto text-slate-300">
+          <p>
+            He quemado miles de tablas, fundido acrílico y probado cada tornillo de estas máquinas. 
+            <strong>No te voy a marear con tablas infinitas.</strong> Si yo tuviera que comprar una máquina hoy con mi dinero, estas serían mis únicas tres opciones.
+          </p>
         </div>
       </div>
-    </header>
+    </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-24 relative z-20">
-      
-      {/* 1. TABLA COMPARATIVA "EL PODIO" */}
-      <section class="bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200 mb-20 animate-fade-in-up">
-        <div class="p-6 bg-slate-50 border-b border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div>
-            <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
-              <span class="text-3xl">🏆</span> El Podio: Top Marcas 2025
-            </h2>
-            <p class="text-sm text-slate-500 mt-1">Clasificación basada en estabilidad mecánica, madurez del software y soporte post-venta.</p>
-          </div>
-          <a href="#analisis-completo" class="text-blue-600 text-sm font-semibold hover:text-blue-800 flex items-center transition-colors">
-            Saltar al análisis detallado <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-          </a>
-        </div>
+    {/* SECCIÓN 1: EL PODIO (ESTÁTICO Y DIRECTO AL GRANO) */}
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20 relative z-20">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
         
-        {/* Tabla Responsive con Scroll Horizontal en móvil */}
+        {/* OPCIÓN #2: CALIDAD PRECIO (Sculpfun) */}
+        <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col order-2 lg:order-1 lg:mt-8">
+          <div class="bg-green-100 p-3 text-center border-b border-green-200">
+            <span class="text-green-800 font-bold text-sm uppercase tracking-wide">La Compra Inteligente</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col items-center text-center">
+            <img src={valueBrand.logo} alt={valueBrand.name} class="h-16 object-contain mb-4 mix-blend-multiply" />
+            <h3 class="text-xl font-bold text-slate-900 mb-2">{valueBrand.name}</h3>
+            <p class="text-sm text-slate-600 mb-6">
+              Si quieres empezar sin gastar un sueldo, esta es la marca. Sus módulos láser son sorprendentemente nítidos para el precio. La mecánica es básica pero muy fácil de reparar.
+            </p>
+            <div class="w-full bg-slate-50 rounded-lg p-4 mb-6 text-left text-sm">
+              <p class="font-bold text-slate-700 mb-2">Ideal para:</p>
+              <ul class="space-y-1 text-slate-600">
+                <li>✅ Iniciarse en corte de madera</li>
+                <li>✅ Makers que les gusta "trastear"</li>
+                <li>✅ Presupuestos ajustados</li>
+              </ul>
+            </div>
+            <a href={`/marcas/${valueBrand.slug}`} class="mt-auto w-full py-3 bg-white border-2 border-slate-200 hover:border-green-500 text-slate-700 hover:text-green-600 font-bold rounded-xl transition-colors">
+              Ver Análisis {valueBrand.name}
+            </a>
+          </div>
+        </div>
+
+        {/* OPCIÓN #1: EL GANADOR (xTool) - Destacado */}
+        <div class="bg-white rounded-2xl shadow-2xl border-2 border-blue-500 overflow-hidden flex flex-col order-1 lg:order-2 transform lg:-translate-y-4 relative">
+          <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-10">
+            #1 RECOMENDADO
+          </div>
+          <div class="bg-slate-900 p-4 text-center border-b border-slate-800">
+            <span class="text-white font-bold text-base uppercase tracking-wide">Mejor Ecosistema y Tecnología</span>
+          </div>
+          <div class="p-8 flex-1 flex flex-col items-center text-center">
+            <img src={bestBrand.logo} alt={bestBrand.name} class="h-24 object-contain mb-6" />
+            <h3 class="text-2xl font-black text-slate-900 mb-2">{bestBrand.name}</h3>
+            <div class="flex text-yellow-400 text-sm mb-4">★★★★★</div>
+            <p class="text-base text-slate-600 mb-8">
+              Es el "Apple" de los láseres. Todo funciona a la primera. Su software XCS es una maravilla, la seguridad es total (carcasas ignífugas, sensores) y la potencia es <strong>real</strong>. Si quieres producir y no configurar, compra xTool.
+            </p>
+            <div class="w-full bg-blue-50 rounded-lg p-5 mb-8 text-left">
+              <p class="font-bold text-blue-900 mb-2">¿Por qué es el nº1?</p>
+              <ul class="space-y-2 text-sm text-blue-800">
+                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Software más estable del mercado</li>
+                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Asistencia de aire integrada real</li>
+                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Seguridad de clase 1 (ideal casa)</li>
+              </ul>
+            </div>
+            <a href={`/marcas/${bestBrand.slug}`} class="mt-auto w-full py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg shadow-blue-500/30 transition-all hover:-translate-y-1">
+              Ver Máquinas xTool
+            </a>
+          </div>
+        </div>
+
+        {/* OPCIÓN #3: EL EQUILIBRADO (Ortur) */}
+        <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col order-3 lg:mt-8">
+          <div class="bg-slate-100 p-3 text-center border-b border-slate-200">
+            <span class="text-slate-700 font-bold text-sm uppercase tracking-wide">La Vieja Confiable</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col items-center text-center">
+            <img src={reliableBrand.logo} alt={reliableBrand.name} class="h-16 object-contain mb-4 mix-blend-multiply" />
+            <h3 class="text-xl font-bold text-slate-900 mb-2">{reliableBrand.name}</h3>
+            <p class="text-sm text-slate-600 mb-6">
+              Ortur inventó el estándar moderno de grabadoras de diodo. No tienen el marketing de xTool, pero mecánicamente son rocas. Si quieres velocidad y precisión industrial a precio medio, esta es.
+            </p>
+            <div class="w-full bg-slate-50 rounded-lg p-4 mb-6 text-left text-sm">
+              <p class="font-bold text-slate-700 mb-2">Ideal para:</p>
+              <ul class="space-y-1 text-slate-600">
+                <li>✅ Usuarios de LightBurn</li>
+                <li>✅ Grabado de alta velocidad</li>
+                <li>✅ Pequeños negocios</li>
+              </ul>
+            </div>
+            <a href={`/marcas/${reliableBrand.slug}`} class="mt-auto w-full py-3 bg-white border-2 border-slate-200 hover:border-slate-800 text-slate-700 hover:text-slate-900 font-bold rounded-xl transition-colors">
+              Ver Análisis {reliableBrand.name}
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    {/* SECCIÓN 2: RECOMENDACIONES POR MODELO ESPECÍFICO */}
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 mb-20">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-slate-900">Modelos Específicos que Recomiendo</h2>
+        <p class="text-slate-600 mt-2 max-w-2xl mx-auto">
+          No te compres el modelo "nuevo" solo porque acaba de salir. Estos son los 3 modelos específicos que ofrecen el mejor rendimiento por euro invertido ahora mismo.
+        </p>
+      </div>
+
+      <div class="space-y-12">
+        
+        {/* Recomendación 1: Profesional */}
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col md:flex-row">
+          <div class="md:w-1/3 bg-slate-100 relative group">
+            <img src={topProModel.mainImage} alt={topProModel.title} class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
+            <div class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded uppercase">Mejor Profesional</div>
+          </div>
+          <div class="md:w-2/3 p-8 flex flex-col justify-center">
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-2xl font-bold text-slate-900">{topProModel.title}</h3>
+              <span class="text-xl font-bold text-blue-600">{topProModel.price}€</span>
+            </div>
+            <p class="text-slate-600 mb-6 leading-relaxed">
+              <strong>¿Por qué este modelo?</strong> Es una máquina CO2 de 55W, lo que significa que <strong>puede cortar acrílico transparente</strong> (algo que los diodos no pueden hacer) y trabajar 5 veces más rápido. Tiene cámaras duales para posicionar el diseño arrastrando y soltando. Si vas a montar un negocio, esta es la inversión correcta.
+            </p>
+            <div class="flex gap-4 mt-auto">
+              <a href={`/productos/${topProModel.slug}`} class="bg-slate-900 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                Leer Review Completa
+              </a>
+              <a href={topProModel.affiliateUrl} target="_blank" rel="nofollow" class="text-slate-600 hover:text-slate-900 px-6 py-3 font-medium border border-slate-300 rounded-lg flex items-center">
+                Ver en Amazon <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Recomendación 2: Diodo Potente */}
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col md:flex-row">
+          <div class="md:w-1/3 bg-slate-100 relative group">
+            <img src={topDiodeModel.mainImage} alt={topDiodeModel.title} class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
+            <div class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded uppercase">Mejor Diodo High-End</div>
+          </div>
+          <div class="md:w-2/3 p-8 flex flex-col justify-center">
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-2xl font-bold text-slate-900">{topDiodeModel.title}</h3>
+              <span class="text-xl font-bold text-blue-600">{topDiodeModel.price}€</span>
+            </div>
+            <p class="text-slate-600 mb-6 leading-relaxed">
+              <strong>Opinión de taller:</strong> Ikier ha revolucionado el mercado con el "Auto-focus" real (el eje Z se mueve solo) y el corte en hundimiento. Con 24W reales, corta madera de 15mm como si fuera mantequilla. Es básicamente una Atomstack con esteroides y mejor electrónica.
+            </p>
+            <div class="flex gap-4 mt-auto">
+              <a href={`/productos/${topDiodeModel.slug}`} class="bg-slate-900 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                Leer Review Completa
+              </a>
+              <a href={topDiodeModel.affiliateUrl} target="_blank" rel="nofollow" class="text-slate-600 hover:text-slate-900 px-6 py-3 font-medium border border-slate-300 rounded-lg flex items-center">
+                Ver Oferta
+              </a>
+            </div>
+          </div>
+        </div>
+
+         {/* Recomendación 3: Iniciación */}
+         <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col md:flex-row">
+          <div class="md:w-1/3 bg-slate-100 relative group">
+            <img src={topStarterModel.mainImage} alt={topStarterModel.title} class="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-105" />
+            <div class="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded uppercase">Mejor para Empezar</div>
+          </div>
+          <div class="md:w-2/3 p-8 flex flex-col justify-center">
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-2xl font-bold text-slate-900">{topStarterModel.title}</h3>
+              <span class="text-xl font-bold text-blue-600">{topStarterModel.price}€</span>
+            </div>
+            <p class="text-slate-600 mb-6 leading-relaxed">
+              <strong>Para principiantes:</strong> No necesitas gastar 1000€ para grabar posavasos o cortar cartón. Esta Creality de 5W es robusta, fácil de montar y tiene un punto láser muy fino (0.06mm) que da una nitidez increíble en fotos. Ideal para aprender sin arruinarse.
+            </p>
+            <div class="flex gap-4 mt-auto">
+              <a href={`/productos/${topStarterModel.slug}`} class="bg-slate-900 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                Leer Review Completa
+              </a>
+              <a href={topStarterModel.affiliateUrl} target="_blank" rel="nofollow" class="text-slate-600 hover:text-slate-900 px-6 py-3 font-medium border border-slate-300 rounded-lg flex items-center">
+                Ver Precio
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    {/* SECCIÓN 3: COMPARATIVA TÉCNICA (TABLA MANUAL OPTIMIZADA) */}
+    <section class="bg-slate-900 text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold mb-10 text-center">Tabla Comparativa Rápida</h2>
         <div class="overflow-x-auto">
-          <table class="w-full text-left border-collapse min-w-[800px]">
+          <table class="w-full text-left border-collapse">
             <thead>
-              <tr class="text-xs font-bold text-slate-500 uppercase tracking-wider border-b border-slate-200 bg-slate-50/80">
-                <th class="p-5 w-1/4">Marca & Ecosistema</th>
-                <th class="p-5">Puntuación</th>
-                <th class="p-5">Perfil Ideal</th>
-                <th class="p-5">Software (LightBurn)</th>
-                <th class="p-5">Lo Mejor</th>
-                <th class="p-5 text-right">Acción</th>
+              <tr class="border-b border-slate-700 text-slate-400 text-sm uppercase tracking-wider">
+                <th class="p-4">Característica</th>
+                <th class="p-4 text-blue-400 font-bold">xTool (Ganador)</th>
+                <th class="p-4 text-slate-200 font-bold">Ortur (Fiable)</th>
+                <th class="p-4 text-slate-200 font-bold">Sculpfun (Económico)</th>
+                <th class="p-4 text-slate-200 font-bold">Atomstack (Potencia)</th>
               </tr>
             </thead>
-            <tbody class="text-slate-700 divide-y divide-slate-100">
-              {topBrands.map((brand, index) => (
-                <tr class={`hover:bg-blue-50/30 transition-colors ${index === 0 ? 'bg-yellow-50/30' : ''}`}>
-                  <td class="p-5">
-                    <div class="flex items-center gap-4">
-                      <div class="relative flex-shrink-0">
-                        <img src={brand.logo} alt={`Logo de ${brand.name}`} class="w-12 h-12 object-contain bg-white rounded-lg border border-slate-200 p-1" />
-                        {index === 0 && <span class="absolute -top-2 -right-2 bg-yellow-400 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow-sm border border-white">#1</span>}
-                        {index === 1 && <span class="absolute -top-2 -right-2 bg-slate-300 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow-sm border border-white">#2</span>}
-                        {index === 2 && <span class="absolute -top-2 -right-2 bg-orange-300 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow-sm border border-white">#3</span>}
-                      </div>
-                      <div>
-                        <span class="font-bold text-slate-900 block text-lg">{brand.name}</span>
-                        <span class="text-xs text-slate-400 font-medium">{brand.productCount} Modelos analizados</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-5">
-                    <div class="flex items-center gap-2">
-                      <span class="text-2xl font-black text-slate-800">{brand.rating}</span>
-                      <div class="flex flex-col">
-                        <div class="flex text-yellow-400 text-sm tracking-tighter">
-                          {"★".repeat(Math.floor(brand.rating))}
-                          <span class="text-slate-200">{"★".repeat(5 - Math.floor(brand.rating))}</span>
-                        </div>
-                        <span class="text-[10px] text-slate-400 font-medium uppercase tracking-wide">Excelente</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-5">
-                    <span class={`inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold border ${brand.badgeClass}`}>
-                      {brand.specialty}
-                    </span>
-                  </td>
-                  <td class="p-5">
-                    {brand.hasLightBurn 
-                      ? <div class="flex items-center text-green-700 text-sm font-semibold"><svg class="w-4 h-4 mr-1.5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Nativo</div>
-                      : <div class="flex items-center text-slate-500 text-sm"><svg class="w-4 h-4 mr-1.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Limitado / Propietario</div>
-                    }
-                  </td>
-                  <td class="p-5 text-sm text-slate-600 font-medium max-w-xs truncate" title={brand.pros[0]}>
-                    {brand.pros[0]}
-                  </td>
-                  <td class="p-5 text-right">
-                    <a href={`/marcas/${brand.slug}`} class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-blue-700 bg-blue-50 hover:bg-blue-100 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                      Ver Análisis
-                    </a>
-                  </td>
-                </tr>
-              ))}
+            <tbody class="text-slate-300 text-sm divide-y divide-slate-800">
+              <tr>
+                <td class="p-4 font-bold text-slate-100">Calidad de Construcción</td>
+                <td class="p-4">Industrial (Cerrada)</td>
+                <td class="p-4">Aluminio Rígido</td>
+                <td class="p-4">Básica pero Funcional</td>
+                <td class="p-4">Robusta</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-bold text-slate-100">Software</td>
+                <td class="p-4">XCS (Propio) + LightBurn</td>
+                <td class="p-4">LightBurn / LaserGRBL</td>
+                <td class="p-4">LightBurn / LaserGRBL</td>
+                <td class="p-4">LightBurn / LaserGRBL</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-bold text-slate-100">Facilidad de Uso</td>
+                <td class="p-4">⭐⭐⭐⭐⭐ (Plug & Play)</td>
+                <td class="p-4">⭐⭐⭐⭐</td>
+                <td class="p-4">⭐⭐⭐</td>
+                <td class="p-4">⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-bold text-slate-100">Seguridad</td>
+                <td class="p-4">Clase 1 (Totalmente segura)</td>
+                <td class="p-4">Sensores activos</td>
+                <td class="p-4">Básica (Gafas)</td>
+                <td class="p-4">Media</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-bold text-slate-100">Precio Medio</td>
+                <td class="p-4 text-red-400">Alto (€€€€)</td>
+                <td class="p-4 text-yellow-400">Medio (€€€)</td>
+                <td class="p-4 text-green-400">Bajo (€€)</td>
+                <td class="p-4 text-yellow-400">Medio-Alto (€€€)</td>
+              </tr>
             </tbody>
           </table>
         </div>
-      </section>
-
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12" id="analisis-completo">
-        
-        {/* COLUMNA PRINCIPAL: ANÁLISIS PROFUNDO */}
-        <div class="lg:col-span-2 space-y-12">
-          
-          <div class="border-b border-slate-200 pb-4 mb-8">
-            <h2 class="text-3xl font-bold text-slate-900">Análisis Detallado por Marca</h2>
-            <p class="text-slate-600 mt-2 text-lg">
-              Más allá de las especificaciones: mi opinión honesta sobre la construcción, el software y la experiencia real de uso.
-            </p>
-          </div>
-
-          {brandsWithAnalysis.map((brand) => (
-            <article class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="flex flex-col sm:flex-row h-full">
-                
-                {/* Lateral Izquierdo: Identidad Visual */}
-                <div class="sm:w-1/3 bg-slate-50 p-8 flex flex-col items-center justify-between border-b sm:border-b-0 sm:border-r border-slate-100 relative overflow-hidden">
-                  {/* Fondo decorativo sutil */}
-                  <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white to-transparent opacity-50"></div>
-                  
-                  <a href={`/marcas/${brand.slug}`} class="relative z-10 block mb-6 transform group-hover:scale-105 transition-transform duration-300 w-full h-32 flex items-center justify-center">
-                    <img src={brand.logo} alt={`Logo ${brand.name}`} class="max-w-full max-h-full object-contain mix-blend-multiply" loading="lazy" />
-                  </a>
-                  
-                  <div class="text-center w-full relative z-10">
-                    <div class="inline-flex items-center justify-center bg-white px-4 py-2 rounded-full shadow-sm border border-slate-200 mb-6">
-                      <span class="text-3xl font-black text-slate-800 mr-2 leading-none">{brand.rating}</span>
-                      <div class="flex flex-col items-start">
-                         <div class="flex text-yellow-400 text-xs tracking-tighter">{"★".repeat(5)}</div>
-                         <span class="text-[10px] text-slate-400 uppercase font-bold">Puntuación Global</span>
-                      </div>
-                    </div>
-                    
-                    <div class="space-y-3 w-full px-2">
-                      <a href={`/marcas/${brand.slug}`} class="block w-full py-2.5 px-4 bg-slate-900 hover:bg-blue-600 text-white text-sm font-bold rounded-lg transition-colors text-center shadow-md hover:shadow-lg">
-                        Ver {brand.productCount} Máquinas
-                      </a>
-                      <a href={brand.amazonUrl} target="_blank" rel="nofollow noopener" class="block w-full py-2.5 px-4 bg-yellow-400 hover:bg-yellow-500 text-yellow-900 text-sm font-bold rounded-lg transition-colors text-center flex items-center justify-center gap-2 shadow-sm hover:shadow-md">
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M13.725 21h-.005c-1.391-.004-3.696-.26-6.496-2.034l.216-.959c2.709 1.579 4.896 1.83 6.302 1.833h.004c1.176.002 2.378-.201 2.378-1.42 0-1.156-1.074-1.397-2.652-1.921l-1.042-.349c-2.322-.773-3.922-1.89-3.922-4.137 0-2.374 1.947-4.011 5.301-4.011.896 0 2.219.122 4.09.954l-.244.975c-1.282-.574-2.529-.824-3.864-.824-1.927 0-3.329.854-3.329 2.768 0 1.25.992 1.762 2.592 2.296l1.246.416c2.478.828 3.987 2.062 3.987 4.256 0 2.92-2.395 4.201-5.163 4.201h-.601zM8.33 9.774a17.336 17.336 0 0 1-.226-2.336c0-1.127.319-2.222 1.201-3.23.067-.076.032-.239-.06-.251-.767-.101-1.636.248-2.259.957-.96 1.092-1.298 2.29-1.298 3.42 0 .611.082 1.346.223 2.02.019.091.139.098.175.009.071-.176.155-.386.244-.589zm13.34 9.227c-.443-.193-1.359-.526-2.484-.663-.121-.015-.176.138-.076.215 1.053.805 1.54 1.217 1.63 1.32.072.083.023.239-.089.239-.336 0-.82-.259-1.341-.539-.569-.306-1.311-.703-2.203-1.183-.102-.055-.213.045-.164.148.552 1.157 1.339 2.404 2.793 2.404 1.621 0 2.625-1.402 2.625-1.402.049-.071-.027-.193-.105-.193-.264 0-.465-.181-.586-.346z"/></svg>
-                        Ver Ofertas
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Contenido Principal: Veredicto */}
-                <div class="sm:w-2/3 p-6 md:p-8 flex flex-col justify-between">
-                  <div>
-                    <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-                      <div class="flex items-center gap-3">
-                        <h3 class="text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">{brand.name}</h3>
-                        <span class={`text-[10px] uppercase font-bold px-2 py-0.5 rounded border ${brand.badgeClass}`}>
-                          {brand.specialty}
-                        </span>
-                      </div>
-                      {brand.hasLightBurn && (
-                        <span class="text-xs font-medium text-green-600 bg-green-50 px-2 py-1 rounded border border-green-100 flex items-center">
-                          <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                          LightBurn Ready
-                        </span>
-                      )}
-                    </div>
-
-                    {/* Rating Text Parseado */}
-                    <div class="bg-slate-50 rounded-xl p-4 mb-6 border border-slate-100">
-                       <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 flex items-center gap-1">
-                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
-                         Veredicto del Experto
-                       </h4>
-                       <div class="text-slate-700 text-sm leading-relaxed prose-sm prose-p:my-1" set:html={brand.ratingText}></div>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
-                      <div>
-                        <h4 class="text-xs font-bold text-green-700 uppercase tracking-wider mb-3 flex items-center gap-1 border-b border-green-100 pb-1">
-                          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg>
-                          Lo Bueno
-                        </h4>
-                        <ul class="space-y-2">
-                          {brand.pros.slice(0, 4).map(pro => (
-                            <li class="text-sm text-slate-600 flex items-start gap-2">
-                              <svg class="w-4 h-4 text-green-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                              <span>{pro}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      <div>
-                        <h4 class="text-xs font-bold text-red-700 uppercase tracking-wider mb-3 flex items-center gap-1 border-b border-red-100 pb-1">
-                          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018a2 2 0 01.485.06l3.76.92m-7 10v5a2 2 0 002 2h.096c.5 0 .905-.405.905-.904 0-.715.211-1.413.608-2.008L17 13V4m-7 10h2m5-10h2a2 2 0 012 2v6a2 2 0 01-2 2h-2.5"></path></svg>
-                          A Mejorar
-                        </h4>
-                        <ul class="space-y-2">
-                          {brand.cons.slice(0, 3).map(con => (
-                            <li class="text-sm text-slate-500 flex items-start gap-2">
-                              <svg class="w-4 h-4 text-red-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                              <span>{con}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-
-        {/* COLUMNA LATERAL: WIDGETS STICKY */}
-        <div class="lg:col-span-1">
-          <div class="sticky top-8 space-y-8">
-            
-            {/* Widget: Metodología (E-E-A-T) */}
-            <div class="bg-slate-900 text-white p-6 rounded-2xl shadow-xl border border-slate-800">
-              <h3 class="text-lg font-bold mb-4 flex items-center gap-2 border-b border-slate-700 pb-3">
-                <svg class="w-5 h-5 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
-                Criterios de Análisis
-              </h3>
-              <p class="text-slate-400 text-xs mb-6 leading-relaxed">
-                Para que una marca reciba una calificación superior a 4.5 estrellas, debe demostrar excelencia en tres pilares fundamentales:
-              </p>
-              <ul class="space-y-5">
-                <li class="flex gap-3 group">
-                  <div class="flex-shrink-0 w-8 h-8 rounded bg-blue-500/20 flex items-center justify-center font-bold text-blue-400 text-xs group-hover:bg-blue-500 group-hover:text-white transition-colors">1</div>
-                  <div>
-                    <h4 class="font-bold text-sm text-slate-200 group-hover:text-blue-300 transition-colors">Potencia Óptica Real</h4>
-                    <p class="text-xs text-slate-500 group-hover:text-slate-400 transition-colors">Ignoramos el marketing de "consumo eléctrico". Medimos la capacidad de corte en contrachapado de 5mm en una sola pasada.</p>
-                  </div>
-                </li>
-                <li class="flex gap-3 group">
-                  <div class="flex-shrink-0 w-8 h-8 rounded bg-blue-500/20 flex items-center justify-center font-bold text-blue-400 text-xs group-hover:bg-blue-500 group-hover:text-white transition-colors">2</div>
-                  <div>
-                    <h4 class="font-bold text-sm text-slate-200 group-hover:text-blue-300 transition-colors">Ecosistema LightBurn</h4>
-                    <p class="text-xs text-slate-500 group-hover:text-slate-400 transition-colors">El software propietario suele limitar. La compatibilidad nativa con LightBurn es innegociable para uso serio.</p>
-                  </div>
-                </li>
-                <li class="flex gap-3 group">
-                  <div class="flex-shrink-0 w-8 h-8 rounded bg-blue-500/20 flex items-center justify-center font-bold text-blue-400 text-xs group-hover:bg-blue-500 group-hover:text-white transition-colors">3</div>
-                  <div>
-                    <h4 class="font-bold text-sm text-slate-200 group-hover:text-blue-300 transition-colors">Seguridad Activa</h4>
-                    <p class="text-xs text-slate-500 group-hover:text-slate-400 transition-colors">Sensores de llama, giroscopios y protección ocular certificada no son lujos, son necesidades.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            {/* Widget: Guía Rápida FAQ */}
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
-              <h3 class="font-bold text-slate-900 mb-4 text-lg">Guía Rápida de Compra</h3>
-              <div class="space-y-0 divide-y divide-slate-100">
-                <details class="group py-3">
-                  <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-sm text-slate-800 hover:text-blue-600 transition-colors">
-                    <span>¿Diodo vs CO2?</span>
-                    <span class="transition group-open:rotate-180">
-                      <svg fill="none" height="20" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="20"><path d="M6 9l6 6 6-6"></path></svg>
-                    </span>
-                  </summary>
-                  <div class="text-slate-600 text-xs mt-2 group-open:animate-fadeIn leading-relaxed pl-2 border-l-2 border-blue-200">
-                    <p class="mb-2"><strong>Diodo (Azul):</strong> Ideal para empezar. Económico y duradero (20k horas). Corta madera fina y graba casi todo menos metal desnudo y acrílico transparente.</p>
-                    <p><strong>CO2 (Infrarrojo):</strong> El estándar profesional. Corta acrílico transparente (clave), madera gruesa y graba vidrio mucho más rápido.</p>
-                  </div>
-                </details>
-
-                <details class="group py-3">
-                  <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-sm text-slate-800 hover:text-blue-600 transition-colors">
-                    <span>¿Es vital el Air Assist?</span>
-                    <span class="transition group-open:rotate-180">
-                      <svg fill="none" height="20" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="20"><path d="M6 9l6 6 6-6"></path></svg>
-                    </span>
-                  </summary>
-                  <div class="text-slate-600 text-xs mt-2 group-open:animate-fadeIn leading-relaxed pl-2 border-l-2 border-blue-200">
-                    <p>Para cortar, <strong>SÍ, ABSOLUTAMENTE</strong>. Sin aire, la madera se carboniza en los bordes y el humo se pega a la lente, arruinándola en pocas horas. Para solo grabar, es opcional.</p>
-                  </div>
-                </details>
-                
-                <details class="group py-3">
-                  <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-sm text-slate-800 hover:text-blue-600 transition-colors">
-                    <span>¿Qué potencia necesito?</span>
-                    <span class="transition group-open:rotate-180">
-                      <svg fill="none" height="20" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="20"><path d="M6 9l6 6 6-6"></path></svg>
-                    </span>
-                  </summary>
-                  <div class="text-slate-600 text-xs mt-2 group-open:animate-fadeIn leading-relaxed pl-2 border-l-2 border-blue-200">
-                    <ul class="list-disc list-inside space-y-1">
-                        <li><strong>5W:</strong> Grabado fino y corte de papel/cartón.</li>
-                        <li><strong>10W:</strong> El estándar. Corta contrachapado de 3-4mm.</li>
-                        <li><strong>20W+:</strong> Para producción. Corta maderas de 10mm+ en una pasada.</li>
-                    </ul>
-                  </div>
-                </details>
-              </div>
-            </div>
-
-            {/* Banner Promocional Interno (Ejemplo) */}
-            <div class="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-6 text-white text-center shadow-lg">
-              <p class="text-sm font-bold uppercase tracking-wide mb-2 text-blue-200">¿Buscas Ofertas?</p>
-              <h3 class="text-xl font-bold mb-4">Top Ventas del Mes</h3>
-              <p class="text-xs text-blue-100 mb-6">Las máquinas con mejor precio en Amazon ahora mismo.</p>
-              <a href="/ofertas" class="inline-block bg-white text-blue-700 font-bold py-2 px-6 rounded-full text-sm hover:bg-blue-50 transition-colors">
-                Ver Descuentos
-              </a>
-            </div>
-
-          </div>
-        </div>
       </div>
+    </section>
 
-      {/* SECCIÓN FINAL: RECURSOS RELACIONADOS */}
-      <section class="mt-24 mb-16">
-        <h2 class="text-2xl font-bold text-slate-900 mb-8 text-center">Guías para profundizar</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-          <a href="/materiales/madera" class="group bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:border-blue-300 transition-all hover:shadow-md">
-            <h3 class="font-bold text-lg text-slate-800 group-hover:text-blue-600 transition-colors mb-2">Guía de Madera</h3>
-            <p class="text-sm text-slate-500">Parámetros de corte y grabado para contrachapado, MDF y madera maciza.</p>
-          </a>
-          <a href="/software/lightburn" class="group bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:border-blue-300 transition-all hover:shadow-md">
-            <h3 class="font-bold text-lg text-slate-800 group-hover:text-blue-600 transition-colors mb-2">Tutorial LightBurn</h3>
-            <p class="text-sm text-slate-500">Domina el software estándar de la industria. Capas, potencias y trucos.</p>
-          </a>
-          <a href="/seguridad" class="group bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:border-blue-300 transition-all hover:shadow-md">
-            <h3 class="font-bold text-lg text-slate-800 group-hover:text-blue-600 transition-colors mb-2">Seguridad Láser</h3>
-            <p class="text-sm text-slate-500">Gafas OD+, extracción de humos y prevención de incendios en el taller.</p>
-          </a>
-        </div>
-      </section>
+    {/* SECCIÓN 4: GUÍA EXPERTA (TEXTO FINAL) */}
+    <section class="max-w-4xl mx-auto px-4 py-20">
+      <h2 class="text-3xl font-bold text-slate-900 mb-6">Consejo final antes de comprar</h2>
+      <div class="prose prose-lg prose-slate text-slate-700">
+        <p>
+          No te obsesiones con los "Watios" de marketing. Muchas marcas chinas baratas dicen "40W" refiriéndose al consumo eléctrico, cuando el láser real es de 5W. Fíjate siempre en la <strong>Potencia Óptica de Salida</strong>.
+        </p>
+        <p>
+          Si vas a trabajar en el salón de tu casa, compra una <strong>xTool</strong> o cualquier máquina con carcasa cerrada. El humo es tóxico y el láser rebota. Si tienes un garaje o taller ventilado, una <strong>Ortur</strong> o <strong>Sculpfun</strong> con un buen sistema de extracción casero te ahorrará mucho dinero.
+        </p>
+        <p>
+          Y recuerda: la máquina es solo el 50%. El otro 50% eres tú aprendiendo a usar el software <strong>LightBurn</strong>. Asegúrate de que la máquina que elijas sea compatible (todas las de esta lista lo son).
+        </p>
+      </div>
+    </section>
 
-    </div>
   </main>
 </Layout>
 
 <style>
-  /* Estilos utilitarios para animaciones simples sin JS pesado */
-  details > summary {
-    list-style: none;
-  }
-  details > summary::-webkit-details-marker {
-    display: none;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-5px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  .group-open\:animate-fadeIn[open] > div {
-    animation: fadeIn 0.3s ease-out forwards;
-  }
-
+  /* Animaciones suaves para dar sensación premium */
   @keyframes fade-in-up {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -449,7 +319,7 @@ const renderStars = (rating) => {
   .animate-fade-in-up {
     animation: fade-in-up 0.6s ease-out forwards;
   }
-
+  
   @keyframes fade-in-down {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
