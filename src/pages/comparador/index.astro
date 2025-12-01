@@ -237,17 +237,15 @@ const bestForMetal = productsData.products.find(p => p.id === bestForMetalId);
                 Buscas algo barato, fácil de montar y con mucha comunidad para resolver dudas. No necesitas cortar madera muy gruesa.
               </p>
 
-              <div class="flex items-center gap-3 mb-4">
+              <div class="flex items-center gap-3 mb-2">
                 <img src={bestForBeginners.mainImage} class="w-16 h-16 object-contain border rounded" />
                 <div>
                   <span class="text-xs font-bold text-slate-400 uppercase">Recomendación</span>
-                  <h4 class="font-bold text-slate-800">{bestForBeginners.title}</h4>
+                  <a href={`/products/${bestForBeginners.slug}/`} class="font-bold text-slate-800 hover:text-green-700 transition-colors">
+                    {bestForBeginners.title}
+                  </a>
                 </div>
               </div>
-
-              <a href={`/products/${bestForBeginners.slug}/`} class="block w-full text-center py-2 border border-green-500 text-green-600 font-bold rounded hover:bg-green-50 transition-colors">
-                Ver Análisis
-              </a>
             </div>
           </div>
 
@@ -264,17 +262,15 @@ const bestForMetal = productsData.products.find(p => p.id === bestForMetalId);
                 Necesitas al menos 20W ópticos y un buen asistente de aire para que los bordes no se quemen.
               </p>
 
-              <div class="flex items-center gap-3 mb-4">
+              <div class="flex items-center gap-3 mb-2">
                 <img src={bestForWood.mainImage} class="w-16 h-16 object-contain border rounded" />
                 <div>
                   <span class="text-xs font-bold text-slate-400 uppercase">Recomendación</span>
-                  <h4 class="font-bold text-slate-800">{bestForWood.title}</h4>
+                  <a href={`/products/${bestForWood.slug}/`} class="font-bold text-slate-800 hover:text-orange-700 transition-colors">
+                    {bestForWood.title}
+                  </a>
                 </div>
               </div>
-
-              <a href={`/products/${bestForWood.slug}/`} class="block w-full text-center py-2 border border-orange-500 text-orange-600 font-bold rounded hover:bg-orange-50 transition-colors">
-                Ver Análisis
-              </a>
             </div>
           </div>
 
@@ -291,55 +287,136 @@ const bestForMetal = productsData.products.find(p => p.id === bestForMetalId);
                 Olvida los diodos. Necesitas un láser de <strong>Fibra</strong>. Es otra liga de precio, pero el resultado es permanente y profesional.
               </p>
 
-              <div class="flex items-center gap-3 mb-4">
+              <div class="flex items-center gap-3 mb-2">
                 <img src={bestForMetal.mainImage} class="w-16 h-16 object-contain border rounded" />
                 <div>
                   <span class="text-xs font-bold text-slate-400 uppercase">Recomendación</span>
-                  <h4 class="font-bold text-slate-800">{bestForMetal.title}</h4>
+                  <a href={`/products/${bestForMetal.slug}/`} class="font-bold text-slate-800 hover:text-slate-700 transition-colors">
+                    {bestForMetal.title}
+                  </a>
                 </div>
               </div>
-
-              <a href={`/products/${bestForMetal.slug}/`} class="block w-full text-center py-2 border border-slate-700 text-slate-700 font-bold rounded hover:bg-slate-100 transition-colors">
-                Ver Análisis
-              </a>
             </div>
           </div>
 
         </div>
       </section>
-      {/* --- SECCIÓN 5: COMPARATIVA TÉCNICA --- */}
-      <section class="mb-24">
-        <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">
+{/* --- SECCIÓN 5: COMPARATIVA TÉCNICA --- */}
+      <section className="mb-24">
+        <h2 className="text-3xl font-bold text-center text-slate-900 mb-12">
           Comparativa Técnica de Grabadoras Láser 2025
         </h2>
 
-        <p class="max-w-3xl mx-auto text-center text-slate-600 mb-10">
-          Tabla comparativa real basada en potencia óptica, área de trabajo, tipo de láser y precio aproximado. 
-          Perfecta para decidir cuál es la mejor grabadora láser según tus necesidades.
+        <p className="max-w-3xl mx-auto text-center text-slate-600 mb-10">
+          Analizamos las especificaciones clave de los 10 modelos más relevantes del mercado actual. 
+          Compara potencia, área de trabajo y tecnología para encontrar la máquina exacta para tu taller.
         </p>
 
-        <div class="overflow-x-auto bg-white rounded-xl border border-slate-200 shadow-sm">
-          <table class="w-full text-sm text-left">
-            <thead class="bg-slate-100 text-slate-700 uppercase text-xs font-bold">
+        <div className="overflow-x-auto bg-white rounded-xl border border-slate-200 shadow-sm">
+          <table className="w-full text-sm text-left">
+            <thead className="bg-slate-100 text-slate-700 uppercase text-xs font-bold">
               <tr>
-                <th class="p-4">Modelo</th>
-                <th class="p-4">Potencia</th>
-                <th class="p-4">Área</th>
-                <th class="p-4">Tipo</th>
-                <th class="p-4">Precio</th>
-                <th class="p-4">Análisis</th>
+                <th className="p-4 min-w-[200px]">Modelo</th>
+                <th className="p-4">Potencia</th>
+                <th className="p-4">Área de Trabajo</th>
+                <th className="p-4">Tecnología</th>
+                <th className="p-4 text-center">Análisis</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-slate-200">
-              {[topModel1, topModel2, topModel3].map((m) => (
-                <tr class="hover:bg-slate-50">
-                  <td class="p-4 font-bold text-slate-800">{m.title}</td>
-                  <td class="p-4">{m.power || "—"}</td>
-                  <td class="p-4">{m.area || "—"}</td>
-                  <td class="p-4">{m.laserType || "Diodo"}</td>
-                  <td class="p-4">{m.priceRange || "—"}</td>
-                  <td class="p-4">
-                    <a href={`/products/${m.slug}/`} class="text-blue-600 font-bold hover:underline">Ver review</a>
+            <tbody className="divide-y divide-slate-200">
+              {[
+                {
+                  title: "xTool P2 55W",
+                  slug: "xtool-p2-55w",
+                  power: "55W",
+                  area: "680 x 360 mm",
+                  type: "CO2"
+                },
+                {
+                  title: "Atomstack A70 Pro",
+                  slug: "atomstack-a70-pro",
+                  power: "70W",
+                  area: "400 x 500 mm",
+                  type: "Diodo"
+                },
+                {
+                  title: "xTool F1 Ultra",
+                  slug: "xtool-f1-ultra",
+                  power: "20W (Dual)",
+                  area: "220 x 220 mm",
+                  type: "Híbrido"
+                },
+                {
+                  title: "OMTech 60W RDWorks",
+                  slug: "omtech-60w-rdworks",
+                  power: "60W",
+                  area: "500 x 700 mm",
+                  type: "CO2"
+                },
+                {
+                  title: "Mecpow X5 Pro",
+                  slug: "mecpow-x5-pro",
+                  power: "33W",
+                  area: "600 x 600 mm",
+                  type: "Diodo"
+                },
+                {
+                  title: "Sculpfun S30 Ultra",
+                  slug: "sculpfun-s30-ultra",
+                  power: "33W",
+                  area: "600 x 600 mm",
+                  type: "Diodo"
+                },
+                {
+                  title: "ComMarker B4",
+                  slug: "commarker-b4",
+                  power: "20W",
+                  area: "200 x 200 mm",
+                  type: "Fibra"
+                },
+                {
+                  title: "LaserPecker 4",
+                  slug: "laserpecker-4",
+                  power: "10W / 2W",
+                  area: "160 x 120 mm",
+                  type: "Dual"
+                },
+                {
+                  title: "xTool D1 Pro",
+                  slug: "xtool-d1-pro",
+                  power: "20W",
+                  area: "430 x 400 mm",
+                  type: "Diodo"
+                },
+                {
+                  title: "Mecpow X3",
+                  slug: "mecpow-x3",
+                  power: "5W",
+                  area: "410 x 400 mm",
+                  type: "Diodo"
+                }
+              ].map((m, index) => (
+                <tr key={index} className="hover:bg-slate-50 transition-colors">
+                  <td className="p-4 font-bold text-slate-800">{m.title}</td>
+                  <td className="p-4 text-slate-600">{m.power}</td>
+                  <td className="p-4 text-slate-600">{m.area}</td>
+                  <td className="p-4">
+                    <span className={`px-2 py-1 rounded-full text-xs font-bold border ${
+                      m.type === 'CO2' ? 'bg-purple-50 text-purple-700 border-purple-200' :
+                      m.type === 'Fibra' ? 'bg-orange-50 text-orange-700 border-orange-200' :
+                      m.type === 'Híbrido' || m.type === 'Dual' ? 'bg-emerald-50 text-emerald-700 border-emerald-200' :
+                      'bg-blue-50 text-blue-700 border-blue-200'
+                    }`}>
+                      {m.type}
+                    </span>
+                  </td>
+                  <td className="p-4 text-center">
+                    <a 
+                      href={`/products/${m.slug}/`} 
+                      className="text-blue-600 font-bold hover:text-blue-800 hover:underline transition-colors"
+                    >
+                      Ver review
+                    </a>
                   </td>
                 </tr>
               ))}
@@ -347,6 +424,7 @@ const bestForMetal = productsData.products.find(p => p.id === bestForMetalId);
           </table>
         </div>
       </section>
+
       {/* --- SECCIÓN 6: COMPARADOR INTELIGENTE --- */}
       <section class="mb-24">
         <h2 class="text-3xl font-bold text-center text-slate-900 mb-10">
