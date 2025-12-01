@@ -256,7 +256,7 @@ const products = data.products
             Preguntas frecuentes sobre la marca {brand.name}
           </h3>
           {brand.faqs.map((faq, index) => (
-            <details class="group bg-gray-50 rounded-xl" {...index === 0 && { open: true }}>
+            <details class="group bg-gray-50 rounded-xl" open={index === 0}>
               <summary class="flex justify-between items-center cursor-pointer p-6">
                 <h4 class="text-lg font-medium text-gray-900">{faq.question}</h4>
                 <span class="ml-6 flex-shrink-0">
