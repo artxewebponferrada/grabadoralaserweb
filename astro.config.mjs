@@ -69,7 +69,9 @@ export default defineConfig({
         'https://migrabadoralaser.es/buscador/',
         'https://migrabadoralaser.es/sobre-nosotros/',
         'https://migrabadoralaser.es/contacto/',
-        'https://migrabadoralaser.es/faqs/'
+        'https://migrabadoralaser.es/faqs/',
+        'https://migrabadoralaser.es/conceptos/',
+        'https://migrabadoralaser.es/comparador/'
       ],
       changefreq: 'daily',
       priority: 0.7,
