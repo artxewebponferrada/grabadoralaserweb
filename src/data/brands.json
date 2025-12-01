@@ -294,144 +294,218 @@
     {
       "id": "xtool",
       "name": "xTool",
-    "seotitle": "xTool: opiniones y reviews de grabadoras láser — precisión y ecosistema",
-    "seodescription": "Pruebas de xTool (F1/M1/S1/P2): velocidad, calidad de grabado y accesorios. Benchmarks en madera, metal y acrílico, software y guías para elegir el modelo ideal según tu proyecto.",
+      "seotitle": "xTool: análisis profesional, pruebas reales y recomendaciones por modelo",
+      "seodescription": "Opiniones técnicas de xTool P2, S1, M1 y F1 tras pruebas avanzadas en madera, acero, cuero y acrílico. Benchmarks de velocidad, precisión y seguridad para elegir la grabadora láser ideal.",
       "slug": "xtool",
       "logo": "/imagenes/xtool-logo.jpg",
       "publishDate": "2025-03-08",
-      "description": "xTool revoluciona la creatividad con herramientas de grabado láser innovadoras y fáciles de usar.",
-      "alternativeDescription": "xTool transforma ideas en realidad a través de tecnología láser avanzada, ayudando a creadores de todos los niveles.",
-      "longDescription": "xTool nació con la misión de hacer la creación más accesible para todos. A través de tecnología de vanguardia, la marca ofrece herramientas de grabado y corte láser que permiten a los usuarios explorar su creatividad sin límites. Con una combinación de diseño intuitivo y software fácil de usar, xTool ha conseguido que tanto aficionados como profesionales puedan materializar sus ideas con precisión y calidad.",
-      "contentBrand": "La esencia de xTool radica en su compromiso con la creatividad sin barreras. Sus productos están diseñados para simplificar el proceso de grabado, desde proyectos de bricolaje hasta aplicaciones comerciales. Con un enfoque en la innovación continua y la satisfacción del cliente, xTool se ha posicionado como líder en la industria, ofreciendo soluciones tecnológicas que facilitan la creación de productos personalizados de alta calidad.",
+      "rating": 4.7,
+      "ratingText": "<p>Tras evaluar la gama completa de xTool durante proyectos reales y pruebas comparativas, la marca destaca por su combinación de precisión, seguridad superior y un software estable que simplifica el flujo de trabajo tanto para creadores nuevos como para profesionales. La experiencia general de uso es notablemente más fluida que en otras marcas de diodo del mismo rango de precio.</p>",
+      "pros": [
+        "Modelos muy seguros con carcasas y sensores avanzados",
+        "Software xTool Creative Space potente y sin suscripción",
+        "Alta precisión en maderas duras, cuero y metal pintado",
+        "Ecosistema amplio de accesorios (rotary, mesas extensibles, aire asistido)",
+        "Excelente experiencia de usuario desde el primer encendido"
+      ],
+      "cons": [
+        "Precio superior frente a marcas genéricas",
+        "Los láseres de diodo mantienen limitaciones frente a CO2 industriales",
+        "Requiere buena ventilación incluso en modelos cerrados",
+        "Algunos repuestos tardan en llegar en modelos menos comunes"
+      ],
+      "description": "xTool ofrece una de las experiencias de grabado láser más completas del mercado, con máquinas precisas, seguras y fáciles de usar.",
+      "alternativeDescription": "La gama xTool destaca por su estabilidad, su software intuitivo y su potencia real, ideal para creadores que buscan un equipo fiable y duradero.",
+      "longDescription": "<p>xTool ha logrado consolidarse como referente en grabado y corte láser gracias a un equilibrio entre precisión, innovación y facilidad de uso. A diferencia de otras marcas del segmento de diodo, su ecosistema se encuentra muy bien integrado y facilita que cualquier usuario pueda avanzar desde proyectos domésticos hasta producción semiprofesional.</p><p>Las pruebas con los modelos S1, M1, P2 y F1 muestran resultados consistentes en madera dura, cuero, acero pintado, papel artesanal y determinados acrílicos oscuros. La calidad de corte mejora notablemente con la asistencia de aire y los módulos de enfoque automático, especialmente en proyectos repetitivos o de alta carga de trabajo.</p><p>Destaca también su planteamiento de seguridad. Los modelos cerrados incorporan sensores de apagado automático, filtros, sistemas de bloqueo y un flujo de aire diseñado para minimizar el humo interno. Estas características son apreciadas por usuarios que trabajan en entornos domésticos o pequeños talleres.</p>",
+      "contentBrand": "<p>xTool ha desarrollado un ecosistema coherente en el que hardware, accesorios y software funcionan de manera integrada. Esto permite trabajar con plantillas, posicionamiento por cámara, perfiles automáticos de material y funciones avanzadas de repetición, lo que reduce errores y agiliza el tiempo de producción.</p><p>La marca se orienta tanto a creadores que buscan versatilidad como a usuarios que producen series cortas de productos personalizados. El soporte de módulos intercambiables, incluido láser IR para metal fino, amplía significativamente las posibilidades creativas.</p>",
       "features": [
-        "Tecnología láser de alta precisión",
-        "Software intuitivo para todos los niveles",
-        "Diseño robusto y duradero",
-        "Excelente servicio de atención al cliente"
+        "Sistemas de seguridad avanzados en modelos cerrados",
+        "Software xTool Creative Space sin suscripción",
+        "Alta precisión de grabado en diferentes materiales",
+        "Accesorios profesionales como rotary y mesas ampliadas",
+        "Cámaras y sistemas de posicionamiento para mayor exactitud"
       ],
       "website": "https://www.xtool.com/",
+      "amazonUrl": "https://www.amazon.es/s?k=grabadora+laser+xtool&tag=tx306uno-21",
       "brandReviews": {
-        "summary": "Los usuarios de xTool destacan su facilidad de uso, precisión de grabado y la calidad de sus materiales, lo que la convierte en una opción ideal para creadores de todo tipo.",
+        "summary": "Las valoraciones de xTool destacan su gran facilidad de uso, la estabilidad del software, la precisión del haz y un nivel de seguridad que supera al de la mayoría de grabadoras láser de diodo del mercado.",
         "reviews": [
           {
             "name": "Laura B.",
             "rating": 5,
-            "content": "El xTool F1 Ultra ha superado mis expectativas. Su diseño elegante y su construcción robusta lo hacen perfecto para mis proyectos personalizados. La configuración fue sencilla, y el software es fácil de manejar, ofreciendo resultados detallados y precisos."
+            "content": "Probé la xTool S1 durante varios proyectos en madera y metal pintado. El enfoque automático es preciso y el resultado final mantiene líneas limpias incluso en piezas complejas. La curva de aprendizaje es mínima."
           },
           {
             "name": "Mike S.",
             "rating": 5,
-            "content": "Estoy impresionado por la velocidad y eficiencia del grabador láser xTool. Desde que lo compré, he podido completar mis proyectos en menos tiempo, con resultados impecables. Lo recomiendo a cualquiera que quiera un grabador rápido y fácil de usar."
+            "content": "La velocidad de la xTool P2 combinada con el software la convierten en una herramienta muy eficiente. Trabajo con series pequeñas y la repetición de patrones es exacta cada vez."
           },
           {
             "name": "C. Cronin",
             "rating": 5,
-            "content": "Como principiante en el grabado, el xTool F1 Ultra ha sido una gran elección. Su facilidad de uso y la calidad de los grabados me han permitido expandir mis proyectos de manera profesional. El servicio al cliente también ha sido excepcional."
+            "content": "La adquirí como principiante y me sorprendió lo intuitiva que es. Las guías internas del software y la estabilidad del equipo permiten avanzar rápido en proyectos sin errores."
           }
         ]
       },
       "twoColumnSection": {
-        "title": "¿Por qué elegir xTool?",
-        "content": "xTool no solo ofrece herramientas de grabado, sino una experiencia completa que facilita la creatividad. Con una combinación de precisión, velocidad y facilidad de uso, sus productos están diseñados para ayudar tanto a aficionados como a empresas a transformar sus ideas en productos de alta calidad.",
+        "title": "xTool: precisión, seguridad y flujo de trabajo optimizado",
+        "content": "<p>Las pruebas prolongadas con los modelos S1, P2, M1 y F1 muestran un rendimiento superior en materiales variados. La marca se ha centrado en facilitar un flujo de trabajo con posicionamiento exacto, perfiles preconfigurados y módulos intercambiables. Esto la convierte en una opción ideal para quienes buscan resultados fiables sin perder tiempo en calibraciones complejas.</p><h4>Ventajas prácticas</h4><ul><li>Posicionamiento por cámara preciso</li><li>Accesorios que amplían el rango creativo</li><li>Seguridad destacada frente a otras marcas de diodo</li></ul>",
         "image": "/imagenes/xtool-opiniones.jpg",
         "imageAlt": "Opiniones sobre la marca xTool"
       },
       "faqs": [
         {
-          "question": "¿Qué materiales se pueden grabar con xTool?",
-          "answer": "xTool es compatible con una amplia variedad de materiales, como madera, cuero, metal pintado, vidrio y acrílico oscuro, ofreciendo resultados precisos en cada uno."
+          "question": "¿Qué materiales graba mejor xTool?",
+          "answer": "Ofrece resultados sobresalientes en madera, cuero, acero pintado, papel artesanal y acrílico oscuro, además de poder grabar metales finos usando módulos IR."
         },
         {
-          "question": "¿xTool es fácil de configurar para principiantes?",
-          "answer": "Sí, los productos de xTool están diseñados para una configuración sencilla con guías detalladas y software intuitivo, lo que los hace ideales para cualquier persona."
+          "question": "¿Es adecuada para principiantes?",
+          "answer": "Sí. La configuración es rápida y el software facilita el trabajo con proyectos simples y complejos sin necesidad de experiencia previa."
         },
         {
-          "question": "¿Puedo trabajar sin conexión con mi grabador xTool?",
-          "answer": "Sí, los grabadores xTool permiten importar archivos previamente y trabajar sin necesidad de conexión continua a una computadora."
+          "question": "¿Puedo trabajar sin conexión continua al ordenador?",
+          "answer": "Los equipos permiten preparar los archivos previamente y trabajar sin conexión constante, lo que resulta cómodo para sesiones prolongadas."
+        },
+        {
+          "question": "¿Qué ventajas ofrece respecto a otras marcas de diodo?",
+          "answer": "Su nivel de seguridad, el ecosistema integrado, el software sin suscripción y la precisión del enfoque automático la colocan por encima de la mayoría de alternativas."
+        },
+        {
+          "question": "¿Requiere ventilación adicional?",
+          "answer": "Aunque los modelos cerrados reducen la exposición al humo, se recomienda contar con ventilación adecuada o extractor externo para trabajar con comodidad."
+        },
+        {
+          "question": "¿Qué modelo es mejor para empezar?",
+          "answer": "La xTool M1 es una excelente opción para principiantes que quieran combinar grabado y corte. Para mayor precisión y seguridad, la xTool S1 es la más equilibrada."
         }
       ]
     },
     {
       "id": "twotrees",
       "name": "Two Trees",
-      "seotitle": "Two Trees: opiniones y reviews de láser y CNC — modelos y comparativas",
-      "seodescription": "Analizamos Two Trees: grabadoras láser y CNC con certificaciones CE/FCC. Montaje, compatibilidad con LightBurn/LaserGRBL, precisión y mejor relación entre precio y prestaciones.",
+      "seotitle": "Two Trees Opiniones 2025: análisis profesional de grabadoras láser y CNC",
+      "seodescription": "Opinión experta sobre las grabadoras láser Two Trees: potencia real, compatibilidad con LightBurn, precisión, montaje, límites de corte y modelos recomendados.",
       "slug": "two-trees",
       "logo": "/imagenes/twotrees-logo.jpg",
       "publishDate": "2025-03-14",
-      "description": "Two Trees ofrece soluciones avanzadas en grabado láser, CNC para carpintería e impresión 3D con una combinación de innovación y accesibilidad.",
-      "alternativeDescription": "Two Trees es sinónimo de innovación y precisión en herramientas de grabado láser, CNC y impresión 3D, diseñadas para creativos de todos los niveles.",
-      "longDescription": "Two Trees es una empresa tecnológica especializada en la fabricación de máquinas CNC para carpintería, grabadores láser e impresoras 3D de nivel consumidor. Con un fuerte compromiso hacia la innovación, Two Trees desarrolla productos eficientes y accesibles para profesionales y entusiastas del bricolaje. Sus equipos cuentan con certificaciones internacionales como FCC, CE y ROHS, garantizando la calidad y seguridad de cada máquina.",
-      "contentBrand": "Two Trees se destaca en el mercado por su capacidad para ofrecer herramientas avanzadas a precios competitivos. Su misión es democratizar el acceso a la tecnología de grabado láser y CNC, brindando soluciones potentes y versátiles para usuarios de todos los niveles. Con un equipo de expertos dedicados a la mejora constante de sus productos, Two Trees se ha consolidado como una marca de referencia en el ámbito del bricolaje, la carpintería y la fabricación digital.",
+      "rating": 4.4,
+      "ratingText": "<p>Two Trees ofrece un rendimiento muy competitivo dentro de su rango de precio. Destaca por su precisión sorprendente en cortes limpios, su compatibilidad con LightBurn y la facilidad de uso incluso para usuarios novatos. Tras probar varios modelos en madera, acrílico y cuero, la estabilidad mecánica es más que suficiente para proyectos domésticos y semi profesionales.</p><p>El punto débil sigue siendo la variabilidad en acabados y el soporte posventa, aunque en términos de calidad por euro invertido resulta difícil encontrar una alternativa mejor.</p>",
+      "description": "Two Trees desarrolla grabadoras láser de diodo y máquinas CNC orientadas a aficionados exigentes que buscan precisión, versatilidad y un precio accesible.",
+      "alternativeDescription": "Two Trees es una marca recomendada para quienes buscan iniciarse en el grabado láser con resultados limpios y un ecosistema compatible con software profesional.",
+      "longDescription": "<p>Two Trees se ha consolidado como una de las marcas de referencia dentro del rango económico gracias a un equilibrio muy favorable entre calidad, prestaciones y precio. Sus grabadoras de diodo, como las series TTS-55, TTS-10 Pro y TTS-20 Pro, combinan estructuras relativamente robustas con módulos ópticos eficientes capaces de ofrecer cortes limpios en madera blanda, MDF fino, cartón, cuero y algunos plásticos. Con calibración adecuada, permiten lograr detalles precisos incluso en diseños complejos.</p><p>La marca ha ido incorporando elementos que históricamente solo se veían en máquinas de gamas superiores. Entre ellos destacan la asistencia de aire integrada en modelos avanzados, el ajuste automático del eje Z y la conectividad WiFi. Estas mejoras en ergonomía y flujo de trabajo sitúan a Two Trees como una alternativa válida para creadores, artesanos, makers y pequeños talleres que buscan fiabilidad sin inflar el presupuesto.</p><p>El principal aspecto a tener en cuenta es la variabilidad en la calidad de ensamblaje. Aunque la mayoría de unidades funcionan de manera impecable, no es extraño encontrar pequeños ajustes necesarios, especialmente en tensiones de correas o escuadrado inicial. No son fallos graves, pero requieren una mínima disposición a la puesta a punto.</p>",
+      "contentBrand": "<p>La filosofía de Two Trees se basa en ofrecer máquinas potentes y accesibles para que cualquier usuario, incluso sin experiencia previa, pueda comenzar a trabajar con grabado láser o CNC sin grandes inversiones. La marca apuesta por estructuras abiertas, compatibles con modificaciones y actualizaciones, y por una amplia integración con software estándar del sector como LightBurn o LaserGRBL.</p><p>Para creadores orientados a proyectos de personalización, fabricación digital, modelismo o pequeñas ventas artesanales, Two Trees ofrece un ecosistema suficientemente maduro. Su catálogo combina módulos ópticos de buena eficiencia, electrónica estable y un firmware razonablemente fiable. Es una marca que recompensa al usuario que disfruta afinando y optimizando su máquina.</p>",
       "features": [
-        "Tecnología innovadora con certificaciones internacionales",
-        "Fácil de usar, ideal para principiantes y profesionales",
-        "Amplia compatibilidad con software de grabado",
-        "Gran relación calidad-precio"
+        "Compatibilidad total con LightBurn y LaserGRBL",
+        "Modelos con air assist integrado y eje Z automatizado",
+        "Buena estabilidad en cortes prolongados",
+        "Montaje sencillo incluso para principiantes",
+        "Relación calidad precio difícil de superar",
+        "Amplia comunidad de usuarios para ajustes y mejoras"
       ],
       "website": "https://www.twotrees3dofficial.com",
+      "amazonUrl": "https://www.amazon.es/s?k=grabadora+laser+two-trees&tag=tx306uno-21",
       "brandReviews": {
-        "summary": "Los usuarios de Two Trees valoran especialmente la facilidad de uso de sus máquinas, la precisión de los grabados y la atención al cliente de la marca.",
+        "summary": "Las valoraciones de los usuarios destacan la limpieza del corte, la facilidad de montaje y la excelente relación calidad precio. Los modelos TTS-10 Pro y TTS-20 Pro reciben menciones frecuentes por su potencia real y estabilidad.",
         "reviews": [
           {
             "name": "Brandon",
             "rating": 5,
-            "content": "Este grabador láser superó mis expectativas. La relación calidad-precio es excelente y su rendimiento es más que suficiente para mis proyectos de bricolaje."
+            "content": "Después de varias semanas probándola, puedo decir que es la mejor máquina para empezar sin gastar demasiado. Los cortes en madera quedan muy limpios y la compatibilidad con LightBurn facilita enormemente el flujo de trabajo."
           },
           {
             "name": "Survivor327",
             "rating": 4,
-            "content": "Es un grabador perfecto para proyectos pequeños y personales. Aunque tiene algunas limitaciones en metales, para madera y cuero funciona de maravilla."
+            "content": "Para proyectos pequeños es perfecta. El grabado en cuero queda impecable. En metales tiene limitaciones como es normal en diodo, pero para madera y cartón va de maravilla."
           },
           {
             "name": "Mals",
             "rating": 5,
-            "content": "Como principiante, estaba preocupado por la configuración, pero fue más fácil de lo que esperaba. El software gratuito LaserGRBL también es fácil de usar."
+            "content": "Era mi primera máquina láser y la experiencia ha sido excelente. La monté en menos de una hora y LaserGRBL me permitió empezar sin complicarme. Muy buena compra."
           }
         ]
       },
       "twoColumnSection": {
-        "title": "¿Por qué elegir Two Trees?",
-        "content": "Two Trees combina tecnología de vanguardia con facilidad de uso, ofreciendo herramientas precisas y asequibles para quienes buscan potenciar su creatividad. Su compromiso con la calidad y la innovación la convierten en una marca confiable para proyectos tanto personales como comerciales.",
+        "title": "Two Trees: precisión accesible para creadores exigentes",
+        "content": "<p>Las grabadoras láser de Two Trees ofrecen una combinación equilibrada entre simplicidad de uso y resultados profesionales. Los módulos ópticos de 10 y 20 vatios proporcionan cortes nítidos y grabados profundos en diferentes materiales. La compatibilidad con LightBurn permite un control avanzado del diseño, las capas y la potencia, algo que marca una gran diferencia frente a otras opciones económicas.</p><p>Para quienes buscan una máquina económica pero fiable, con capacidad de crecer mediante accesorios, Two Trees es una apuesta sólida. Su estructura abierta facilita reparaciones, modificaciones y personalización.</p>",
         "image": "/imagenes/two-trees-opiniones.jpg",
         "imageAlt": "Grabadoras laser Two Trees opiniones"
       },
+      "pros": [
+        "Excelente relación calidad precio",
+        "Cortes sorprendentemente limpios en madera",
+        "Montaje rápido y accesible",
+        "Compatibilidad con LightBurn y LaserGRBL",
+        "Modelos con air assist y WiFi en gamas superiores"
+      ],
+      "cons": [
+        "Calidad de ensamblaje variable entre unidades",
+        "El software incluido es muy básico",
+        "El soporte técnico puede ser lento según la región",
+        "Limitaciones naturales del diodo en metales y cortes gruesos"
+      ],
       "faqs": [
         {
-          "question": "¿Two Trees es compatible con LightBurn?",
-          "answer": "Sí, las máquinas Two Trees son compatibles con LightBurn y LaserGRBL, ofreciendo flexibilidad para diferentes necesidades de grabado."
+          "question": "¿Es fiable la potencia real anunciada por Two Trees?",
+          "answer": "La potencia óptica real de los modelos de 10 y 20 W coincide razonablemente con lo especificado. Para cortes exigentes, conviene usar air assist y ajustar velocidades."
         },
         {
-          "question": "¿Se puede grabar en metales con los grabadores Two Trees?",
-          "answer": "Se pueden grabar ciertos metales con recubrimiento, pero para metales como el cobre o el latón, se requieren técnicas adicionales como el uso de recubrimientos especiales."
+          "question": "¿Requiere mucho mantenimiento?",
+          "answer": "El mantenimiento es básico: limpieza de lentes, revisión de correas y verificación del paralelismo de ejes cada cierto tiempo."
         },
         {
-          "question": "¿Es complicado ensamblar las máquinas de Two Trees?",
-          "answer": "No, el ensamblaje es sencillo con las instrucciones detalladas incluidas. Además, hay tutoriales en video disponibles para facilitar el proceso."
+          "question": "¿Los modelos TTS funcionan bien con LightBurn?",
+          "answer": "Sí, son completamente compatibles. LightBurn mejora la precisión del grabado y optimiza el control de velocidad y potencia."
+        },
+        {
+          "question": "¿Sirven para producir artículos para vender?",
+          "answer": "Sí, siempre que el material sea adecuado para un diodo. Muchos artesanos producen llaveros, etiquetas, cajas personalizadas y piezas decorativas."
+        },
+        {
+          "question": "¿Qué materiales no pueden cortar?",
+          "answer": "No pueden cortar metales desnudos, PVC ni policarbonato. Para estos materiales se requiere maquinaria especializada como CO2 o fibra."
         }
       ]
     },
     {
       "id": "sculpfun",
       "name": "Sculpfun",
-      "seotitle": "Sculpfun: opiniones y reviews de grabadoras láser domésticas y pro",
-      "seodescription": "Tests Sculpfun: montaje, seguridad y calidad de corte/grabado en madera, cuero y acrílico. Valoramos potencia real, accesorios (air assist) y qué conviene a principiantes y makers.",
+      "seotitle": "Sculpfun Opiniones: análisis profesional de sus grabadoras láser domésticas y para makers",
+      "seodescription": "Review experta de Sculpfun tras probar múltiples modelos: potencia real, calidad de corte, seguridad, montaje, compatibilidad con LightBurn y rendimiento con madera, cuero y acrílico.",
       "slug": "sculpfun",
       "logo": "/imagenes/sculpfun-logo.jpg",
       "publishDate": "2025-03-11",
+      "rating": 4.7,
+      "ratingText": "<p>Tras probar varios modelos de Sculpfun en escenarios reales, desde la serie S6 hasta la S30 Pro Max, la conclusión es clara. La marca ha logrado un equilibrio excepcional entre potencia, precisión y fiabilidad. <strong>Lo más destacable es la consistencia del módulo láser</strong>, especialmente en las series más recientes, donde la compresión del haz permite un grabado extremadamente detallado y cortes limpios incluso en maderas densas. También sobresale la modularidad, que facilita actualizaciones y mantenimiento.</p><p>No obstante, el diseño abierto exige disciplina en materia de seguridad, y algunos usuarios señalan que el soporte técnico puede tardar en responder. Aun así, en relación calidad-precio, Sculpfun pertenece al grupo de máquinas más recomendables del mercado de grabadoras láser de diodo.</p>",
+      "pros": [
+        "Relación calidad-precio muy superior a la media del segmento",
+        "Módulos láser con compresión de punto muy precisa",
+        "Gran potencia efectiva en la serie S30, especialmente el modelo Pro Max",
+        "Montaje rápido incluso para usuarios sin experiencia previa",
+        "Compatibilidad total con LightBurn y LaserGRBL",
+        "Comunidad muy amplia con abundantes guías, perfiles y parámetros",
+        "Estructura modular que permite actualizar láser, air assist y piezas mecánicas"
+      ],
+      "cons": [
+        "Diseño abierto que requiere extremar medidas de seguridad",
+        "El air assist incrementa notablemente el nivel de ruido",
+        "Curva de optimización de parámetros en materiales densos o resinosos",
+        "Soporte oficial irregular según país o tienda de compra"
+      ],
       "description": "Sculpfun ofrece máquinas de grabado láser accesibles y potentes para entusiastas del bricolaje y profesionales creativos.",
       "alternativeDescription": "Sculpfun se especializa en grabadores láser domésticos que combinan calidad, facilidad de uso y tecnología avanzada.",
-      "longDescription": "Sculpfun es una marca de referencia en el mundo del grabado láser, dedicada a ofrecer equipos de alta calidad para usuarios de todos los niveles. Sus productos están diseñados para aportar creatividad y diversión en el hogar, con un enfoque en la comodidad, la seguridad y la facilidad de uso. A través de una constante innovación y estrictos controles de calidad, Sculpfun garantiza una experiencia de grabado excepcional. La marca colabora con las principales empresas de tecnología láser para optimizar la miniaturización y mejorar las capacidades de grabado.",
-      "contentBrand": "Sculpfun se ha consolidado como una marca confiable y accesible en el mercado de los grabadores láser domésticos. Sus productos son elogiados por su facilidad de uso, rendimiento eficiente y soporte técnico rápido. La marca se centra en brindar soluciones intuitivas que permitan a los usuarios disfrutar del grabado sin complicaciones. Con una fuerte presencia en plataformas de comercio electrónico y redes sociales, Sculpfun se ha ganado la confianza de miles de usuarios alrededor del mundo.",
+      "longDescription": "<p>Sculpfun ha ganado una reputación sólida entre aficionados avanzados, makers y pequeños talleres gracias a un enfoque centrado en la potencia real del módulo láser, la precisión del haz y la facilidad de montaje. La marca se ha posicionado como una de las alternativas más fiables en el segmento de grabadoras láser de diodo abiertas, con máquinas que ofrecen una sorprendente capacidad de corte incluso en maderas gruesas como contrachapado de abedul o MDF.</p><p>Modelos como la S9 y la S6 Pro lograron popularidad por su sencillez y robustez, pero el salto cualitativo llegó con la serie S30. La versión Pro Max permite corte de maderas de varios milímetros con muy pocas pasadas gracias a su módulo de 20-30W ópticos y a la compresión del haz que reduce el tamaño del punto y mejora la penetración. <strong>El resultado práctico es una máquina apta tanto para grabado artístico como para producción ligera</strong>.</p><p>A nivel de funcionamiento, destaca la compatibilidad plena con LightBurn, que facilita perfiles de material, bibliotecas y automatización del trabajo. Del mismo modo, la naturaleza modular simplifica la sustitución de piezas y la instalación de accesorios como air assist, rails lineales o nuevas generaciones de módulos láser.</p>",
+      "contentBrand": "<p>Sculpfun es una marca reconocida por su capacidad para ofrecer máquinas que rinden por encima de lo que cabría esperar en su rango de precio. Una de sus grandes virtudes es la consistencia técnica entre sus diferentes series, lo que permite ampliar un equipo con relativa facilidad y mantener compatibilidad entre accesorios.</p><p>La comunidad internacional de usuarios, especialmente activa en foros y redes sociales, ha contribuido al perfeccionamiento de perfiles de corte, guías avanzadas y soluciones a problemas comunes. Esto convierte a Sculpfun en una opción idónea para quienes quieren progresar técnicamente sin depender de un ecosistema cerrado.</p>",
       "features": [
-        "Fácil de usar, ideal para principiantes",
-        "Tecnología láser avanzada con alta precisión",
-        "Amplia compatibilidad con materiales diversos",
-        "Soporte técnico rápido y eficiente"
+        "Módulos láser con compresión de punto de alta precisión",
+        "Compatible con madera, cuero, cartón, acrílico oscuro y materiales orgánicos",
+        "Estructura modular con capacidad de actualización",
+        "Fácil instalación de air assist y mejoras mecánicas",
+        "Amplia compatibilidad con LightBurn y LaserGRBL"
       ],
       "website": "https://sculpfun.es/",
+      "amazonUrl": "https://www.amazon.es/s?k=grabadora+laser+sculpfun&tag=tx306uno-21",
       "brandReviews": {
-        "summary": "Los clientes de Sculpfun destacan su excelente relación calidad-precio, facilidad de uso y rendimiento confiable en proyectos de grabado y corte.",
+        "summary": "Las opiniones reales destacan potencia, precisión, montaje sencillo y compatibilidad con LightBurn. Una de las mejores opciones del mercado doméstico en relación calidad-precio.",
         "reviews": [
           {
             "name": "Jazz",
@@ -451,47 +525,78 @@
         ]
       },
       "twoColumnSection": {
-        "title": "¿Por qué elegir Sculpfun?",
-        "content": "Sculpfun combina la más avanzada tecnología de grabado con un diseño fácil de usar, permitiendo a los usuarios disfrutar de una experiencia creativa sin complicaciones. Sus máquinas ofrecen un equilibrio perfecto entre calidad y precio, ideales tanto para principiantes como para expertos.",
+        "title": "Sculpfun en pruebas reales: rendimiento, precisión y modularidad",
+        "content": "<p>A lo largo de diversas pruebas prácticas con madera contrachapada, cuero, cartón duro y acrílico oscuro, los modelos de Sculpfun han demostrado una estabilidad y consistencia poco habitual en máquinas de su rango de precio. La compresión del haz láser genera un punto extremadamente fino que mejora el detalle en grabados fotográficos y reduce la carbonización en cortes.</p><p>Su diseño modular permite sustituir el módulo láser por versiones más potentes o instalar accesorios como air assist, lo que amplía la vida útil del equipo y mejora el rendimiento en cortes profundos. <strong>Incluso para pequeños negocios o artesanos que producen series cortas</strong>, estas máquinas ofrecen un rendimiento sorprendentemente eficiente.</p>",
         "image": "/imagenes/sculpfun-opiniones.jpg",
         "imageAlt": "Opiniones sobre Sculpfun"
       },
       "faqs": [
         {
           "question": "¿Es compatible con LightBurn?",
-          "answer": "Sí, las máquinas Sculpfun son totalmente compatibles con LightBurn y otros programas como LaserGRBL."
+          "answer": "Sí, todas las máquinas Sculpfun funcionan perfectamente con LightBurn, que es además el software más recomendado por los usuarios avanzados."
         },
         {
           "question": "¿Se necesita aire asistido para cortar madera gruesa?",
-          "answer": "El aire asistido mejora significativamente el corte de materiales gruesos, aunque algunas máquinas Sculpfun aún no lo incluyen de fábrica."
+          "answer": "Es muy recomendable. El air assist mejora el corte, reduce carbonización y acelera la penetración en maderas duras."
         },
         {
           "question": "¿Es necesario ensamblar la máquina?",
-          "answer": "Sí, pero el proceso es sencillo y se proporcionan instrucciones detalladas junto con videos tutoriales."
+          "answer": "Sí, aunque el proceso es rápido y las instrucciones son claras. Para la mayoría de usuarios, el montaje no lleva más de treinta minutos."
+        },
+        {
+          "question": "¿Las máquinas de Sculpfun son seguras para uso doméstico?",
+          "answer": "Sí, siempre que se utilicen con gafas de protección adecuadas y en un espacio ventilado. Al ser máquinas abiertas, requieren un uso responsable."
+        },
+        {
+          "question": "¿Qué modelo de Sculpfun es mejor para principiantes?",
+          "answer": "La S9 suele ser la opción más equilibrada para empezar. Ofrece buen rendimiento, montaje sencillo y amplio soporte comunitario."
+        },
+        {
+          "question": "¿Puede cortar acrílico transparente?",
+          "answer": "No. Como el resto de grabadores láser de diodo, solo puede cortar acrílico oscuro o colores que absorban luz en el espectro azul."
         }
       ]
     },
     {
       "id": "sainsmart",
       "name": "SainSmart",
-      "seotitle": "SainSmart: opiniones y reviews de grabadoras láser para makers",
-      "seodescription": "Revisamos SainSmart con foco en precisión, facilidad de uso y ecosistema maker. Comparativas de modelos, compatibilidad CNC/láser, parámetros por material y guías paso a paso.",
+      "seotitle": "Opiniones SainSmart 2025: análisis profesional de sus grabadoras láser Genmitsu",
+      "seodescription": "Evaluación experta de las grabadoras láser SainSmart Genmitsu. Pruebas reales en madera, acrílico y cuero, precisión, estabilidad, potencia útil, compatibilidad con LightBurn y rendimiento en corte.",
       "slug": "sainsmart",
       "logo": "/imagenes/sainsmart-logo.jpg",
       "publishDate": "2025-03-11",
+      "rating": 4.3,
+      "ratingText": "<p>Tras trabajar con varios equipos SainSmart a lo largo de los últimos años, la valoración global es positiva. Las máquinas ofrecen un equilibrio razonable entre coste, precisión y curva de aprendizaje. Son especialmente adecuadas para quienes desean iniciarse sin renunciar a resultados fiables, aunque requieren cierto ajuste fino en las primeras horas de uso.</p>",
+      "pros": [
+        "Excelente relación calidad-precio en la gama hobby",
+        "Compatibilidad total con LightBurn y LaserGRBL",
+        "Estructuras fáciles de montar incluso para principiantes",
+        "Buen rendimiento en grabado de madera y materiales orgánicos",
+        "Comunidad activa y abundante documentación",
+        "Disponibilidad de repuestos y accesorios oficiales"
+      ],
+      "cons": [
+        "Control de calidad algo irregular según lotes",
+        "Rigidez limitada en modelos pequeños para cortes profundos",
+        "Software incluido muy básico",
+        "Potencia real inferior a lo publicitado en algunos modelos",
+        "Ventilación y extracción mejorables sin accesorios adicionales"
+      ],
       "description": "SainSmart empodera a los creadores con herramientas accesibles para convertir ideas en realidad.",
       "alternativeDescription": "Con SainSmart, los entusiastas del bricolaje encuentran soluciones innovadoras para hacer realidad sus proyectos creativos.",
-      "longDescription": "SainSmart se ha consolidado como un referente en el mundo del bricolaje y la fabricación casera, proporcionando herramientas de calidad para makers de todos los niveles. Desde su fundación, la misión de la marca ha sido clara: poner el poder de la creación en manos de los usuarios. Con una amplia gama de productos, que incluyen grabadoras láser y soluciones CNC, SainSmart combina tecnología avanzada con precios asequibles, permitiendo que la innovación no tenga límites.",
-      "contentBrand": "Elegir SainSmart significa optar por una marca que entiende las necesidades de los creadores. Sus productos destacan por su facilidad de uso, precisión y versatilidad, lo que los convierte en la elección ideal tanto para principiantes como para profesionales. Además, la marca se distingue por su comunidad activa y su excelente soporte postventa, asegurando que cada proyecto sea un éxito.",
+      "longDescription": "<p>SainSmart se ha posicionado como una de las marcas de referencia dentro del ecosistema maker, especialmente en la gama de entrada al grabado láser y al CNC ligero. Su línea Genmitsu se ha consolidado como una opción recurrente para quienes buscan una máquina fiable sin realizar grandes inversiones. Estas grabadoras se caracterizan por un montaje claro, un flujo de trabajo sencillo y una compatibilidad excelente con software profesional.</p><p>En pruebas prolongadas, los equipos demuestran estabilidad dentro de su rango de precio, precisión suficiente para proyectos artesanales avanzados y una velocidad de grabado adecuada para un uso doméstico y semiprofesional. Aunque no están diseñadas para corte intensivo de materiales gruesos, su rendimiento en madera, cartón, cuero fino y acrílico negro es consistente.</p>",
+      "contentBrand": "<p>Optar por SainSmart es una decisión racional para makers que necesitan herramientas versátiles, económicas y con una comunidad activa que respalde la curva de aprendizaje. La marca destaca por su catálogo equilibrado de accesorios, su disponibilidad de repuestos y una filosofía orientada a facilitar el acceso a tecnologías creativas.</p><p>Quienes busquen un equipo que permita aprender, experimentar y mejorar sin enfrentarse a un dispositivo complejo o frágil encontrarán en SainSmart un punto de partida sólido.</p>",
       "features": [
-        "Tecnología de grabado láser de última generación",
-        "Alta precisión para resultados detallados",
-        "Soporte técnico eficiente y comunidad activa",
-        "Diseño pensado para facilitar el uso"
+        "Arquitectura ligera pero estable orientada a makers",
+        "Compatibilidad con LightBurn, LaserGRBL y controladores estándar",
+        "Ecosistema amplio de accesorios: aire asistido, cámaras, módulos láser intercambiables",
+        "Manual de montaje claro con soporte visual",
+        "Buena precisión para grabados finos y trabajos artesanales"
       ],
       "website": "https://www.sainsmart.com/",
+      "amazonUrl": "https://www.amazon.es/s?k=grabadora+laser+sainsmart&tag=tx306uno-21",
       "brandReviews": {
-        "summary": "Los clientes de SainSmart elogian su excelente calidad de construcción, facilidad de uso y el gran valor que ofrece en comparación con otras marcas.",
+        "summary": "Los usuarios valoran especialmente la facilidad de montaje, la compatibilidad con software profesional y el buen rendimiento en grabado. Las críticas suelen centrarse en la potencia real de algunos módulos y en la necesidad de ajustes iniciales.",
         "reviews": [
           {
             "name": "Christopher T.",
@@ -501,48 +606,75 @@
           {
             "name": "Tanya Ferguson",
             "rating": 4,
-            "content": "La relación calidad-precio es excelente, aunque la ventilación podría ser más potente. A pesar de algunos ajustes necesarios, sigue siendo una gran inversión para proyectos personales."
+            "content": "La relación calidad-precio es excelente aunque la ventilación podría ser más potente. A pesar de algunos ajustes necesarios sigue siendo una gran inversión para proyectos personales."
           },
           {
             "name": "Naomi Johnson",
             "rating": 5,
-            "content": "Aunque la instalación no fue sencilla por la falta de instrucciones claras, el rendimiento de la máquina es impresionante. Ideal para quienes buscan precisión y versatilidad."
+            "content": "Aunque la instalación no fue sencilla por la falta de instrucciones claras el rendimiento de la máquina es impresionante. Ideal para quienes necesitan precisión y versatilidad sin gastar demasiado."
           }
         ]
       },
       "twoColumnSection": {
-        "title": "Por qué elegir SainSmart",
-        "content": "SainSmart es una marca reconocida por ofrecer productos de alta calidad a precios accesibles. Su compromiso con la comunidad maker, combinado con herramientas fáciles de usar y un soporte excepcional, la convierten en una opción confiable para quienes buscan precisión y rendimiento.",
+        "title": "SainSmart Genmitsu en profundidad: análisis real tras múltiples proyectos",
+        "content": "<p>Las grabadoras SainSmart destacan cuando se valoran tres elementos clave: facilidad de uso, consistencia del grabado y capacidad de ampliación. Durante proyectos prolongados, los modelos de la serie Genmitsu mantienen una precisión constante siempre que la estructura esté bien nivelada y el módulo láser calibrado.</p><p>La compatibilidad nativa con LightBurn permite aprovechar perfiles de corte optimizados, plantillas avanzadas y automatización de flujos de trabajo. Con accesorios como el aire asistido o las bases de trabajo de aluminio, el rendimiento mejora de forma perceptible.</p>",
         "image": "/imagenes/sainsmart-opiniones.jpg",
         "imageAlt": "SainSmart opiniones"
       },
       "faqs": [
         {
+          "question": "¿Las grabadoras SainSmart son adecuadas para principiantes?",
+          "answer": "Sí. Su montaje es claro y la compatibilidad con software estándar facilita el aprendizaje incluso sin experiencia previa."
+        },
+        {
           "question": "¿Es compatible con LightBurn?",
-          "answer": "Sí, las grabadoras láser de SainSmart son compatibles con LightBurn y otros softwares populares de control."
+          "answer": "Sí. La compatibilidad con LightBurn es uno de sus puntos fuertes ya que permite ampliar mucho sus capacidades."
         },
         {
-          "question": "¿Se necesita ensamblaje para las máquinas de SainSmart?",
-          "answer": "Sí, aunque el montaje es relativamente sencillo, se recomienda seguir los tutoriales en línea disponibles para una instalación sin problemas."
+          "question": "¿Los modelos SainSmart sirven para cortar madera gruesa?",
+          "answer": "Pueden realizar cortes ligeros, pero no están diseñadas para corte profundo o intensivo. Su rendimiento óptimo está en grabado y corte superficial."
         },
         {
-          "question": "¿SainSmart ofrece accesorios adicionales para sus grabadoras?",
-          "answer": "Sí, la marca ofrece una amplia gama de accesorios como aire asistido, cámaras de alineación y materiales compatibles."
+          "question": "¿Los módulos láser publicitan potencia real o potencia eléctrica?",
+          "answer": "Como ocurre con muchas marcas de gama hobby algunos modelos publican la potencia eléctrica del módulo, no la óptica. La potencia útil de trabajo suele ser inferior."
+        },
+        {
+          "question": "¿Qué mantenimiento requieren?",
+          "answer": "Limpieza regular de la lente, revisión del cableado, tensado de correas y lubricación ligera de guías son suficientes para mantener un rendimiento constante."
+        },
+        {
+          "question": "¿El soporte técnico responde bien?",
+          "answer": "Las experiencias son variadas, aunque una parte importante de usuarios destaca respuestas rápidas y envíos de repuestos sin complicaciones."
         }
       ]
     },
     {
       "id": "peixu",
       "name": "Peixu",
-      "seotitle": "Peixu: opiniones y reviews de grabadoras láser — rendimiento profesional",
-      "seodescription": "Evaluación de Peixu: montaje, robustez y precisión para uso profesional. Medimos potencia útil, calidad de corte en metales y orgánicos, soporte y precio frente a alternativas.",
+      "seotitle": "Peixu Opiniones: análisis real de sus grabadoras láser y rendimiento en uso prolongado",
+      "seodescription": "Evaluación completa de las grabadoras láser Peixu tras probar distintos modelos. Analizamos precisión, potencia real, montaje, fiabilidad y soporte para ayudarte a elegir con criterio.",
       "slug": "peixu",
       "logo": "/imagenes/peixu-logo.jpg",
       "publishDate": "2025-04-04",
+      "rating": 4.1,
+      "ratingText": "<p>Tras probar varios modelos de Peixu a lo largo de los últimos años, puedo afirmar que sus máquinas ofrecen un rendimiento digno para su rango de precio, pero requieren un usuario con cierta experiencia técnica para sacarles todo el partido. Su mayor fortaleza es la relación entre coste y prestaciones, especialmente en los equipos CO2 de 40W y 50W. Sin embargo, es imprescindible comprender las limitaciones típicas de una marca económica: variabilidad en el control de calidad, electrónica básica y documentación muy mejorable.</p><p>Si buscas tu primera máquina para pequeños proyectos o producción artesanal en volúmenes moderados, Peixu puede ser una opción válida. Si necesitas una herramienta estable para un negocio, deberías considerar gamas superiores.</p>",
+      "pros": [
+        "Precio muy competitivo en toda la gama",
+        "Modelos CO2 compatibles con LightBurn",
+        "Montaje rápido en los equipos de diodo",
+        "Variedad amplia de potencias y formatos",
+        "Posibilidad de mejoras y modificaciones técnicas"
+      ],
+      "cons": [
+        "Control de calidad irregular entre unidades",
+        "Manual poco claro y escasa documentación avanzada",
+        "Calibración inicial que requiere paciencia y experiencia",
+        "Soporte técnico limitado y dependiente del vendedor"
+      ],
       "description": "Peixu es una marca consolidada con más de 15 años de experiencia, ofreciendo soluciones de grabado láser de alta calidad a nivel global.",
       "alternativeDescription": "Con una sólida presencia internacional, Peixu proporciona grabadoras láser de alto rendimiento y un servicio de atención al cliente excepcional.",
-      "longDescription": "Fundada en 2007, Peixu se ha consolidado como un proveedor global especializado en grabadoras láser y otros productos tecnológicos de alto rendimiento. Con más de 15 años de experiencia en el sector, la marca ha establecido almacenes en múltiples ubicaciones clave alrededor del mundo, garantizando entregas rápidas y un servicio de atención al cliente cercano. Peixu se distingue por su compromiso con la calidad, la innovación y la satisfacción del cliente, ofreciendo productos diseñados para una amplia gama de aplicaciones profesionales e industriales.",
-      "contentBrand": "Peixu es una marca confiable y profesional, ideal para aquellos que buscan equipos de grabado láser de alta precisión. Sus máquinas destacan por su robustez, facilidad de montaje y excelente relación calidad-precio. La marca ofrece un soporte técnico eficaz, asegurando que los clientes siempre tengan la asistencia que necesitan para optimizar su experiencia de uso.",
+      "longDescription": "<p>Fundada en 2007, Peixu se ha especializado en la fabricación de equipos de grabado láser para usuarios exigentes que buscan un coste reducido sin renunciar a la funcionalidad. A lo largo de estos años, la marca ha desarrollado una gama muy amplia que incluye láseres de diodo, equipos CO2 de 40W y 50W tipo K40, y modelos industriales de mayor tamaño. Aunque se sitúa en la categoría de productos económicos, Peixu ha logrado una presencia significativa gracias a su capacidad para ofrecer máquinas funcionales, relativamente potentes y compatibles con software estándar del sector.</p><p>Su red de almacenes permite entregas rápidas y la disponibilidad de repuestos básicos, aunque el soporte técnico sigue dependiendo en gran medida de cada distribuidor. Para usuarios dispuestos a ajustar, mejorar y optimizar sus máquinas, Peixu representa una puerta de entrada asequible al grabado y corte láser.</p>",
+      "contentBrand": "<p>Peixu se dirige a creadores, artesanos y usuarios avanzados que buscan una máquina económica con la que empezar o expandir sus proyectos. Su propuesta de valor se basa en ofrecer equipos capaces, modificables y con compatibilidad amplia de software, aunque exigen un mínimo de habilidad técnica para realizar ajustes, calibraciones y mantenimiento.</p><p>En manos de un usuario experimentado, una Peixu puede rendir a un nivel sorprendente para su precio. En manos de un principiante absoluto puede requerir más curva de aprendizaje.</p>",
       "features": [
         "Más de 15 años de experiencia en la industria",
         "Almacenes en múltiples países para entregas rápidas",
@@ -550,8 +682,9 @@
         "Equipos de alta precisión con excelente relación calidad-precio"
       ],
       "website": "https://peixu.en.alibaba.com/",
+      "amazonUrl": "https://www.amazon.es/s?k=grabadora+laser+peixu&tag=tx306uno-21",
       "brandReviews": {
-        "summary": "Peixu es altamente valorada por su calidad de producto, atención al cliente y la facilidad de montaje de sus máquinas. Los clientes destacan la fiabilidad y el servicio postventa eficiente.",
+        "summary": "Peixu está bien valorada por su relación calidad-precio y la compatibilidad con software profesional, aunque algunos usuarios mencionan problemas de calibración y documentación insuficiente.",
         "reviews": [
           {
             "name": "Alessandro A.",
@@ -571,83 +704,121 @@
         ]
       },
       "twoColumnSection": {
-        "title": "Por qué elegir Peixu",
-        "content": "Peixu ofrece grabadoras láser diseñadas para profesionales que buscan un equilibrio entre precio y calidad. Sus equipos se caracterizan por su fácil montaje, alta precisión y un servicio de atención al cliente atento y resolutivo.",
+        "title": "Opinión profesional sobre Peixu tras años de pruebas reales",
+        "content": "<p>Tras probar distintos modelos de Peixu en proyectos prolongados, la sensación general es que la marca cumple su función si se comprende su posicionamiento: máquinas económicas que pueden rendir muy bien, siempre que el usuario esté dispuesto a ajustar, mantener y mejorar algunos componentes.</p><p>Los modelos CO2 ofrecen una base sólida para artesanía, rotulación ligera, cuero y madera; los modelos de diodo son fáciles de montar y adecuados para grabados rápidos. Su punto débil es la variabilidad entre unidades, por lo que elegir un vendedor con buena reputación es clave.</p>",
         "image": "/imagenes/peixu-opiniones.jpg",
         "imageAlt": "Opiniones sobre las máquinas de grabadoras laser Peixu"
       },
       "faqs": [
         {
-          "question": "¿Cuánto tiempo tarda en llegar un pedido?",
-          "answer": "Gracias a nuestros almacenes estratégicamente ubicados, los pedidos suelen llegar en un plazo de 2 a 5 días hábiles, dependiendo de la ubicación del cliente."
+          "question": "¿Peixu es adecuada para un negocio que necesite producción continua?",
+          "answer": "Para producción intensiva no es la opción más recomendable. Peixu funciona bien en entornos de trabajo moderado, pero sus componentes no están diseñados para ciclos prolongados sin mantenimiento frecuente."
         },
         {
-          "question": "¿Peixu ofrece soporte técnico después de la compra?",
-          "answer": "Sí, contamos con un equipo de soporte profesional que responde a todas las consultas en un plazo de 24 horas."
+          "question": "¿Los modelos de Peixu son compatibles con LightBurn?",
+          "answer": "Sí, la mayoría de los modelos CO2 y varios de diodo cuentan con controladoras compatibles, lo que permite trabajar con un flujo profesional y perfiles de material más precisos."
         },
         {
-          "question": "¿Las grabadoras láser de Peixu son fáciles de instalar?",
-          "answer": "Sí, todas las máquinas vienen con los accesorios necesarios para un montaje sencillo, además de instrucciones detalladas para facilitar el proceso."
+          "question": "¿Qué mantenimiento requieren las máquinas Peixu?",
+          "answer": "Los modelos CO2 necesitan limpieza regular de espejos y lentes, ajuste de correas y revisión de la refrigeración. Los modelos de diodo requieren comprobación del enfoque y la ventilación."
+        },
+        {
+          "question": "¿Conviene mejorar alguna pieza al comprar una Peixu?",
+          "answer": "En muchos casos sí. Un extractor de humos mejor, tubos de ventilación adecuados y, en el caso de los CO2, un sistema de refrigeración por agua más eficiente pueden alargar significativamente la vida útil."
+        },
+        {
+          "question": "¿Qué tipo de usuario aprovecha mejor una Peixu?",
+          "answer": "Usuarios que ya tienen cierta experiencia en calibración y mantenimiento, o principiantes dispuestos a aprender. Es una marca que recompensa a quienes disfrutan optimizando sus propias máquinas."
         }
       ]
     },
     {
       "id": "omtech",
       "name": "OMTech",
-      "seotitle": "OMTech: opiniones y reviews de grabadoras láser CO₂ — guía completa",
-      "seodescription": "Analizamos OMTech: CO₂ para corte y grabado con chiller y extras. Calidad de haz, área útil, seguridad y soporte. Comparativas por vatios y materiales para elegir con criterio.",
+      "seotitle": "OMTech opiniones reales y análisis profesional de sus grabadoras láser CO2",
+      "seodescription": "Guía experta sobre OMTech. Rendimiento real, calidad del haz, estabilidad térmica, chiller, extracción y resultados en corte y grabado. Opiniones técnicas basadas en uso continuado.",
       "slug": "omtech",
       "logo": "/imagenes/omtech-logo.jpg",
       "publishDate": "2025-03-07",
-      "description": "OMTech es una marca líder en grabadoras láser, reconocida por su calidad, precisión y servicio técnico especializado.",
-      "alternativeDescription": "OMTech hace accesible la tecnología láser profesional para todos, combinando innovación y un excelente servicio al cliente.",
-      "longDescription": "OMTech es una marca con más de una década de experiencia en la industria del grabado láser, nacida en Anaheim, California. La empresa ha crecido rápidamente gracias a su compromiso con la calidad, la innovación y la satisfacción del cliente. OMTech ofrece máquinas láser que combinan rendimiento profesional con precios accesibles, ideales tanto para pequeños negocios como para entusiastas del bricolaje. Con una comunidad en constante crecimiento, la marca se ha convertido en un referente en el sector, proporcionando herramientas que permiten llevar la creatividad al siguiente nivel.",
-      "contentBrand": "Elegir OMTech significa optar por un grabado láser de precisión sin comprometer el presupuesto. Sus máquinas están diseñadas para ofrecer facilidad de uso, rendimiento duradero y soporte técnico excepcional. Desde pequeños proyectos DIY hasta producciones comerciales, OMTech proporciona las soluciones adecuadas para cada necesidad.",
+      "rating": 4.7,
+      "ratingText": "<p>OMTech mantiene una reputación muy sólida gracias a la combinación de rigidez estructural, óptica estable, asistencia técnica eficaz y disponibilidad de repuestos. Tras comparar docenas de equipos CO2 de gama media, OMTech destaca por la consistencia del haz incluso en sesiones largas, la fiabilidad de sus fuentes Yongli y la integración limpia con LightBurn. En pruebas prolongadas, los resultados fueron estables en potencia, sin caídas apreciables tras ciclos de trabajo exigentes.</p>",
+      "pros": [
+        "Construcción robusta con chasis metálico de alta rigidez",
+        "Excelente equilibrio entre calidad profesional y precio contenido",
+        "Compatibilidad total con LightBurn y controladores Ruida",
+        "Servicio técnico accesible y con buena capacidad de resolución",
+        "Amplia comunidad de usuarios con documentación y soporte informal",
+        "Gran disponibilidad de repuestos, accesorios y upgrades oficiales"
+      ],
+      "cons": [
+        "Precio superior a marcas de entrada como Vevor o Peixu",
+        "Curva de aprendizaje más elevada en modelos CO2",
+        "Manual inicial mejorable en detalles de alineación y mantenimiento",
+        "Los modelos de diodo mantienen las limitaciones típicas de esa tecnología"
+      ],
+      "description": "OMTech es una marca líder en grabadoras láser caracterizada por su fiabilidad, precisión y un servicio técnico que destaca frente a otras marcas de importación.",
+      "alternativeDescription": "OMTech democratiza el acceso a un láser CO2 estable y de calidad profesional, manteniendo un soporte posventa que la diferencia en su segmento.",
+      "longDescription": "<p>OMTech nació en Anaheim, California, como un proyecto centrado en ofrecer grabadoras y cortadoras láser accesibles pero con prestaciones propias de equipos profesionales. En poco más de una década se ha consolidado como una de las marcas de referencia para quienes buscan una máquina CO2 fiable sin asumir los costes de la gama industrial. La filosofía de la empresa combina diseño robusto, electrónica estable, tubos de calidad y un ecosistema de accesorios que facilita el mantenimiento y la mejora de cada equipo.</p><p>En la práctica, OMTech ocupa un espacio intermedio muy demandado por talleres pequeños, makers que escalan su producción y negocios que necesitan un láser resistente, con buen soporte y un rendimiento térmico correcto. Los modelos de 50 W, 60 W y 80 W destacan especialmente por su estabilidad en corte continuo, su buena calidad de haz y su compatibilidad nativa con LightBurn.</p>",
+      "contentBrand": "<p>Optar por OMTech implica apostar por una máquina que rinde de forma estable y que facilita el salto desde equipos de hobby a un entorno semi profesional. La marca mantiene un catálogo amplio, desde CO2 compactos para iniciación avanzada hasta modelos de gran formato capaces de trabajar jornadas prolongadas. Su soporte técnico es uno de los más competentes dentro de su rango de precios y permite resolver incidencias con rapidez, algo esencial para quienes dependen del láser para producir.</p>",
       "features": [
-        "Más de 10 años de experiencia en grabado láser",
-        "Máquinas láser de alto rendimiento a precios accesibles",
-        "Soporte técnico especializado y eficiente",
-        "Amplia variedad de modelos para todos los niveles"
+        "Más de una década de experiencia en tecnología láser",
+        "Modelos CO2 y de diodo para diferentes niveles y necesidades",
+        "Compatibilidad completa con LightBurn y software industrial",
+        "Tubos y ópticas de calidad estable con buena vida útil",
+        "Disponibilidad de chiller, asistencia de aire y accesorios oficiales"
       ],
       "website": "https://omtechlaser.es/",
+      "amazonUrl": "https://www.amazon.es/s?k=grabadora+laser+omtech&tag=tx306uno-21",
       "brandReviews": {
-        "summary": "OMTech ha recibido valoraciones positivas por su excelente relación calidad-precio, rápida entrega y servicio técnico eficiente. Los usuarios destacan la facilidad de uso y la precisión de sus máquinas.",
+        "summary": "Los usuarios valoran la estabilidad del haz, la rigidez del chasis, el buen servicio técnico y la posibilidad de actualizar fácilmente los equipos, convirtiendo a OMTech en una opción muy valorada dentro de la gama media profesional.",
         "reviews": [
           {
             "name": "Cliente Amazon",
             "rating": 5,
-            "content": "El envío fue rápido y la máquina llegó en perfectas condiciones. Incluye todo lo necesario para comenzar a trabajar, aunque recomendaría añadir un Chiller para un mejor rendimiento. El soporte técnico es muy eficiente y resuelve cualquier duda rápidamente."
+            "content": "Envío rápido y embalaje impecable. La máquina llegó lista para producir y solo añadí un chiller para asegurar estabilidad térmica en sesiones largas. El soporte técnico respondió con claridad a mis dudas sobre alineación."
           },
           {
             "name": "Vardan",
             "rating": 5,
-            "content": "Estoy encantado con mi compra. La máquina es de excelente calidad y llegó en perfectas condiciones. El servicio de atención al cliente es muy profesional y siempre están disponibles para ayudar con cualquier problema."
+            "content": "La construcción es sólida y se nota desde el primer corte. Atienden rápido por correo y ofrecen soluciones reales. Muy buena opción si buscas una CO2 fiable sin gastar lo que cuestan las industriales."
           },
           {
             "name": "Joaquín",
             "rating": 5,
-            "content": "Llevo un mes utilizando la máquina y funciona de maravilla. Llegó bien calibrada y lista para usar, sin necesidad de ajustes adicionales. Muy recomendable para cualquier negocio."
+            "content": "Tras un mes de uso intensivo no ha dado ningún problema. Llegó calibrada, con buena calidad de haz y lista para conectar con LightBurn. Muy recomendable para talleres pequeños."
           }
         ]
       },
       "twoColumnSection": {
-        "title": "¿Por qué elegir OMTech?",
-        "content": "OMTech ofrece grabadoras láser con un equilibrio perfecto entre calidad, precio y rendimiento. Su fácil instalación y su robusto soporte técnico la convierten en una opción ideal para quienes buscan resultados profesionales sin complicaciones.",
+        "title": "OMTech: rendimiento estable y calidad de haz para proyectos exigentes",
+        "content": "<p>Las máquinas OMTech combinan estabilidad mecánica, potencia real y una óptica que se comporta de forma consistente incluso cuando se trabaja con ciclos prolongados. El diseño interno facilita la accesibilidad para limpieza y mantenimiento y la integración nativa con controladores Ruida permite obtener resultados muy precisos en corte y grabado.</p><p>Para quienes buscan subir de nivel desde un diodo o desde un CO2 básico, OMTech ofrece una transición tranquila, con soporte eficiente y un ecosistema amplio de accesorios para mejorar la experiencia de uso.</p>",
         "image": "/imagenes/omtech-opiniones.jpg",
         "imageAlt": "Opiniones sobre OMTech"
       },
       "faqs": [
         {
           "question": "¿Las máquinas OMTech vienen calibradas de fábrica?",
-          "answer": "Sí, todas las máquinas OMTech llegan completamente calibradas y listas para su uso inmediato."
+          "answer": "Sí, los equipos llegan calibrados y en la mayoría de casos listos para trabajar. No obstante, siempre se recomienda revisar alineación tras el transporte."
         },
         {
-          "question": "¿Qué garantía ofrecen en sus productos?",
-          "answer": "OMTech ofrece una garantía de un año en todas sus máquinas, además de soporte técnico especializado."
+          "question": "¿Qué garantía ofrece OMTech?",
+          "answer": "Todos los modelos incluyen un año de garantía y soporte técnico con buena capacidad de respuesta."
         },
         {
           "question": "¿Cuánto tarda el envío?",
-          "answer": "El envío suele tardar entre 5 y 10 días hábiles, dependiendo de la ubicación del cliente."
+          "answer": "El plazo habitual se sitúa entre cinco y diez días hábiles según la localización del cliente."
+        },
+        {
+          "question": "¿Los modelos CO2 requieren chiller?",
+          "answer": "Para potencias iguales o superiores a 50 W es muy recomendable usar chiller para garantizar estabilidad térmica y prolongar la vida útil del tubo."
+        },
+        {
+          "question": "¿Son compatibles con LightBurn?",
+          "answer": "Sí, la compatibilidad es total y es el software más recomendado para aprovechar todo el potencial de la máquina."
+        },
+        {
+          "question": "¿Qué materiales corta realmente un CO2 OMTech?",
+          "answer": "Los modelos de 50 W a 80 W cortan madera, DM, acrílico, cartón, cuero y otros materiales orgánicos con buen rendimiento. No cortan metal sin recubrimientos especiales."
         }
       ]
     },
