@@ -27,7 +27,7 @@
       "featuredImage": "/imagenes/grabado-corte-laser-madera.jpg",
       "tags": ["consejos"],
       "categories": ["tutoriales"],
-      "readTime": 13,
+      "readTime": 3,
       "relatedArticles": ["mejores-maquinas-laser-co2", "grabado-en-acrilico", "parametros-corte-laser-tabla"]
     },
     {
@@ -42,7 +42,7 @@
       "featuredImage": "/imagenes/grabado-corte-laser-cristal.jpg",
       "tags": ["consejos"],
       "categories": ["tutoriales"],
-      "readTime": 14,
+      "readTime": 4,
       "relatedArticles": ["grabado-en-acrilico", "consejos-grabado-corte-laser-madera", "mejores-maquinas-laser-co2"]
     },
     {
@@ -57,7 +57,7 @@
       "featuredImage": "/imagenes/grabado-corte-laser-metal.jpg",
       "tags": ["consejos"],
       "categories": ["tutoriales"],
-      "readTime": 14,
+      "readTime": 4,
       "relatedArticles": ["consejos-grabado-corte-laser-madera", "consejos-grabado-corte-laser-cristal", "mejores-maquinas-laser-fibra"]
     },
     {
@@ -72,7 +72,7 @@
       "featuredImage": "/imagenes/grabado-corte-laser-cuero.jpg",
       "tags": ["consejos"],
       "categories": ["tutoriales"],
-      "readTime": 14,
+      "readTime": 5,
       "relatedArticles": ["consejos-grabado-corte-laser-madera", "consejos-grabado-corte-laser-metal", "grabado-en-acrilico"]
     },
     {
@@ -87,7 +87,7 @@
       "featuredImage": "/imagenes/grabado-corte-laser-plastico.jpg",
       "tags": ["consejos"],
       "categories": ["tutoriales"],
-      "readTime": 13,
+      "readTime": 4,
       "relatedArticles": ["grabado-en-acrilico", "consejos-grabado-corte-laser-metal", "mejores-maquinas-laser-co2"]
     },
     {
@@ -102,7 +102,7 @@
       "featuredImage": "/imagenes/grabado-corte-laser-tela.jpg",
       "tags": ["consejos"],
       "categories": ["tutoriales"],
-      "readTime": 13,
+      "readTime": 5,
       "relatedArticles": ["consejos-grabado-corte-laser-plastico", "consejos-grabado-corte-laser-cuero", "mejores-maquinas-laser-co2"]
     },
     {
@@ -117,7 +117,7 @@
       "featuredImage": "/imagenes/mantenimiento-cortadora-laser.jpg",
       "tags": ["consejos"],
       "categories": ["tutoriales"],
-      "readTime": 12,
+      "readTime": 6,
       "relatedArticles": ["consejos-grabado-corte-laser-metal", "consejos-grabado-corte-laser-plastico", "mejores-maquinas-laser-co2"]
     },
     {
@@ -132,7 +132,7 @@
     "featuredImage": "/imagenes/corte-laser-metacrilato.jpg",
     "tags": ["principiantes"],
     "categories": ["tutoriales"],
-    "readTime": 14,
+    "readTime": 6,
     "relatedArticles": ["grabado-en-acrilico", "mejores-maquinas-laser-co2", "parametros-corte-laser-tabla"]
     },
     {
@@ -147,7 +147,7 @@
       "featuredImage": "/imagenes/como-funciona-un-cortador-laser.jpg",
       "tags": ["principiantes"],
       "categories": ["tutoriales"],
-      "readTime": 14,
+      "readTime": 7,
       "relatedArticles": ["consejos-grabado-corte-laser-cuero","corte-laser-metacrilato","mantenimiento-cortadora-laser"]
     },
     {
@@ -163,7 +163,7 @@
       "featuredImage": "/imagenes/que-es-maquina-laser-fibra.jpg",
       "tags": ["principiantes"],
       "categories": ["tutoriales"],
-      "readTime": 14,
+      "readTime": 7,
       "relatedArticles": ["grabado-corte-laser-metal","mantenimiento-cortadora-laser","guia-principiantes-grabado-laser"]
     },
     {
@@ -179,7 +179,7 @@
       "featuredImage": "/imagenes/que-es-marcado-laser.jpg",
       "tags": ["principiantes"],
       "categories": ["tutoriales"],
-      "readTime": 14,
+      "readTime": 8,
       "relatedArticles": ["grabado-corte-laser-metal","consejos-grabado-corte-laser-plastico","guia-principiantes-grabado-laser"]
     },
     {
@@ -195,7 +195,7 @@
       "featuredImage": "/imagenes/que-es-laser-uv.jpg",
       "tags": ["principiantes"],
       "categories": ["tutoriales"],
-      "readTime": 16,
+      "readTime": 6,
       "relatedArticles": ["consejos-grabado-corte-laser-plastico","consejos-grabado-corte-laser-cristal","guia-principiantes-grabado-laser"]
     },
     {
@@ -211,7 +211,7 @@
       "featuredImage": "/imagenes/parametros-grabado-corte-laser.jpg",
       "tags": ["principiantes"],
       "categories": ["tutoriales"],
-      "readTime": 18,
+      "readTime": 8,
       "relatedArticles": ["consejos-grabado-corte-laser-madera","corte-laser-metacrilato","guia-principiantes-grabado-laser"]
     },
     {
@@ -227,7 +227,7 @@
       "featuredImage": "/imagenes/materiales-prohibidos-laser.jpg",
       "tags": ["principiantes"],
       "categories": ["tutoriales"],
-      "readTime": 16,
+      "readTime": 6,
       "relatedArticles": ["consejos-grabado-corte-laser-madera","consejos-grabado-corte-laser-plastico","guia-principiantes-grabado-laser"]
     },
     {
@@ -243,7 +243,7 @@
       "featuredImage": "/imagenes/air-assist-grabadoras-laser.jpg",
       "tags": ["principiantes"],
       "categories": ["tutoriales"],
-      "readTime": 16,
+      "readTime": 6,
       "relatedArticles": ["consejos-grabado-corte-laser-madera","consejos-grabado-corte-laser-plastico","guia-principiantes-grabado-laser"]
     },
     {
@@ -257,7 +257,7 @@
       "featuredImage": "/imagenes/humos-cortadora-laser.jpg",
       "tags": ["seguridad"],
       "categories": ["tutoriales"],
-      "readTime": 19,
+      "readTime": 7,
       "content": "<p>En una cortadora láser no existe un corte mecánico, sino un proceso termoquímico intenso. El haz eleva el material a temperaturas en las que se produce pirólisis, combustión localizada o vaporización, generando una mezcla compleja de gases, partículas y aerosoles. Estos humos nunca son inocuos, incluso cuando se trabaja con materiales considerados seguros como madera o acrílico.</p>\n\n<h2>1. Qué son realmente los humos en una cortadora láser</h2>\n<p>Al descomponerse un material bajo un haz láser se producen:</p>\n<ul>\n <li><strong>Gases inorgánicos</strong>: CO₂, CO, NOx, HCl, HF, Cl₂.</li>\n <li><strong>Compuestos orgánicos volátiles</strong> (COV): formaldehído, benceno, estireno, MMA.</li>\n <li><strong>Partículas ultrafinas</strong> (PM₁₀, PM₂.₅, nanopartículas).</li>\n <li><strong>Aerosoles de condensado</strong> (resinas, pigmentos, aceites, polímeros recondensados).</li>\n</ul>\n<p>Los manuales de OSHA y de seguridad industrial describen estos humos como <strong>vapores y partículas potencialmente peligrosos</strong>, que deben mantenerse siempre por debajo de los valores límite de exposición mediante ventilación localizada.</p>\n\n<h2>2. Tipología de contaminantes: qué hay dentro del humo</h2>\n<h3>2.1. Gases inorgánicos</h3>\n<ul>\n <li><strong>CO y CO₂</strong>: subproductos de combustión completa/incompleta en madera y polímeros.</li>\n <li><strong>NOx</strong>: generados por altas temperaturas y materiales nitrogenados.</li>\n <li><strong>HCl</strong>: producto de la descomposición de plásticos clorados como PVC.</li>\n <li><strong>HF</strong>: emitido por fluoro-polímeros como PTFE.</li>\n <li><strong>Cl₂</strong>: asociado a PVC y vinilos clorados.</li>\n <li><strong>HCN</strong>: característico de polímeros nitrogenados (nylon, ABS, poliuretanos).</li>\n</ul>\n\n<h3>2.2. Compuestos orgánicos volátiles (COV)</h3>\n<ul>\n <li><strong>Estireno</strong> (de poliestireno y espumas).</li>\n <li><strong>Metil metacrilato (MMA)</strong> del acrílico/PMMA.</li>\n <li><strong>Formaldehído</strong> procedente de MDF, contrachapados y madera.</li>\n <li><strong>Benceno y aromáticos</strong> derivados de combustión incompleta de resinas.</li>\n</ul>\n<p>Estos compuestos son irritantes, sensibilizantes y algunos están clasificados como carcinógenos en exposiciones prolongadas.</p>\n\n<h3>2.3. Partículas finas y ultrafinas</h3>\n<p>Los humos incluyen hollín, cenizas y polvo recondensado en rangos PM₂.₅ y menores. Estas partículas:</p>\n<ul>\n <li>Alcanzan alvéolos pulmonares.</li>\n <li>Transportan COV y PAHs adheridos.</li>\n <li>Aumentan riesgo respiratorio y cardiovascular.</li>\n</ul>\n\n<h3>2.4. Productos de combustión especialmente tóxicos</h3>\n<p>La pirólisis de PVC puede producir <strong>dioxinas cloradas</strong>, altamente persistentes y tóxicas incluso en concentraciones muy bajas.</p>\n\n<h2>3. Qué humos produce cada material</h2>\n<h3>3.1. Madera, MDF y derivados</h3>\n<p>La madera natural genera CO, CO₂, formaldehído, PAHs y gran cantidad de partículas finas. El MDF añade resinas urea-formaldehído y genera más polvo fino, lo que satura rápidamente filtros HEPA.</p>\n\n<h3>3.2. Acrílico (PMMA)</h3>\n<p>Produce principalmente MMA, de olor fuerte e irritante, junto con otros COV. No genera gases halogenados, pero el humo sigue siendo tóxico y no debe liberarse sin filtración.</p>\n\n<h3>3.3. Plásticos problemáticos</h3>\n<ul>\n <li><strong>PVC</strong>: libera HCl, Cl₂ y dioxinas.</li>\n <li><strong>ABS y nylon</strong>: generan HCN, formaldehído y aromáticos.</li>\n <li><strong>Policarbonato</strong>: emite bisfenol-A y aldehídos.</li>\n <li><strong>PTFE</strong>: libera HF, extremadamente corrosivo.</li>\n <li><strong>Epoxi/FR-4</strong>: mezcla de humos orgánicos y polvo de fibra de vidrio altamente irritante.</li>\n</ul>\n<p>La conclusión debe ser clara: <strong>ninguno de estos materiales es apto para corte láser doméstico</strong>.</p>\n\n<h3>3.4. Cuero y textiles</h3>\n<ul>\n <li><strong>Cuero al cromo</strong>: humos con compuestos metálicos tóxicos.</li>\n <li><strong>Textiles sintéticos</strong>: liberan formaldehído y compuestos cianurados.</li>\n</ul>\n\n<h3>3.5. Metales y recubrimientos</h3>\n<p>El metal en sí no produce humos orgánicos, pero sí partículas metálicas y gases procedentes de pinturas, galvanizados o barnices, con presencia de compuestos de zinc, plomo o cromo.</p>\n\n<h2>4. Riesgos sanitarios para el usuario</h2>\n<h3>4.1. Irritación aguda y daño corrosivo</h3>\n<p>HCl y HF son corrosivos para vías respiratorias, ojos y piel. Pueden provocar:</p>\n<ul>\n <li>Tos intensa y broncoespasmo.</li>\n <li>Dolor torácico.</li>\n <li>Irritación ocular severa.</li>\n</ul>\n<p>El HCN afecta al metabolismo celular y es extremadamente peligroso en concentraciones elevadas.</p>\n\n<h3>4.2. Efectos crónicos</h3>\n<ul>\n <li><strong>Formaldehído</strong>: carcinógeno reconocido.</li>\n <li><strong>Benceno, estireno, MMA</strong>: efectos neurológicos y cancerígenos.</li>\n <li><strong>PM ultrafino</strong>: riesgo respiratorio y cardiovascular.</li>\n</ul>\n\n<h3>4.3. Exposición combinada</h3>\n<p>En la práctica, los humos contienen mezclas de gases irritantes y partículas finas que actúan como vehículo de compuestos tóxicos. Por ello, la ventilación localizada no es opcional, sino <strong>imprescindible</strong>.</p>\n\n<h2>5. Riesgos para la máquina y el entorno</h2>\n<ul>\n <li><strong>Corrosión</strong> de ópticas y partes metálicas por HCl y HF.</li>\n <li><strong>Acumulación de hollín</strong> que aumenta la absorción térmica de la lente.</li>\n <li><strong>Daños a electrónica y ventiladores</strong> por partículas agresivas.</li>\n <li><strong>Olores y emisiones hacia exteriores</strong> que pueden generar problemas vecinales.</li>\n</ul>\n\n<h2>6. Criterios normativos y límites de exposición</h2>\n<p>Las directrices de OSHA, ACGIH y NIOSH establecen límites muy bajos para sustancias como HCl, HF, formaldehído y CO. Aunque no pretendes hacer un análisis jurídico, el principio es claro:</p>\n<p><strong>La ventilación debe mantener siempre las concentraciones de humo por debajo de los niveles aceptables en entornos laborales.</strong></p>\n\n<h2>7. Cómo gestionar correctamente los humos</h2>\n<h3>7.1. Extracción localizada</h3>\n<p>La recomendación universal consiste en:</p>\n<ul>\n <li>Cabina cerrada.</li>\n <li>Extractor dedicado.</li>\n <li>Tubo hacia el exterior o conexión a un extractor de humos con HEPA + carbón activo.</li>\n</ul>\n<p>La ventilación general de la habitación no basta para capturar contaminantes en origen.</p>\n\n<h3>7.2. Filtros HEPA y carbón activo</h3>\n<ul>\n <li><strong>Pre-filtros</strong>: partículas grandes.</li>\n <li><strong>HEPA</strong>: partículas finas y ultrafinas.</li>\n <li><strong>Carbón activo</strong>: COV y gases.</li>\n</ul>\n<p>Mucha madera/MDF saturará antes el HEPA; mucho acrílico agotará antes el carbón.</p>\n\n<h3>7.3. Extracción directa al exterior</h3>\n<p>Muy común en entornos domésticos. Conviene asegurar:</p>\n<ul>\n <li>Estanqueidad del circuito.</li>\n <li>Ausencia de fugas hacia el interior.</li>\n <li>Evitar recirculación sin filtración adecuada.</li>\n</ul>\n\n<h3>7.4. EPI complementarios</h3>\n<ul>\n <li>Mascarillas con filtros combinados (ABEK-P3).</li>\n <li>Gafas protectoras cuando exista riesgo de exposición directa.</li>\n</ul>\n<p>Los EPI no sustituyen la ventilación; solo aportan seguridad adicional.</p>\n\n<h2>8. Checklist de seguridad práctica</h2>\n<ul>\n <li>No cortar plásticos sin identificar.</li>\n <li>Evitar por completo PVC, PTFE, ABS, policarbonato, epoxi y FR-4.</li>\n <li>Usar siempre cabina cerrada con extracción localizada.</li>\n <li>Elegir un extractor dimensionado al volumen y potencia de la máquina.</li>\n <li>Reemplazar filtros según carga real de trabajo.</li>\n <li>No recircular aire sin filtración certificada.</li>\n <li>Tratar todos los humos como potencialmente tóxicos.</li>\n</ul>\n<p>Una gestión adecuada de los humos no es un accesorio opcional, sino un requisito para trabajar con seguridad, prolongar la vida útil de la máquina y evitar riesgos para salud y entorno.</p>",
       "relatedArticles": [
         "materiales-prohibidos-cortadora-laser",
@@ -276,7 +276,7 @@
       "featuredImage": "/imagenes/laser-diodo-vs-co2-vs-fibra.jpg",
       "tags": ["comparativas"],
       "categories": ["tutoriales"],
-      "readTime": 18,
+      "readTime": 6,
       "content": "<p>Elegir entre un láser de diodo, un CO₂ o un láser de fibra determina por completo qué materiales podrás trabajar, qué nivel de productividad obtendrás y cuánto pagarás en mantenimiento a medio plazo. Aunque a primera vista parezcan máquinas similares, su comportamiento físico cambia de forma radical porque cada tecnología opera en una <strong>longitud de onda distinta</strong> y transmite la energía al material de manera diferente.</p>\n\n<h2>1. Qué es cada tipo de láser: la longitud de onda lo decide todo</h2>\n<p>Cada tecnología parte de un principio distinto, y su longitud de onda determina qué materiales absorben bien la energía y cuáles la reflejan:</p>\n<ul>\n <li><strong>Diodo (≈450 nm, azul):</strong> fuente de estado sólido compacta y eficiente. Ideal para madera, cuero y ciertos plásticos oscuros. Limitado en acrílico transparente y metal desnudo.</li>\n <li><strong>CO₂ (10,6 μm, infrarrojo lejano):</strong> láser de gas dentro de un tubo. Es el estándar para madera, acrílico, cuero, cartón y materiales orgánicos.</li>\n <li><strong>Fibra (≈1064 nm, infrarrojo cercano):</strong> tecnología de estado sólido acoplada a una fibra dopada. Es la elección natural para metal: acero, aluminio, latón, cobre y titanio.</li>\n</ul>\n\n<h2>2. Tabla comparativa rápida</h2>\n<table>\n<thead>\n<tr>\n<th>Característica</th>\n<th>Diodo (azul)</th>\n<th>CO₂</th>\n<th>Fibra</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Longitud de onda</td>\n<td>≈450 nm</td>\n<td>10,6 μm</td>\n<td>1064 nm</td>\n</tr>\n<tr>\n<td>Potencia típica</td>\n<td>5–10 W ópticos</td>\n<td>40–150 W ópticos</td>\n<td>20–50 W (marcaje), ≥1 kW en corte</td>\n</tr>\n<tr>\n<td>Materiales fuertes</td>\n<td>Madera, cuero, cartón, plásticos oscuros</td>\n<td>Madera, acrílico, cuero, cartón, telas, vidrio</td>\n<td>Metales y plásticos técnicos para marcaje</td>\n</tr>\n<tr>\n<td>Corte de metal</td>\n<td>No, solo marcado asistido</td>\n<td>No, salvo recubrimientos</td>\n<td>Sí (según potencia)</td>\n</tr>\n<tr>\n<td>Coste de entrada</td>\n<td>Bajo</td>\n<td>Medio</td>\n<td>Medio-alto / alto</td>\n</tr>\n<tr>\n<td>Mantenimiento</td>\n<td>Muy bajo</td>\n<td>Medio-alto</td>\n<td>Bajo</td>\n</tr>\n<tr>\n<td>Vida útil fuente</td>\n<td>25.000–50.000 h</td>\n<td>2.000–10.000 h (tubo)</td>\n<td>50.000–100.000 h</td>\n</tr>\n</tbody>\n</table>\n\n<h2>3. Ventajas y desventajas reales</h2>\n<h3>3.1. Láser de diodo</h3>\n<p><strong>Ventajas:</strong></p>\n<ul>\n <li>Precio de entrada bajo.</li>\n <li>Eficiencia energética muy alta.</li>\n <li>Buena calidad de grabado en madera, cuero y anodizados.</li>\n <li>Mantenimiento mínimo.</li>\n</ul>\n<p><strong>Desventajas:</strong></p>\n<ul>\n <li>Potencia óptica limitada: la mayoría de módulos ofrecen 5–10 W reales.</li>\n <li>Corte lento y poco profundo.</li>\n <li>Malo en acrílico transparente.</li>\n <li>Cabinas normalmente abiertas, difícil gestión de humos.</li>\n</ul>\n\n<h3>3.2. Láser CO₂</h3>\n<p><strong>Ventajas:</strong></p>\n<ul>\n <li>Mucha más potencia útil a buen precio.</li>\n <li>Excelente para madera, acrílico y orgánicos.</li>\n <li>Produce bordes pulidos en acrílico.</li>\n <li>Cabina cerrada que facilita la extracción.</li>\n</ul>\n<p><strong>Desventajas:</strong></p>\n<ul>\n <li>El tubo tiene vida limitada y debe reemplazarse.</li>\n <li>Refrigeración obligatoria.</li>\n <li>Requiere alineación y limpieza de ópticas.</li>\n <li>No corta metal macizo en potencias domésticas.</li>\n</ul>\n\n<h3>3.3. Láser de fibra</h3>\n<p><strong>Ventajas:</strong></p>\n<ul>\n <li>Máxima eficiencia y estabilidad.</li>\n <li>Perfecto para marcar y cortar metal.</li>\n <li>Mantenimiento muy bajo.</li>\n <li>Vida útil muy prolongada.</li>\n</ul>\n<p><strong>Desventajas:</strong></p>\n<ul>\n <li>Coste elevado.</li>\n <li>Área de trabajo reducida en máquinas de marcaje.</li>\n <li>No es adecuado para cortar madera o acrílico en entornos hobby.</li>\n</ul>\n\n<h2>4. Qué materiales corta realmente cada tipo</h2>\n<h3>Diodo</h3>\n<ul>\n <li>Madera, MDF, contrachapado.</li>\n <li>Cuero, cartón, papel.</li>\n <li>Plásticos oscuros selectivos.</li>\n <li>Marcado en metal anodizado o recubierto.</li>\n</ul>\n<p><strong>Limitado en:</strong> metales desnudos y acrílico transparente.</p>\n\n<h3>CO₂</h3>\n<ul>\n <li>Madera y derivados.</li>\n <li>Acrílico (corte limpio, borde pulido).</li>\n <li>Cartón, cuero, textiles, fieltro.</li>\n <li>Grabado en vidrio y cerámica.</li>\n</ul>\n<p><strong>No apto para:</strong> corte de metal macizo.</p>\n\n<h3>Fibra</h3>\n<ul>\n <li>Todos los metales: inox, aluminio, cobre, latón, titanio.</li>\n <li>Marcaje profundo industrial.</li>\n <li>Plásticos técnicos láser-markable.</li>\n</ul>\n\n<h2>5. Potencia útil vs potencia anunciada: el gran malentendido</h2>\n<p>En diodos abunda el marketing engañoso. Un módulo anunciado como “40 W” suele referirse a potencia eléctrica, no óptica. En la práctica:</p>\n<ul>\n <li>Los módulos de 5 W reales son los más comunes.</li>\n <li>Los módulos multidiode llegan a 10 W reales.</li>\n <li>Valores superiores suelen ser exageración comercial.</li>\n</ul>\n<p>En CO₂ y fibra, la potencia indicada suele ser más realista, pero depende de la calidad del tubo o de la fuente.</p>\n\n<h2>6. Mantenimiento y coste real</h2>\n<h3>Diodo</h3>\n<ul>\n <li>Limpieza básica de la lente.</li>\n <li>Bajo consumo eléctrico.</li>\n <li>Fuente con vida muy prolongada.</li>\n</ul>\n\n<h3>CO₂</h3>\n<ul>\n <li>Sustitución de tubo cada cierto número de horas.</li>\n <li>Chiller o refrigeración obligatoria.</li>\n <li>Limpieza y ajuste de ópticas.</li>\n <li>Filtros y extracción si se trabaja en interior.</li>\n</ul>\n\n<h3>Fibra</h3>\n<ul>\n <li>Mínimo mantenimiento.</li>\n <li>Ópticas de salida que deben mantenerse limpias.</li>\n <li>Inversión inicial más alta, pero bajo coste por hora.</li>\n</ul>\n\n<h2>7. Casos de uso: hogar, pymes y negocio</h2>\n<h3>Hogar / maker</h3>\n<ul>\n <li><strong>Diodo:</strong> ideal para comenzar, proyectos personales y grabado.</li>\n <li><strong>CO₂ compacto:</strong> para quien quiere cortar acrílico y mejorar productividad.</li>\n</ul>\n\n<h3>Pymes / negocio creativo</h3>\n<ul>\n <li><strong>CO₂ 60–100 W:</strong> rotulación, decoración, merchandising.</li>\n <li><strong>Diodo avanzado:</strong> personalización ligera en madera/cuero.</li>\n <li><strong>Fibra 20–30 W:</strong> joyería, placas metálicas, trazabilidad.</li>\n</ul>\n\n<h3>Industria / metalworking</h3>\n<ul>\n <li><strong>Fibra ≥1 kW:</strong> corte de chapa y fabricación metálica.</li>\n</ul>\n\n<h2>8. Qué elegir según tu presupuesto</h2>\n<ul>\n <li><strong>Presupuesto reducido:</strong> diodo 5–10 W con potencia óptica real verificada.</li>\n <li><strong>Presupuesto medio:</strong> CO₂ de 40–60 W o diodo avanzado.</li>\n <li><strong>Presupuesto medio-alto:</strong> CO₂ 60–100 W o fibra de 20–30 W para metal.</li>\n <li><strong>Inversión profesional:</strong> fibra de corte ≥1 kW para chapa.</li>\n</ul>\n<p>La clave es definir qué materiales quieres trabajar y qué nivel de producción necesitas. La tecnología adecuada es aquella cuya longitud de onda coincide con la absorción del material objetivo.</p>",
       "relatedArticles": [
         "consejos-grabado-corte-laser-madera",
@@ -296,7 +296,7 @@
       "featuredImage": "/imagenes/guia-principiantes-grabado-laser.jpg",
       "tags": ["principiantes"],
       "categories": ["tutoriales"],
-      "readTime": 15,
+      "readTime": 4,
       "relatedArticles": ["comparativa-grabadores-2025", "mejores-materiales"]
     }
   ],
