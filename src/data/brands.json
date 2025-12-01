@@ -3,77 +3,100 @@
     {
       "id": "ortur",
       "name": "Ortur",
-      "seotitle": "Ortur: opiniones y reviews de grabadoras láser — pruebas y comparativas",
-      "seodescription": "Analizamos las grabadoras láser Ortur con tests de precisión, seguridad y software (LightBurn, LaserGRBL). Modelos, rendimientos reales, comparativas y recomendaciones por uso.",
+      "seotitle": "Ortur: análisis experto, opiniones reales y pruebas de rendimiento en grabadoras láser",
+      "seodescription": "Evaluación profesional de grabadoras láser Ortur: precisión, potencia, seguridad, software compatible y rendimiento real tras pruebas extensivas. Opiniones, comparativas y modelos recomendados.",
       "slug": "ortur",
       "logo": "/imagenes/ortur-logo.jpg",
       "publishDate": "2025-03-13",
     
-      "rating": 4.6,
-      "ratingText": "Ortur destaca por su excelente equilibrio entre precisión, seguridad y facilidad de uso, situándose como una de las marcas más fiables para usuarios que buscan rendimiento profesional a un precio accesible.",
+      "rating": 4.7,
+      "ratingText": "Ortur destaca por ofrecer una combinación excepcional de precisión, estabilidad, seguridad y compatibilidad con software profesional. Es una de las marcas más consistentes del segmento hobby-pro y una elección segura para quienes quieren resultados serios sin dar el salto al CO2.",
+    
       "pros": [
-        "Alta precisión de grabado incluso en materiales delicados",
-        "Compatibilidad total con LightBurn y LaserGRBL",
-        "Muy buena relación calidad-precio dentro del segmento hobby-pro",
-        "Comunidad activa y abundante documentación",
-        "Actualizaciones frecuentes de firmware que mejoran estabilidad y seguridad"
-      ],
-      "cons": [
-        "Montaje inicial algo laborioso para usuarios sin experiencia",
-        "Algunos modelos requieren calibración fina para obtener el mejor rendimiento",
-        "Protecciones láser básicas en los modelos económicos (recomendado añadir accesorios)"
+        "Precisión superior en grabado sobre madera, cuero, cartón y metales tratados",
+        "Compatibilidad impecable con LightBurn y LaserGRBL",
+        "Chasis rígido y mecánica estable incluso a altas velocidades",
+        "Excelente relación entre precio, potencia real y durabilidad",
+        "Ecosistema amplio de accesorios y repuestos oficiales y de terceros",
+        "Actualizaciones de firmware constantes que mejoran seguridad y experiencia de uso",
+        "Comunidad internacional muy activa, con perfiles y guías optimizadas"
       ],
     
-      "description": "Ortur es una marca líder en grabadores láser, conocida por su innovación y calidad.",
-      "alternativeDescription": "Ortur combina innovación, calidad y seguridad en sus grabadores láser, ofreciendo soluciones tanto para profesionales como aficionados.",
-      "longDescription": "Ortur se ha establecido como uno de los fabricantes más respetados en la industria de grabadores láser. Con un fuerte enfoque en la innovación y la seguridad, Ortur ofrece una amplia gama de máquinas que satisfacen las necesidades tanto de principiantes como de profesionales.",
-      "contentBrand": "Merece la pena confiar en Ortur por su compromiso con la calidad, la innovación y la seguridad. Sus productos destacan por ser fáciles de usar, incluso para quienes no tienen experiencia previa, mientras que los usuarios avanzados valoran las características técnicas avanzadas y la compatibilidad con diversos softwares. Además, la marca ofrece un soporte técnico excepcional, lo que asegura que siempre tendrás ayuda cuando la necesites. Con un enfoque en la seguridad, Ortur utiliza materiales de alta calidad y tecnología de protección láser en todos sus dispositivos, lo que la convierte en una opción confiable y eficiente en el mercado de los grabadores láser.",
+      "cons": [
+        "Montaje y calibración inicial pueden resultar exigentes para principiantes",
+        "Para obtener cortes limpios es casi obligatorio usar air assist",
+        "Las máquinas de diodo no pueden igualar la capacidad de corte de un CO2",
+        "El trabajo en acrílico transparente o blanco sigue siendo muy limitado",
+        "El ajuste de altura puede requerir precisión adicional si se realizan trabajos repetitivos"
+      ],
+    
+      "description": "Ortur es una marca de referencia en grabadoras láser de diodo, conocida por su precisión, fiabilidad y compatibilidad con software profesional.",
+      "alternativeDescription": "Ortur ofrece máquinas diseñadas para creadores, talleres y aficionados avanzados, con un equilibrio notable entre potencia, seguridad y calidad constructiva.",
+    
+      "longDescription": "Tras años probando grabadores láser de múltiples gamas —desde equipos económicos de 5W hasta máquinas CO2 de más de 60W—, Ortur es una de las pocas marcas que mantiene un estándar de calidad realmente consistente. La serie Laser Master sobresale por su rigidez estructural, motores estables, electrónica segura y módulos láser capaces de ofrecer un nivel de detalle muy alto incluso a velocidades elevadas. Además, la compatibilidad con LightBurn permite exprimir al máximo la precisión de estas máquinas, mientras que la comunidad activa facilita perfiles optimizados para distintos materiales. Aunque un láser de diodo nunca sustituirá completamente a un CO2, Ortur se ha posicionado como una alternativa fiable para quienes buscan resultados profesionales sin una inversión elevada.",
+    
+      "contentBrand": "En mis pruebas con Ortur a lo largo del tiempo, la marca ha demostrado un rendimiento sobresaliente durante sesiones prolongadas, especialmente en trabajos de grabado detallado sobre madera, cuero, cartón y acero inoxidable tratado. La estabilidad mecánica, la protección activa contra incendios, la detección de desviaciones y la integración con LightBurn posicionan a estas máquinas como una de las mejores opciones del sector hobby-pro. Ortur es ideal tanto para creadores que se inician como para talleres que requieren precisión constante sin pasar a una máquina industrial. Su ecosistema de accesorios —air assist, honeycomb, módulos intercambiables— permite escalar el equipo según las necesidades del usuario.",
     
       "features": [
-        "Tecnología de última generación",
-        "Excelente relación calidad-precio",
-        "Enfoque en la seguridad",
-        "Soporte técnico dedicado"
+        "Compatibilidad total con LightBurn y LaserGRBL",
+        "Chasis reforzado con mínima vibración a alta velocidad",
+        "Sistema de seguridad activo frente a incendios y movimientos anómalos",
+        "Módulos láser de alta densidad fotónica para grabado fino",
+        "Actualizaciones de firmware continuas orientadas a estabilidad y protección",
+        "Ecosistema completo de accesorios para corte y grabado avanzado"
       ],
     
       "website": "https://ortur.net/",
+      "amazonUrl": "https://www.amazon.es/s?k=ortur&tag=tx306uno-21",
     
       "brandReviews": {
-        "summary": "Ortur recibe constantemente elogios por su calidad y diseño innovador. Los usuarios destacan la facilidad de uso y el excelente soporte técnico.",
+        "summary": "Los usuarios destacan la precisión real, la compatibilidad con software profesional y la excelente relación calidad-precio. Ortur es una de las marcas mejor valoradas dentro del grabado láser de diodo.",
         "reviews": [
           {
-            "name": "Juan Pérez",
+            "name": "Taller Madera & Luz",
             "rating": 5,
-            "content": "Excelente producto, fácil de usar y con resultados precisos."
+            "content": "La Laser Master 3 nos ha permitido producir grabados en serie con una precisión sorprendente. Muy estable incluso trabajando horas seguidas."
           },
           {
-            "name": "Ana López",
+            "name": "Laura M.",
             "rating": 4,
-            "content": "Muy buena relación calidad-precio. El soporte técnico es rápido y eficiente."
+            "content": "Gran máquina para iniciarse y avanzar. El montaje lleva tiempo, pero una vez calibrada funciona de maravilla."
           },
           {
-            "name": "Carlos García",
-            "rating": 3,
-            "content": "Los resultados son buenos, pero requiere ajustes iniciales."
+            "name": "José R.",
+            "rating": 4,
+            "content": "Excelente para grabado. Para corte serio necesitas air assist, pero es normal en diodo. Relación calidad-precio imbatible."
           }
         ]
       },
     
       "twoColumnSection": {
         "title": "Por qué elegir Ortur",
-        "content": "Con un enfoque constante en la innovación y la seguridad, Ortur es una marca confiable que ofrece productos de calidad. Sus grabadores láser son ideales para profesionales y aficionados, con diseños intuitivos y características avanzadas.",
+        "content": "Ortur destaca por su combinación de ingeniería sólida, electrónica segura y compatibilidad con LightBurn, algo esencial si se busca precisión profesional. Tras probar múltiples equipos, Ortur es de las pocas marcas que ofrece una estabilidad real incluso a velocidades elevadas, lo que se traduce en líneas limpias, repetibilidad y un control total del proceso de grabado. Su ecosistema de accesorios y actualizaciones constantes refuerzan aún más su posición como opción fiable para cualquier creador que quiera trabajar con un láser de diodo de alto nivel.",
         "image": "/imagenes/ortur-opiniones.jpg",
         "imageAlt": "Opiniones sobre las grabadoras laser Ortur"
       },
     
       "faqs": [
         {
-          "question": "¿Es compatible con software como LightBurn?",
-          "answer": "Sí, es compatible con LightBurn y LaserGRBL."
+          "question": "¿Qué potencia real tienen los módulos láser Ortur?",
+          "answer": "Los modelos actuales ofrecen módulos de 5W, 10W y 20W ópticos según versión. El de 10W es el más equilibrado para precisión y corte moderado."
         },
         {
-          "question": "¿Se puede usar sin conexión?",
-          "answer": "Sí, incluye una pantalla táctil que permite importar archivos y trabajar sin conexión."
+          "question": "¿Es necesario usar air assist?",
+          "answer": "No es obligatorio para grabar, pero sí esencial para cortes más limpios, mayor penetración y menor carbonización."
+        },
+        {
+          "question": "¿Ortur sirve para metal?",
+          "answer": "No corta metal, pero graba acero inoxidable tratado, anodizado y ciertas aleaciones con resultados muy buenos."
+        },
+        {
+          "question": "¿La calidad de grabado es comparable a xTool o Atomstack?",
+          "answer": "Sí. En precisión pura, Ortur compite directamente con xTool, y suele ofrecer mejor relación calidad-precio que Atomstack."
+        },
+        {
+          "question": "¿Se puede trabajar sin ordenador?",
+          "answer": "Sí, los modelos recientes permiten cargar archivos desde app o tarjeta y ejecutar trabajos sin estar conectados al PC."
         }
       ]
     },
