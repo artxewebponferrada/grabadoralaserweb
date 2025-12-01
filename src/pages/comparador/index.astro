@@ -89,7 +89,7 @@ const bestForList = [
                 {topModel2.shortDescription}
               </p>
               <div class="space-y-3">
-                <a href={`/productos/${topModel2.slug}`} class="block w-full py-2 text-center border-2 border-slate-200 rounded-lg font-bold text-slate-700 hover:border-green-600 hover:text-green-600 transition-colors">
+                <a href={`/producto/${topModel2.slug}/`} class="block w-full py-2 text-center border-2 border-slate-200 rounded-lg font-bold text-slate-700 hover:border-green-600 hover:text-green-600 transition-colors">
                   Leer Análisis
                 </a>
                 <a href={topModel2.affiliateUrl} target="_blank" rel="nofollow" class="block w-full py-3 text-center bg-green-600 text-white rounded-lg font-bold hover:bg-green-700 transition-colors shadow-md">
@@ -111,7 +111,7 @@ const bestForList = [
                 {topModel1.shortDescription}
               </p>
               <div class="space-y-4">
-                <a href={`/productos/${topModel1.slug}`} class="block w-full py-3 text-center border-2 border-slate-200 rounded-xl font-bold text-slate-700 hover:border-blue-600 hover:text-blue-600 transition-colors">
+                <a href={`/producto/${topModel1.slug}/`} class="block w-full py-3 text-center border-2 border-slate-200 rounded-xl font-bold text-slate-700 hover:border-blue-600 hover:text-blue-600 transition-colors">
                   Leer Análisis Completo
                 </a>
                 <a href={topModel1.affiliateUrl} target="_blank" rel="nofollow" class="block w-full py-4 text-center bg-blue-600 text-white rounded-xl font-bold text-lg hover:bg-blue-700 transition-colors shadow-lg">
@@ -132,7 +132,7 @@ const bestForList = [
                 {topModel3.shortDescription}
               </p>
               <div class="space-y-3">
-                <a href={`/productos/${topModel3.slug}`} class="block w-full py-2 text-center border-2 border-slate-200 rounded-lg font-bold text-slate-700 hover:border-slate-600 hover:text-slate-800 transition-colors">
+                <a href={`/producto/${topModel3.slug}/`} class="block w-full py-2 text-center border-2 border-slate-200 rounded-lg font-bold text-slate-700 hover:border-slate-600 hover:text-slate-800 transition-colors">
                   Leer Análisis
                 </a>
                 <a href={topModel3.affiliateUrl} target="_blank" rel="nofollow" class="block w-full py-3 text-center bg-slate-700 text-white rounded-lg font-bold hover:bg-slate-800 transition-colors shadow-md">
@@ -171,7 +171,7 @@ const bestForList = [
               </div>
 
               <div class="flex-shrink-0 w-full md:w-auto flex flex-col gap-2">
-                <a href={`/marcas/${brand.slug}`} class="px-6 py-2 bg-slate-900 text-white font-bold rounded-lg hover:bg-blue-600 transition-colors text-center text-sm">
+                <a href={`/marcas/${brand.slug}/`} class="px-6 py-2 bg-slate-900 text-white font-bold rounded-lg hover:bg-blue-600 transition-colors text-center text-sm">
                   Ver Análisis de Marca
                 </a>
                 <a href={brand.amazonUrl} target="_blank" rel="nofollow" class="px-6 py-2 border border-slate-300 text-slate-600 font-bold rounded-lg hover:bg-yellow-400 hover:text-yellow-900 hover:border-yellow-400 transition-colors text-center text-sm">
@@ -204,7 +204,7 @@ const bestForList = [
                 </p>
 
                 <div class="grid grid-cols-2 gap-3 mt-auto">
-                  <a href={`/productos/${item.slug}`} class="py-2 text-center text-sm font-bold text-slate-600 bg-slate-100 rounded hover:bg-slate-200 transition-colors">
+                  <a href={`/producto/${item.slug}/`} class="py-2 text-center text-sm font-bold text-slate-600 bg-slate-100 rounded hover:bg-slate-200 transition-colors">
                     Leer Review
                   </a>
                   <a href={item.affiliateUrl} target="_blank" rel="nofollow" class="py-2 text-center text-sm font-bold text-white bg-blue-600 rounded hover:bg-blue-700 transition-colors">
@@ -217,6 +217,128 @@ const bestForList = [
         </div>
       </section>
 
+{/* --- SECCIÓN 4: GUÍA RÁPIDA DE TECNOLOGÍAS --- */}
+      <section class="mb-24 bg-slate-900 text-white rounded-3xl p-8 md:p-12 shadow-2xl border border-slate-800">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl font-bold mb-4">¿Qué tecnología necesito realmente?</h2>
+          <p class="text-slate-400 max-w-2xl mx-auto">
+            No te dejes engañar por la potencia. Lo más importante es el tipo de láser. Aquí te explico la diferencia en 1 minuto.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          {/* Diodo */}
+          <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition-colors">
+            <div class="w-12 h-12 bg-blue-500/20 text-blue-400 rounded-lg flex items-center justify-center mb-4 text-2xl font-bold">D</div>
+            <h3 class="text-xl font-bold text-white mb-2">Láser de Diodo (Azul)</h3>
+            <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+              El más común y económico. Ideal para empezar. Utiliza luz visible azul (450nm).
+            </p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center text-green-400"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Corta madera y acrílico oscuro</li>
+              <li class="flex items-center text-green-400"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Graba cuero, pizarra y cerámica</li>
+              <li class="flex items-center text-red-400"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg> NO corta acrílico transparente</li>
+            </ul>
+          </div>
+
+          {/* CO2 */}
+          <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-purple-500 transition-colors">
+            <div class="w-12 h-12 bg-purple-500/20 text-purple-400 rounded-lg flex items-center justify-center mb-4 text-2xl font-bold">C</div>
+            <h3 class="text-xl font-bold text-white mb-2">Láser de CO2 (Infrarrojo)</h3>
+            <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+              El estándar profesional. Tubo de gas invisible (10600nm). Mucho más rápido.
+            </p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center text-green-400"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Corta acrílico transparente y de colores</li>
+              <li class="flex items-center text-green-400"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Velocidad 5x superior al diodo</li>
+              <li class="flex items-center text-yellow-400"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg> Requiere mantenimiento (espejos)</li>
+            </ul>
+          </div>
+
+          {/* Fibra */}
+          <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-orange-500 transition-colors">
+            <div class="w-12 h-12 bg-orange-500/20 text-orange-400 rounded-lg flex items-center justify-center mb-4 text-2xl font-bold">F</div>
+            <h3 class="text-xl font-bold text-white mb-2">Láser de Fibra (1064nm)</h3>
+            <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+              Especialista industrial. No corta madera, pero marca metal como ninguna otra.
+            </p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center text-green-400"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Graba todo tipo de metales profundos</li>
+              <li class="flex items-center text-green-400"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Vida útil extrema (+100.000 horas)</li>
+              <li class="flex items-center text-red-400"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg> NO sirve para madera orgánica</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+{/* --- SECCIÓN 5: CHECKLIST DEL COMPRADOR INTELIGENTE --- */}
+      <section class="mb-24 max-w-4xl mx-auto bg-blue-50 rounded-2xl p-8 border border-blue-100">
+        <h2 class="text-2xl font-bold text-blue-900 mb-6 text-center">Checklist antes de comprar</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="space-y-4">
+                <label class="flex items-start space-x-3 cursor-pointer">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 rounded border-gray-300 mt-0.5" />
+                    <span class="text-blue-800 text-sm">¿Tiene <strong>Air Assist</strong> incluido? (Es obligatorio para cortar sin quemar).</span>
+                </label>
+                <label class="flex items-start space-x-3 cursor-pointer">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 rounded border-gray-300 mt-0.5" />
+                    <span class="text-blue-800 text-sm">¿Es compatible con <strong>LightBurn</strong>? (El software gratuito suele ser terrible).</span>
+                </label>
+                <label class="flex items-start space-x-3 cursor-pointer">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 rounded border-gray-300 mt-0.5" />
+                    <span class="text-blue-800 text-sm">¿La potencia es <strong>Óptica</strong> y no Eléctrica? (Busca 5W, 10W, 20W de salida).</span>
+                </label>
+            </div>
+            <div class="space-y-4">
+                <label class="flex items-start space-x-3 cursor-pointer">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 rounded border-gray-300 mt-0.5" />
+                    <span class="text-blue-800 text-sm">¿Tiene <strong>sensores de seguridad</strong> (llama/inclinación)? (Importante si trabajas en casa).</span>
+                </label>
+                <label class="flex items-start space-x-3 cursor-pointer">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 rounded border-gray-300 mt-0.5" />
+                    <span class="text-blue-800 text-sm">¿Hay <strong>repuestos</strong> de lentes disponibles? (Son consumibles, se gastan).</span>
+                </label>
+                 <label class="flex items-start space-x-3 cursor-pointer">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 rounded border-gray-300 mt-0.5" />
+                    <span class="text-blue-800 text-sm">¿El área de trabajo es suficiente? (40x40cm es el estándar ideal).</span>
+                </label>
+            </div>
+        </div>
+      </section>
+{/* --- SECCIÓN 6: PREGUNTAS FRECUENTES FINALES --- */}
+      <section class="mb-24 max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-center text-slate-900 mb-10">Preguntas Incómodas (Respuestas Reales)</h2>
+        <div class="space-y-4">
+            <details class="group bg-white p-5 rounded-xl border border-slate-200 open:ring-2 open:ring-blue-100 transition-all">
+                <summary class="flex justify-between items-center font-bold text-slate-800 cursor-pointer list-none">
+                    ¿Por qué hay máquinas de 200€ y de 1200€ que parecen iguales?
+                    <span class="transform group-open:rotate-180 transition-transform text-blue-500">▼</span>
+                </summary>
+                <div class="mt-4 text-slate-600 leading-relaxed text-sm">
+                    La diferencia está en la <strong>mecánica y la electrónica</strong>. Las baratas usan ruedas de plástico que se desgastan y placas base de 8 bits lentas. Las caras (xTool, Ikier) usan guías lineales de acero, placas de 32 bits rápidas, autoenfoque y mejores lentes. A la larga, lo barato sale caro en repuestos y frustración.
+                </div>
+            </details>
+
+            <details class="group bg-white p-5 rounded-xl border border-slate-200 open:ring-2 open:ring-blue-100 transition-all">
+                <summary class="flex justify-between items-center font-bold text-slate-800 cursor-pointer list-none">
+                    ¿Puedo ganar dinero con una grabadora láser?
+                    <span class="transform group-open:rotate-180 transition-transform text-blue-500">▼</span>
+                </summary>
+                <div class="mt-4 text-slate-600 leading-relaxed text-sm">
+                    <strong>Sí, absolutamente.</strong> La personalización está en auge. Grabar termos, tablas de cortar, cuero, llaveros... El margen de beneficio es alto porque el material es barato y el valor percibido es alto. Recomiendo empezar con una máquina de al menos 10W para trabajar rápido.
+                </div>
+            </details>
+
+             <details class="group bg-white p-5 rounded-xl border border-slate-200 open:ring-2 open:ring-blue-100 transition-all">
+                <summary class="flex justify-between items-center font-bold text-slate-800 cursor-pointer list-none">
+                    ¿Es peligroso tener esto en casa?
+                    <span class="transform group-open:rotate-180 transition-transform text-blue-500">▼</span>
+                </summary>
+                <div class="mt-4 text-slate-600 leading-relaxed text-sm">
+                    El láser no es un juguete. El humo es lo más peligroso a largo plazo. Si trabajas en casa, <strong>necesitas sacar el tubo por la ventana</strong> o usar un purificador de aire. Y siempre, siempre usa las gafas de protección (o compra una máquina cerrada Clase 1 como la xTool S1).
+                </div>
+            </details>
+        </div>
+      </section>
     </div>
   </main>
 </Layout>
