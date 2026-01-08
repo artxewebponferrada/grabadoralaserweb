@@ -565,10 +565,58 @@
   ],
   "tags": [
     {
+      "id": "consejos",
+      "name": "Consejos Prácticos",
+      "slug": "consejos",
+      "description": "Recopilación de trucos, recomendaciones y mejores prácticas para optimizar tus procesos de grabado y corte, evitar errores comunes y sacar el máximo rendimiento a tu máquina láser."
+    },
+    {
       "id": "principiantes",
       "name": "Principiantes",
       "slug": "principiantes",
-      "description": "Contenido ideal para quienes empiezan"
+      "description": "Contenido fundamental diseñado específicamente para quienes se inician en el mundo del láser, con guías paso a paso, conceptos básicos y todo lo necesario para empezar con seguridad."
+    },
+    {
+      "id": "seguridad",
+      "name": "Seguridad y Prevención",
+      "slug": "seguridad",
+      "description": "Información crítica sobre protección ocular, gestión de humos tóxicos, materiales prohibidos y protocolos de taller para operar tu cortadora láser sin poner en riesgo tu salud ni tu equipo."
+    },
+    {
+      "id": "comparativas",
+      "name": "Comparativas",
+      "slug": "comparativas",
+      "description": "Análisis detallados que enfrentan diferentes tecnologías (Diodo vs CO2 vs Fibra) y modelos de máquinas para ayudarte a tomar la mejor decisión de compra según tus necesidades y presupuesto."
+    },
+    {
+      "id": "software",
+      "name": "Software y Control",
+      "slug": "software",
+      "description": "Tutoriales y guías sobre el uso de programas esenciales como LightBurn, LaserGRBL y herramientas de diseño, enfocados en la configuración de parámetros y preparación de archivos."
+    },
+    {
+      "id": "avanzado",
+      "name": "Técnicas Avanzadas",
+      "slug": "avanzado",
+      "description": "Artículos técnicos de alto nivel para usuarios experimentados que buscan dominar procesos complejos como el grabado a color MOPA, marquetería de precisión o producción en serie."
+    },
+    {
+      "id": "diseno",
+      "name": "Diseño y Vectores",
+      "slug": "diseno",
+      "description": "Recursos y técnicas para la creación y edición de archivos digitales, desde la vectorización de imágenes con IA hasta la corrección de geometrías para un corte perfecto."
+    },
+    {
+      "id": "tecnologia",
+      "name": "Tecnología Láser",
+      "slug": "tecnologia",
+      "description": "Profundización en la física y el funcionamiento interno de los equipos láser, explicando cómo interactúan las distintas longitudes de onda y pulsos con los materiales."
+    },
+    {
+      "id": "tutoriales",
+      "name": "Tutoriales Paso a Paso",
+      "slug": "tutoriales",
+      "description": "Guías prácticas detalladas que te acompañan en la realización de proyectos específicos, desde la configuración inicial hasta el acabado final de la pieza."
     }
   ]
 }
