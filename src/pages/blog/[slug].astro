@@ -2,12 +2,13 @@
 import Layout from '../../layouts/Layout.astro';
 import TagCloud from '../../components/TagCloud.astro';
 import { format } from 'date-fns';
+import { es } from 'date-fns/locale';
 import data from '../../data';
 import { getPublishedArticles, getAuthorById } from '../../utils/dataProcessing';
 
 export async function getStaticPaths() {
   const publishedArticles = getPublishedArticles();
-  
+
   return publishedArticles.map((article) => ({
     params: { slug: article.slug },
     props: { article },
@@ -55,12 +56,19 @@ const schema = {
           class="w-12 h-12 rounded-full object-cover"
         />
         <div>
-          <a href={`/authors/${author.slug}/`} class="text-gray-900 font-medium hover:text-primary-600">
+          <a
+            href={`/authors/${author.slug}/`}
+            class="text-gray-900 font-medium hover:text-primary-600"
+          >
             {author.name}
           </a>
           <div class="flex items-center gap-2 text-sm text-gray-500">
             <time datetime={article.publishDate}>
-              {format(new Date(article.publishDate), 'MMM d, yyyy')}
+              {format(
+                new Date(article.publishDate),
+                "d 'de' MMMM 'de' yyyy",
+                { locale: es }
+              )}
             </time>
             <span>·</span>
             <span>{article.readTime} min de lectura</span>
@@ -106,8 +114,11 @@ const schema = {
           class="w-20 h-20 rounded-full object-cover"
         />
         <div>
-          <h2 class="text-xl font-bold text-gray-900 mb-2">Sobre {author.name}</h2>
+          <h2 class="text-xl font-bold text-gray-900 mb-2">
+            Sobre {author.name}
+          </h2>
           <p class="text-gray-600 mb-4">{author.bio}</p>
+
           {author.social && (
             <div class="flex gap-4">
               {author.social.twitter && (
@@ -123,6 +134,7 @@ const schema = {
                   </svg>
                 </a>
               )}
+
               {author.social.linkedin && (
                 <a
                   href={`https://linkedin.com/in/${author.social.linkedin}`}
@@ -141,21 +153,21 @@ const schema = {
         </div>
       </div>
     </section>
+
     <!-- Related Articles -->
     {relatedArticles.length > 0 && (
       <section>
-        <h2 class="text-2xl font-bold text-gray-900 mb-6">Otros artículos relacionados</h2>
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">
+          Otros artículos relacionados
+        </h2>
 
         <div class="grid gap-8 md:grid-cols-3">
-
           {relatedArticles.map((related) => {
             const relatedAuthor = getAuthorById(related.author);
 
             return (
               <article class="group bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
                 <a href={`/blog/${related.slug}/`} class="block">
-
-                  {/* Imagen del artículo */}
                   {related.featuredImage && (
                     <div class="aspect-w-16 aspect-h-9 bg-gray-100 overflow-hidden">
                       <img
@@ -166,7 +178,6 @@ const schema = {
                     </div>
                   )}
 
-                  {/* Contenido */}
                   <div class="p-6">
                     <h3 class="text-xl font-bold text-gray-900 group-hover:text-primary-600 mb-2">
                       {related.title}
@@ -176,12 +187,12 @@ const schema = {
                       {related.excerpt}
                     </p>
 
-                    <div class="flex items-center gap-3">
-                      <div class="text-sm">
-                        <div class="text-gray-500">
-                          {format(new Date(related.publishDate), 'MMM d, yyyy')}
-                        </div>
-                      </div>
+                    <div class="text-sm text-gray-500">
+                      {format(
+                        new Date(related.publishDate),
+                        "d 'de' MMMM 'de' yyyy",
+                        { locale: es }
+                      )}
                     </div>
                   </div>
                 </a>
