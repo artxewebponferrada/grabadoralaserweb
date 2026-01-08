@@ -18,6 +18,16 @@ export async function getStaticPaths() {
 const { article } = Astro.props;
 const author = getAuthorById(article.author);
 
+// Fecha de última actualización (fallback a publishDate)
+const lastUpdateDate = article.updateDate ?? article.publishDate;
+
+// Fecha formateada numérica (dd/mm/yyyy)
+const formattedUpdateDate = new Intl.DateTimeFormat('es-ES', {
+  day: '2-digit',
+  month: '2-digit',
+  year: 'numeric',
+}).format(new Date(lastUpdateDate));
+
 // Get related articles (same tags, excluding current article)
 const relatedArticles = getPublishedArticles()
   .filter(
@@ -62,15 +72,15 @@ const schema = {
           >
             {author.name}
           </a>
-          <div class="flex items-center gap-2 text-sm text-gray-500">
-            <time datetime={article.publishDate}>
-              {format(
-                new Date(article.publishDate),
-                "d 'de' MMMM 'de' yyyy",
-                { locale: es }
-              )}
+
+          <!-- Fecha de actualización + tiempo de lectura -->
+          <div class="flex flex-col gap-1 text-sm text-gray-500">
+            <time datetime={lastUpdateDate}>
+              <span class="font-medium text-gray-700">
+                Artículo actualizado:
+              </span>{' '}
+              {formattedUpdateDate}
             </time>
-            <span>·</span>
             <span>{article.readTime} min de lectura</span>
           </div>
         </div>
@@ -162,43 +172,39 @@ const schema = {
         </h2>
 
         <div class="grid gap-8 md:grid-cols-3">
-          {relatedArticles.map((related) => {
-            const relatedAuthor = getAuthorById(related.author);
-
-            return (
-              <article class="group bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
-                <a href={`/blog/${related.slug}/`} class="block">
-                  {related.featuredImage && (
-                    <div class="aspect-w-16 aspect-h-9 bg-gray-100 overflow-hidden">
-                      <img
-                        src={related.featuredImage}
-                        alt={related.title}
-                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                  )}
-
-                  <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-900 group-hover:text-primary-600 mb-2">
-                      {related.title}
-                    </h3>
-
-                    <p class="text-gray-600 mb-4 line-clamp-2">
-                      {related.excerpt}
-                    </p>
-
-                    <div class="text-sm text-gray-500">
-                      {format(
-                        new Date(related.publishDate),
-                        "d 'de' MMMM 'de' yyyy",
-                        { locale: es }
-                      )}
-                    </div>
+          {relatedArticles.map((related) => (
+            <article class="group bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+              <a href={`/blog/${related.slug}/`} class="block">
+                {related.featuredImage && (
+                  <div class="aspect-w-16 aspect-h-9 bg-gray-100 overflow-hidden">
+                    <img
+                      src={related.featuredImage}
+                      alt={related.title}
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                </a>
-              </article>
-            );
-          })}
+                )}
+
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 group-hover:text-primary-600 mb-2">
+                    {related.title}
+                  </h3>
+
+                  <p class="text-gray-600 mb-4 line-clamp-2">
+                    {related.excerpt}
+                  </p>
+
+                  <div class="text-sm text-gray-500">
+                    {new Intl.DateTimeFormat('es-ES', {
+                      day: '2-digit',
+                      month: '2-digit',
+                      year: 'numeric',
+                    }).format(new Date(related.updateDate ?? related.publishDate))}
+                  </div>
+                </div>
+              </a>
+            </article>
+          ))}
         </div>
       </section>
     )}
