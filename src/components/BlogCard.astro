@@ -1,5 +1,6 @@
 ---
 import { format } from 'date-fns';
+import { es } from 'date-fns/locale';
 
 interface Props {
   title: string;
@@ -11,11 +12,20 @@ interface Props {
     avatar: string;
   };
   tags: string[];
-  featuredImage?: string;   // <- NUEVO
-  imageAlt?: string;        // <- opcional
+  featuredImage?: string;
+  imageAlt?: string;
 }
 
-const { title, slug, excerpt, publishDate, author, tags, featuredImage, imageAlt } = Astro.props;
+const {
+  title,
+  slug,
+  excerpt,
+  publishDate,
+  author,
+  tags,
+  featuredImage,
+  imageAlt
+} = Astro.props;
 
 // Fallback si no hay featuredImage en el JSON
 const cover = featuredImage ?? `/imagenes/${slug}.jpg`;
@@ -53,19 +63,28 @@ const alt = imageAlt ?? title;
         <div class="flex flex-col">
           <strong class="text-sm text-gray-900">{author.name}</strong>
           <time datetime={publishDate} class="text-sm text-gray-500">
-            {format(new Date(publishDate), 'MMM d, yyyy')}
+            {format(
+              new Date(publishDate),
+              "d 'de' MMMM 'de' yyyy",
+              { locale: es }
+            )}
           </time>
         </div>
       </div>
     </header>
 
     <h2 class="text-xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors mb-3">
-      <a href={`/blog/${slug}/`} class="focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-lg">
+      <a
+        href={`/blog/${slug}/`}
+        class="focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-lg"
+      >
         {title}
       </a>
     </h2>
 
-    <p class="text-base text-gray-600 line-clamp-2 mb-4">{excerpt}</p>
+    <p class="text-base text-gray-600 line-clamp-2 mb-4">
+      {excerpt}
+    </p>
 
     <footer class="flex flex-wrap gap-2">
       {tags.map((tag) => (
